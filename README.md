@@ -5,10 +5,11 @@ Custom AI skills (Claude / ChatGPT) encoding how Tahi Studio builds, edits and Q
 | Folder | Skill | Status |
 |---|---|---|
 | Core Skill/tahi-webflow-core | Shared rules + workflow for every Webflow build | Draft v0.1 |
-| Lumos Skill | Lumos framework, Webflow-side workflow (extends the official lumos-skill) | Planned |
-| Client-First Skill | Finsweet Client-First builds | Planned |
-| Client Site Skill | Figma + blank project → full client site with components, props, slots, QA | Planned |
-| Template Skill | Build + QA Webflow Marketplace templates | Planned |
+| Lumos Skill/lumos-webflow | Lumos framework, Webflow-side workflow (extends the official lumos-skill) | Draft v0.1 |
+| Client-First Skill/client-first-webflow | Finsweet Client-First builds incl. Relume imports | Draft v0.1 |
+| Client Site Skill/webflow-client-site | Figma + project → full client site with components, props, slots, schema, QA | Draft v0.1 |
+| Template Skill/webflow-template | Build + QA Webflow Marketplace templates against the submission guidelines | Draft v0.1 |
+| IX2 Migration Skill/webflow-ix2-to-gsap | Read Classic interactions from a published page and rebuild natively | Draft v0.1 |
 
 `_research/` holds the research behind the rules (framework docs, reference-site analysis, user preference rounds, a template pre-QA calibration run). Skills are self-contained and never depend on it.
 
