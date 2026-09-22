@@ -13,3 +13,11 @@ Custom AI skills (Claude / ChatGPT) encoding how Tahi Studio builds, edits and Q
 `_research/` holds the research behind the rules (framework docs, reference-site analysis, user preference rounds, a template pre-QA calibration run). Skills are self-contained and never depend on it.
 
 Each skill is a folder with `SKILL.md` (frontmatter + instructions) and optional `references/`.
+
+## Install into Claude Code
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\install.ps1
+```
+
+Links every skill folder into `~/.claude/skills` as a junction, so edits in this repo apply immediately. For ChatGPT, paste a skill's `SKILL.md` (and its `references/` files) into a custom GPT's instructions or project files.
