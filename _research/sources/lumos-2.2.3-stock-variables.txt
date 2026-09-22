@@ -1,0 +1,152 @@
+
+=== default (47 vars)
+  site/viewport-max [Number] --site--viewport-max = 90
+  site/viewport-min [Number] --site--viewport-min = 20
+  site/margin [Size] --site--margin = custom:clamp(1 * 1rem, ((1 - ((3 - 1) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((3 - 1) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 3 * 1rem)
+  site/gutter [Size] --site--gutter = custom:clamp(1 * 1rem, ((1 - ((2 - 1) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((2 - 1) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 2 * 1rem)
+  site/column-count [Number] --site--column-count = 12
+  max-width/small [Size] --max-width--small = 50rem
+  max-width/main [Size] --max-width--main = custom:calc(var(--site--viewport-max) * 1rem)
+  max-width/full [Size] --max-width--full = custom:100%
+  radius/small [Size] --radius--small = 0.5rem
+  radius/main [Size] --radius--main = 1rem
+  radius/round [Size] --radius--round = 100vw
+  border-width/main [Size] --border-width--main = 0.094rem
+  focus/width [Size] --focus--width = 0.125rem
+  focus/offset-inner [Size] --focus--offset-inner = custom:calc(var(--focus--width) * -1)
+  focus/offset-outer [Size] --focus--offset-outer = 0.1875rem
+  swatch/transparent [Color] --swatch--transparent = transparent
+  swatch/light-100 [Color] --swatch--light-100 = white
+  swatch/light-100-o20 [Color] --swatch--light-100-o20 = custom:color-mix(in srgb, var(--swatch--light-100) 20%, transparent)
+  swatch/light-200 [Color] --swatch--light-200 = #ebebeb
+  swatch/dark-800 [Color] --swatch--dark-800 = #2f2b2d
+  swatch/dark-900-o20 [Color] --swatch--dark-900-o20 = custom:color-mix(in srgb, var(--swatch--dark-900) 20%, transparent)
+  swatch/dark-900 [Color] --swatch--dark-900 = #1f1d1e
+  swatch/brand-100 [Color] --swatch--brand-100 = custom:color-mix(in srgb,var(--swatch--brand-500), white 80%)
+  swatch/brand-200 [Color] --swatch--brand-200 = custom:color-mix(in srgb,var(--swatch--brand-500), white 60%)
+  swatch/brand-400 [Color] --swatch--brand-400 = custom:color-mix(in srgb,var(--swatch--brand-500), white 20%)
+  swatch/brand-300 [Color] --swatch--brand-300 = custom:color-mix(in srgb,var(--swatch--brand-500), white 40%)
+  swatch/brand-500 [Color] --swatch--brand-500 = #c6fb50
+  swatch/brand-900 [Color] --swatch--brand-900 = custom:color-mix(in srgb,var(--swatch--brand-500), black 80%)
+  swatch/brand-800 [Color] --swatch--brand-800 = custom:color-mix(in srgb,var(--swatch--brand-500), black 60%)
+  swatch/brand-700 [Color] --swatch--brand-700 = custom:color-mix(in srgb,var(--swatch--brand-500), black 40%)
+  swatch/brand-600 [Color] --swatch--brand-600 = custom:color-mix(in srgb,var(--swatch--brand-500), black 20%)
+  swatch/brand-text [Color] --swatch--brand-text = ->swatch/dark-900
+  swatch/brand-text-o20 [Color] --swatch--brand-text-o20 = custom:color-mix(in srgb, var(--swatch--brand-text) 20%, transparent)
+  nav/max-width-outer [Size] --nav--max-width-outer = ->max-width/main
+  nav/max-width-inner [Size] --nav--max-width-inner = ->max-width/main
+  nav/height [Size] --nav--height = 4rem
+  nav/banner-height [Size] --nav--banner-height = 2.4rem
+  nav/height-total [Size] --nav--height-total = custom:calc(var(--nav--height) + var(--nav--spacing-outer-vertical))
+  nav/spacing-outer-vertical [Size] --nav--spacing-outer-vertical = ->site/margin
+  nav/spacing-outer-horizontal [Size] --nav--spacing-outer-horizontal = ->site/margin
+  nav/spacing-inner-horizontal [Size] --nav--spacing-inner-horizontal = ->space/5 (32px)
+  nav/radius [Size] --nav--radius = ->radius/small
+  nav/hamburger-thickness [Size] --nav--hamburger-thickness = ->border-width/main
+  nav/hamburger-gap [Size] --nav--hamburger-gap = ->space/2 (12px)
+  button-size/medium [Size] --button-size--medium = 3rem
+  site/column-width [Size] --site--column-width = custom:calc((min(var(--max-width--main), 100% - var(--site--margin) * 2) - (var(--site--gutter) * (var(--site--column-count) - 1))) / var(--site--column-count))
+  button-size/large [Size] --button-size--large = 5rem
+
+=== theme (25 vars)
+  background [Color] --_theme---background = ->swatch/light-200  || Dark:->swatch/dark-900; Brand:->swatch/brand-500
+  background-2 [Color] --_theme---background-2 = ->swatch/light-100  || Dark:->swatch/dark-800; Brand:->swatch/brand-600
+  background-skeleton [Color] --_theme---background-skeleton = custom:color-mix(in lab, currentcolor 10%, transparent)
+  text [Color] --_theme---text = ->swatch/dark-900  || Dark:->swatch/light-100; Brand:->swatch/brand-text
+  heading-accent [Color] --_theme---heading-accent = ->swatch/brand-600  || Dark:->swatch/brand-500; Brand:custom:color-mix(in srgb,var(--_theme---text), white 20%)
+  border [Color] --_theme---border = ->swatch/dark-900-o20  || Dark:->swatch/light-100-o20; Brand:->swatch/brand-text-o20
+  selection/background [Color] --_theme---selection--background = ->swatch/brand-300
+  selection/text [Color] --_theme---selection--text = ->swatch/brand-text
+  button-primary/background [Color] --_theme---button-primary--background = ->swatch/brand-500  || Brand:->swatch/brand-text
+  button-primary/border [Color] --_theme---button-primary--border = ->button-primary/background
+  button-primary/text [Color] --_theme---button-primary--text = ->swatch/brand-text  || Brand:->swatch/brand-500
+  button-primary/background-hover [Color] --_theme---button-primary--background-hover = ->text  || Brand:custom:color-mix(in srgb,var(--_theme---button-primary--background), white 10%)
+  button-primary/border-hover [Color] --_theme---button-primary--border-hover = ->button-primary/background-hover
+  button-primary/text-hover [Color] --_theme---button-primary--text-hover = ->background  || Brand:->button-primary/text
+  button-secondary/background [Color] --_theme---button-secondary--background = ->swatch/transparent
+  button-secondary/border [Color] --_theme---button-secondary--border = ->border
+  button-secondary/text [Color] --_theme---button-secondary--text = ->text
+  button-secondary/background-hover [Color] --_theme---button-secondary--background-hover = ->text
+  button-secondary/border-hover [Color] --_theme---button-secondary--border-hover = ->button-secondary/background-hover
+  button-secondary/text-hover [Color] --_theme---button-secondary--text-hover = ->background
+  text-link/text [Color] --_theme---text-link--text = ->text
+  text-link/border [Color] --_theme---text-link--border = ->border
+  text-link/text-hover [Color] --_theme---text-link--text-hover = ->text-link/text
+  text-link/border-hover [Color] --_theme---text-link--border-hover = ->text  || Dark:->swatch/brand-500
+  nav/background [Color] --_theme---nav--background = ->background-2  || Brand:->background
+
+=== typography (26 vars)
+  font/primary-family [FontFamily] --_typography---font--primary-family = system-ui
+  font/primary-trim-top [Size] --_typography---font--primary-trim-top = 0.33em
+  font/primary-trim-bottom [Size] --_typography---font--primary-trim-bottom = 0.38em
+  font/primary-regular [Number] --_typography---font--primary-regular = 400
+  font/primary-medium [Number] --_typography---font--primary-medium = 500
+  font/primary-bold [Number] --_typography---font--primary-bold = 700
+  letter-spacing/tight [Size] --_typography---letter-spacing--tight = -0.03em
+  letter-spacing/normal [Size] --_typography---letter-spacing--normal = 0em
+  line-height/small [Number] --_typography---line-height--small = 1
+  line-height/medium [Number] --_typography---line-height--medium = 1.1
+  line-height/large [Number] --_typography---line-height--large = 1.3
+  line-height/huge [Number] --_typography---line-height--huge = 1.5
+  font-size/text-small [Size] --_typography---font-size--text-small = custom:clamp(0.875 * 1rem, ((0.875 - ((1 - 0.875) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((1 - 0.875) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 1 * 1rem)
+  font-size/text-main [Size] --_typography---font-size--text-main = custom:clamp(1 * 1rem, ((1 - ((1.125 - 1) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((1.125 - 1) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 1.125 * 1rem)
+  font-size/text-large [Size] --_typography---font-size--text-large = custom:clamp(1.125 * 1rem, ((1.125 - ((1.25 - 1.125) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((1.25 - 1.125) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 1.25 * 1rem)
+  font-size/h6 [Size] --_typography---font-size--h6 = custom:clamp(1 * 1rem, ((1 - ((1.125 - 1) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((1.125 - 1) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 1.125 * 1rem)
+  font-size/h5 [Size] --_typography---font-size--h5 = custom:clamp(1.375 * 1rem, ((1.375 - ((1.5 - 1.375) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((1.5 - 1.375) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 1.5 * 1rem)
+  font-size/h4 [Size] --_typography---font-size--h4 = custom:clamp(1.75 * 1rem, ((1.75 - ((2 - 1.75) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((2 - 1.75) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 2 * 1rem)
+  font-size/h3 [Size] --_typography---font-size--h3 = custom:clamp(2.25 * 1rem, ((2.25 - ((3 - 2.25) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((3 - 2.25) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 3 * 1rem)
+  font-size/h2 [Size] --_typography---font-size--h2 = custom:clamp(2.5 * 1rem, ((2.5 - ((4 - 2.5) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((4 - 2.5) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 4 * 1rem)
+  font-size/h1 [Size] --_typography---font-size--h1 = custom:clamp(3 * 1rem, ((3 - ((5 - 3) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((5 - 3) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 5 * 1rem)
+  font-size/display [Size] --_typography---font-size--display = custom:clamp(4 * 1rem, ((4 - ((7 - 4) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((7 - 4) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 7 * 1rem)
+  text-transform/none [FontFamily] --_typography---text-transform--none = custom:var(--text-transform, none)
+  text-transform/uppercase [FontFamily] --_typography---text-transform--uppercase = custom:uppercase
+  text-transform/capitalize [FontFamily] --_typography---text-transform--capitalize = custom:capitalize
+  text-transform/lowercase [FontFamily] --_typography---text-transform--lowercase = custom:lowercase
+
+=== textstyle (11 vars)
+  font-size [Size] --_text-style---font-size = ->font-size/text-main  || TextSmall:->font-size/text-small; TextLarge:->font-size/text-large; H6:->font-size/h6; H5:->font-size/h5; H4:->font-size/h4; H3:->font-size/h3; H2:->font-size/h2; H1:->font-size/h1; Display:->font-size/display
+  line-height [Number] --_text-style---line-height = ->line-height/huge  || H6:->line-height/medium; H5:->line-height/medium; H4:->line-height/medium; H3:->line-height/medium; H2:->line-height/small; H1:->line-height/small; Display:->line-height/small
+  letter-spacing [Size] --_text-style---letter-spacing = ->letter-spacing/normal  || H3:->letter-spacing/tight; H2:->letter-spacing/tight; H1:->letter-spacing/tight; Display:->letter-spacing/tight
+  text-transform [FontFamily] --_text-style---text-transform = ->text-transform/none
+  margin-top [Size] --_text-style---margin-top = ->space/4 (24px)  || H6:->space/7 (48px); H5:->space/7 (48px); H4:->space/7 (48px); H3:->space/7 (48px); H2:->space/7 (48px); H1:->space/7 (48px); Display:->space/7 (48px)
+  margin-bottom [Size] --_text-style---margin-bottom = ->space/4 (24px)  || H3:->space/5 (32px); H2:->space/5 (32px); H1:->space/5 (32px); Display:->space/6 (40px)
+  font-family [FontFamily] --_text-style---font-family = ->font/primary-family
+  font-weight [Number] --_text-style---font-weight = ->font/primary-regular  || H6:->font/primary-medium; H5:->font/primary-medium; H4:->font/primary-medium; H3:->font/primary-medium; H2:->font/primary-medium; H1:->font/primary-medium; Display:->font/primary-medium
+  trim-top [Size] --_text-style---trim-top = ->font/primary-trim-top
+  trim-bottom [Size] --_text-style---trim-bottom = ->font/primary-trim-bottom
+  text-wrap [FontFamily] --_text-style---text-wrap = custom:pretty  || H6:custom:balance; H5:custom:balance; H4:custom:balance; H3:custom:balance; H2:custom:balance; H1:custom:balance; Display:custom:balance
+
+=== spacing (13 vars)
+  space/1 (8px) [Size] --_spacing---space--1-8px = custom:clamp(0.375 * 1rem, ((0.375 - ((0.5 - 0.375) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((0.5 - 0.375) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 0.5 * 1rem)
+  space/2 (12px) [Size] --_spacing---space--2-12px = custom:clamp(0.625 * 1rem, ((0.625 - ((0.75 - 0.625) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((0.75 - 0.625) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 0.75 * 1rem)
+  space/3 (16px) [Size] --_spacing---space--3-16px = custom:clamp(0.875 * 1rem, ((0.875 - ((1 - 0.875) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((1 - 0.875) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 1 * 1rem)
+  space/4 (24px) [Size] --_spacing---space--4-24px = custom:clamp(1.25 * 1rem, ((1.25 - ((1.5 - 1.25) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((1.5 - 1.25) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 1.5 * 1rem)
+  space/5 (32px) [Size] --_spacing---space--5-32px = custom:clamp(1.75 * 1rem, ((1.75 - ((2 - 1.75) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((2 - 1.75) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 2 * 1rem)
+  space/6 (40px) [Size] --_spacing---space--6-40px = custom:clamp(2 * 1rem, ((2 - ((2.5 - 2) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((2.5 - 2) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 2.5 * 1rem)
+  space/7 (48px) [Size] --_spacing---space--7-48px = custom:clamp(2.25 * 1rem, ((2.25 - ((3 - 2.25) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((3 - 2.25) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 3 * 1rem)
+  space/8 (64px) [Size] --_spacing---space--8-64px = custom:clamp(2.5 * 1rem, ((2.5 - ((4 - 2.5) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((4 - 2.5) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 4 * 1rem)
+  section-space/none [Size] --_spacing---section-space--none = 0px
+  section-space/small (80px) [Size] --_spacing---section-space--small-80px = custom:clamp(3 * 1rem, ((3 - ((5 - 3) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((5 - 3) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 5 * 1rem)
+  section-space/main (112px) [Size] --_spacing---section-space--main-112px = custom:clamp(4 * 1rem, ((4 - ((7 - 4) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((7 - 4) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 7 * 1rem)
+  section-space/large (160px) [Size] --_spacing---section-space--large-160px = custom:clamp(5.5 * 1rem, ((5.5 - ((10 - 5.5) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((10 - 5.5) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 10 * 1rem)
+  section-space/page-top (224px) [Size] --_spacing---section-space--page-top-224px = custom:clamp(10 * 1rem, ((10 - ((14 - 10) / (var(--site--viewport-max) - var(--site--viewport-min)) * var(--site--viewport-min))) * 1rem + ((14 - 10) / (var(--site--viewport-max) - var(--site--viewport-min))) * 100vw), 14 * 1rem)
+
+=== columncount (1 vars)
+  value [Number] --_column-count---value = 1  || mode:a1101a:2; mode:d20351:3; mode:f9433f:4; mode:d0fce8:5; mode:8bc094:6; mode:ff1337:7; mode:7bb1cd:8; mode:11ca07:9; mode:5adb2e:10; mode:65b423:11; mode:dcae94:12
+
+=== gap (1 vars)
+  size [Size] --_gap---size = ->site/gutter  || mode:37f05b:0rem; mode:ff857c:->space/1 (8px); mode:556c7e:->space/2 (12px); mode:ac1a66:->space/3 (16px); mode:e7729f:->space/4 (24px); mode:1aee37:->space/5 (32px); mode:bd4289:->space/6 (40px); mode:c403b0:->space/7 (48px); mode:b0034c:->space/8 (64px)
+
+=== trigger (2 vars)
+  on [Number] --_trigger---on = 1  || Active:0
+  off [Number] --_trigger---off = 0  || Active:1
+
+=== state (2 vars)
+  true [Number] --_state---true = 1  || Active:0
+  false [Number] --_state---false = 0  || Active:1
+
+=== responsive (4 vars)
+  large [Number] --_responsive---large = 1  || Medium:0; Small:0; xSmall:0
+  medium [Number] --_responsive---medium = 0  || Medium:1
+  small [Number] --_responsive---small = 0  || Small:1
+  xsmall [Number] --_responsive---xsmall = 0  || xSmall:1

@@ -1,0 +1,3561 @@
+[
+ {
+  "id": "824b76d0-0ddb-5ed5-8ae6-09771aaa568a",
+  "name": "Button Main",
+  "group": "Button",
+  "instanceCount": 83,
+  "props": [
+   {
+    "id": "a2633333-e348-cdd1-4229-0274657be5f2",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "59dad94d-02cf-903d-918f-aeb4aab17371",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "09c7e3c3-ab2b-fd29-e9c5-1cf5593e84b9",
+    "type": "textContent",
+    "name": "Text",
+    "defaultValue": "Button Text"
+   },
+   {
+    "id": "7a270cd6-1eda-e05c-e2c6-afb653d5a2da",
+    "type": "link",
+    "name": "Link",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   },
+   {
+    "id": "813dba49-c343-92e4-0a40-94cf01644652",
+    "type": "link",
+    "name": "External Link",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   },
+   {
+    "id": "cc42c13b-8a92-71ae-d955-d46ecad83376",
+    "type": "string",
+    "name": "Type",
+    "tooltip": "button, submit, reset",
+    "defaultValue": "button"
+   },
+   {
+    "id": "7b853fac-9139-5661-4dd3-4ac6b870d846",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "56affa2c-3bd2-4ebc-86b2-08776cee87f4",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "4e9676b5-7709-71c2-b570-cfabafc4e9c9",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "dc2c1371-b080-2164-439d-30d9489ffe55",
+    "type": "visibility",
+    "name": "Clickable Visibility"
+   },
+   {
+    "id": "f5aca4bb-50e9-eacc-0463-6c471d6b90b1",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Primary",
+    "isSelected": true
+   },
+   {
+    "id": "e85564cd-af30-a478-692b-71732aefb3ab",
+    "name": "Secondary",
+    "isSelected": false
+   },
+   {
+    "id": "625d5df4-ad91-f7dc-9e2f-2e69f3fd7400",
+    "name": "Link",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "ef6f7715-7082-0e78-9b80-b290d4fc5f0f",
+  "name": "Button Play",
+  "group": "Button",
+  "instanceCount": 5,
+  "props": [
+   {
+    "id": "a811ad81-2da9-942d-e2cd-7e4d900a8d73",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "83194c10-6941-a340-0227-973a3bb8ad35",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "74fae974-c32d-5212-8652-f1082eff2330",
+    "type": "textContent",
+    "name": "Text",
+    "tooltip": "This is the text screen readers will read when focused on the button.",
+    "defaultValue": "Play"
+   },
+   {
+    "id": "7f9b9d9a-f1e9-5c66-9bb2-26df9a33cb17",
+    "type": "link",
+    "name": "Link",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   },
+   {
+    "id": "92472fef-fd6c-4630-b999-d97bf281530d",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "5ddfa01f-f635-832b-6023-31be186b003b",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "861877cc-ebb8-1e75-b91f-013377c05fe8",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Primary / Medium",
+    "isSelected": true
+   },
+   {
+    "id": "ab355ea0-b722-2f23-3507-f0290f710e57",
+    "name": "Secondary / Medium",
+    "isSelected": false
+   },
+   {
+    "id": "d47b6b31-1410-4123-4cbe-47472b6d649d",
+    "name": "Primary / Large",
+    "isSelected": false
+   },
+   {
+    "id": "3970b3f9-2fa6-52d8-098a-2260caaa12bb",
+    "name": "Secondary / Large",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "973d4f8d-b9e1-3d51-3d84-7a9efc662c8f",
+  "name": "Icon Arrow",
+  "group": "SVG",
+  "instanceCount": 39,
+  "props": [
+   {
+    "id": "4110ac31-e9af-1f67-65b2-82b1b11ed64c",
+    "type": "variant",
+    "name": "Direction",
+    "defaultValue": "base"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Right",
+    "isSelected": true
+   },
+   {
+    "id": "dc469724-71a3-14e1-b5d5-1294323411ce",
+    "name": "Left",
+    "isSelected": false
+   },
+   {
+    "id": "b18a0fcd-abb0-329e-47f4-79155dd8284a",
+    "name": "Top",
+    "isSelected": false
+   },
+   {
+    "id": "caa8b8e9-e8ec-6eb3-4526-30f19f7326f5",
+    "name": "Bottom",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "54c81638-84d0-9a5e-6328-555943eb2575",
+  "name": "Icon X",
+  "group": "SVG",
+  "instanceCount": 5,
+  "props": [],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "9d2d1e50-103f-d310-b352-08c163e684c9",
+  "name": "Icon Arrow Full",
+  "group": "SVG",
+  "instanceCount": 14,
+  "props": [
+   {
+    "id": "8b583aae-a6cd-af1d-7e88-12f339a69761",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Right",
+    "isSelected": true
+   },
+   {
+    "id": "1c3f028b-116e-d4eb-db7f-8484491bbf2e",
+    "name": "Left",
+    "isSelected": false
+   },
+   {
+    "id": "a0a4b133-f837-5340-6c98-04b1518f150d",
+    "name": "Top",
+    "isSelected": false
+   },
+   {
+    "id": "5939aeba-b378-ecdc-f1bc-b6970df2be03",
+    "name": "Bottom",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "0b86bbf2-83a2-3b1b-20e3-c535c15c9297",
+  "name": "Global Guides",
+  "group": "Global",
+  "description": "Gives a visual preview of grid guides. Helpful for checking alignment between sections.",
+  "instanceCount": 5,
+  "props": [],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "3c7de3d6-58ac-a383-9a7c-2b483f0bf7d0",
+  "name": "Typography Eyebrow",
+  "group": "Typography",
+  "instanceCount": 14,
+  "props": [
+   {
+    "id": "95f3ed9d-3f5e-f61f-5b5b-eaa639d07fce",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "d2a49f5c-3268-a975-733f-44e8cda24efd",
+    "type": "richText",
+    "name": "Text",
+    "defaultValue": {
+     "innerText": "Eyebrow Text Here"
+    }
+   },
+   {
+    "id": "9fa9269c-2e59-4213-3adf-1ebc834dcf0f",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "625bf776-8cb1-fa1f-a6f9-6b7f7ac28358",
+  "name": "Starter JS",
+  "group": "Utility",
+  "description": "Unlink before use. Include as last child within component. Replace 'yourFunctionName' in the embed with a name that is specific to your component.",
+  "instanceCount": 0,
+  "props": [],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "fc7624c6-48da-610a-1f56-983264845d2d",
+  "name": "Starter CSS",
+  "group": "Utility",
+  "description": "Unlink before use. Include as first child within component.",
+  "instanceCount": 0,
+  "props": [],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "ff646fea-153c-0ace-5c8e-ac7249c9b618",
+  "name": "\u2022 Section Custom (duplicate this)",
+  "group": "\u2022 Section",
+  "instanceCount": 0,
+  "props": [
+   {
+    "id": "02022547-20cc-aa39-aac7-6dfa113f3a9b",
+    "type": "visibility",
+    "name": "Visibility",
+    "group": "Section"
+   },
+   {
+    "id": "050263d0-cb09-a92f-4885-035c72f1a7f0",
+    "type": "variant",
+    "name": "Theme",
+    "group": "Section",
+    "defaultValue": "base"
+   },
+   {
+    "id": "490d9c5f-185e-40ba-ead3-c41ba6236d49",
+    "type": "richText",
+    "name": "Eyebrow Text",
+    "group": "Content",
+    "defaultValue": {
+     "innerText": "Eyebrow Text Here"
+    }
+   },
+   {
+    "id": "c1d3693f-7980-d224-0b34-3381bb128759",
+    "type": "richText",
+    "name": "Heading Text",
+    "group": "Content",
+    "defaultValue": {
+     "innerText": "Lorem ipsum dolor sit amet elit"
+    }
+   },
+   {
+    "id": "6db0e38c-3190-3580-53d0-297d0b4e033e",
+    "type": "richText",
+    "name": "Paragraph Text",
+    "group": "Content",
+    "defaultValue": {
+     "innerText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    }
+   },
+   {
+    "id": "bc017396-b8a5-2020-3f68-b83688da478a",
+    "type": "textContent",
+    "name": "Text",
+    "group": "Button 1",
+    "defaultValue": "Button Text"
+   },
+   {
+    "id": "fe9dbd28-b6f5-3110-9658-daa0ae65b2c8",
+    "type": "link",
+    "name": "Link",
+    "group": "Button 1",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   },
+   {
+    "id": "72366214-35ed-0630-3c6e-2cf3b1447b39",
+    "type": "textContent",
+    "name": "Text",
+    "group": "Button 2",
+    "defaultValue": "Button Text"
+   },
+   {
+    "id": "c91d075d-1cad-0606-c4b2-f22a8ec4f19a",
+    "type": "link",
+    "name": "Link",
+    "group": "Button 2",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   },
+   {
+    "id": "8cf493e7-092f-319d-d4e3-beec5f26786a",
+    "type": "visibility",
+    "name": "Visibility",
+    "group": "Image"
+   },
+   {
+    "id": "f7079307-2df3-5232-ae5f-7c993076fc63",
+    "type": "image",
+    "name": "File",
+    "group": "Image",
+    "defaultValue": "6996a19fa4278634fbc79806"
+   },
+   {
+    "id": "44ec8e48-593e-0cc9-aa42-1bdaabaaaa89",
+    "type": "string",
+    "name": "Loading",
+    "group": "Image",
+    "defaultValue": "lazy"
+   },
+   {
+    "id": "f75a7ad7-94b8-6c44-0db8-7b5cca0a1453",
+    "type": "string",
+    "name": "Url",
+    "group": "Video",
+    "defaultValue": ""
+   },
+   {
+    "id": "e9cc896e-8135-b66e-da47-be0c19b6f07e",
+    "type": "variant",
+    "name": "Padding Top",
+    "group": "Section",
+    "defaultValue": "60a7ad7d-02b0-6682-95a5-2218e6fd1490"
+   },
+   {
+    "id": "f7451683-d20b-97ca-e6fc-58e80ca717b3",
+    "type": "variant",
+    "name": "Padding Bottom",
+    "group": "Section",
+    "defaultValue": "60a7ad7d-02b0-6682-95a5-2218e6fd1490"
+   },
+   {
+    "id": "93369266-c4a3-8939-977b-eb3412c8ba54",
+    "type": "id",
+    "name": "ID",
+    "group": "Section",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Inherit",
+    "isSelected": true
+   },
+   {
+    "id": "f3a81397-d460-3add-9beb-5ec7af47907a",
+    "name": "Light",
+    "isSelected": false
+   },
+   {
+    "id": "b4d321b1-05d4-6b05-8ab2-dfbc2f41ee4e",
+    "name": "Dark",
+    "isSelected": false
+   },
+   {
+    "id": "bb2c68bd-fd74-aa1e-69b0-e84595dd4ec8",
+    "name": "Brand",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "0254e612-9509-0757-3332-f6be61ca6889",
+  "name": "Clickable",
+  "group": "Utility",
+  "description": "This makes its whole parent clickable & can be a link tag or a button tag if the url field is left empty. It has hidden text that is readable by screen readers and has a z-index: 0 only in designer view to keep any relative content clickable.",
+  "instanceCount": 131,
+  "props": [
+   {
+    "id": "d5d5b95f-f511-ea4d-05da-3fb36c2061e0",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "1b693524-2e72-9544-b67d-4c7b725045de",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "15bde6c1-9aad-9550-ed91-b6cb1afa189a",
+    "type": "textContent",
+    "name": "Screen Reader Text",
+    "tooltip": "This is the text screen readers will read when focused on the link or button."
+   },
+   {
+    "id": "b6016031-ccf9-3efa-2abc-f13bad7d1f38",
+    "type": "link",
+    "name": "Link",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   },
+   {
+    "id": "0df3df6a-8fe1-08ac-bb6c-f6db44beacb8",
+    "type": "link",
+    "name": "External Link",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   },
+   {
+    "id": "9bb5600e-24f6-325f-2aed-89e0da589b8c",
+    "type": "string",
+    "name": "Type",
+    "tooltip": "button, submit, reset",
+    "defaultValue": "button"
+   },
+   {
+    "id": "dbff8528-e318-1b4e-2df4-069586d9fdeb",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "25e156b6-c8a0-b33e-7af9-5ae9fca6219b",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Focus Ring Outside",
+    "isSelected": true
+   },
+   {
+    "id": "b793638f-e9bb-2cea-c2d9-27bf5a1f754a",
+    "name": "Focus Ring Inside",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "6988c782-9d84-f50b-88aa-e362ff213d22",
+  "name": "Spacer",
+  "group": "Utility",
+  "instanceCount": 36,
+  "props": [
+   {
+    "id": "41593d77-1bba-d19b-378e-a9a92bc3a7d0",
+    "type": "boolean",
+    "name": "Visibility",
+    "defaultValue": true
+   },
+   {
+    "id": "6c14af0c-7d93-c86c-7e8c-95100cb81cf2",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "60a7ad7d-02b0-6682-95a5-2218e6fd1490"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "None",
+    "isSelected": true
+   },
+   {
+    "id": "41fc0c0a-cac3-53c9-9802-6a916e3fb342",
+    "name": "Even",
+    "isSelected": false
+   },
+   {
+    "id": "d422cbd0-f212-c815-68df-63414354c21d",
+    "name": "Small",
+    "isSelected": false
+   },
+   {
+    "id": "60a7ad7d-02b0-6682-95a5-2218e6fd1490",
+    "name": "Main",
+    "isSelected": false
+   },
+   {
+    "id": "8cc18b30-4618-8767-0111-f6abfe45aaa3",
+    "name": "Large",
+    "isSelected": false
+   },
+   {
+    "id": "e359d2da-de19-6775-b122-3e06f925f39e",
+    "name": "Page Top",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "9cd849af-5c85-da69-3983-2e49dba72900",
+  "name": "Section",
+  "group": "Wrapper",
+  "instanceCount": 17,
+  "props": [
+   {
+    "id": "6022ae9a-0bc0-86ed-6804-bb086c01350a",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "90d95ad3-bc67-89ab-2030-0ac014a96832",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "47f89cc1-c690-5052-46fc-da934938cc33",
+    "type": "variant",
+    "name": "Padding Top",
+    "defaultValue": "60a7ad7d-02b0-6682-95a5-2218e6fd1490"
+   },
+   {
+    "id": "a89be678-5d7d-c6e9-66ad-7d4b011b0f05",
+    "type": "variant",
+    "name": "Padding Bottom",
+    "defaultValue": "60a7ad7d-02b0-6682-95a5-2218e6fd1490"
+   },
+   {
+    "id": "77698e15-fb16-e382-1280-dc7a21a00ac7",
+    "type": "string",
+    "name": "Section Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "9d50b922-a467-b677-e600-e0ddd6cd80aa",
+    "type": "string",
+    "name": "Container Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "d6eea0ab-8bd4-fb7e-6520-293beebc47bb",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   },
+   {
+    "id": "6bded083-7cfb-b19e-7d11-12308a048b24",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "f2510b08-47ac-271e-646e-0421fb1505d9",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "7553a419-191d-001a-6daf-c23265fb1e86",
+    "type": "string",
+    "name": "ID Attribute Name",
+    "tooltip": "Type \"id\" in this field when applying an id to the section",
+    "defaultValue": ""
+   },
+   {
+    "id": "e5afb29e-4dce-71a6-b87b-5dd0bbe1f905",
+    "type": "id",
+    "name": "ID Attribute Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "24982ecd-5d84-7da2-51be-28ae59f56b24",
+    "type": "slot",
+    "name": "Container Slot"
+   },
+   {
+    "id": "de409115-6a00-c117-7f0f-5cd7a6c049bb",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Inherit",
+    "isSelected": true
+   },
+   {
+    "id": "a4eabb01-8ed6-63d0-157e-0a7b56aedaa1",
+    "name": "Light",
+    "isSelected": false
+   },
+   {
+    "id": "857e5430-97c7-deb6-3c1a-d3063f9fe2c7",
+    "name": "Dark",
+    "isSelected": false
+   },
+   {
+    "id": "25bf08d9-3196-322b-5616-019ac7f0f4f7",
+    "name": "Brand",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "ef0597e2-9ec1-c890-ceba-f61926a36e78",
+  "name": "Button Wrapper",
+  "group": "Wrapper",
+  "instanceCount": 30,
+  "props": [
+   {
+    "id": "8815d162-6873-91e9-1884-104c1614556f",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "77ff8780-f2f9-2a1d-bbb0-4266197d4fdc",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "cad31ee9-6406-593c-2394-2b5e0909f6f6",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   },
+   {
+    "id": "5503b39a-b07b-297d-1969-a16235fbdfea",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "b9130e59-aa4e-07ef-a822-eda529bf75ca",
+  "name": "Typography Heading",
+  "group": "Typography",
+  "instanceCount": 37,
+  "props": [
+   {
+    "id": "7e2779ba-2d90-9ecc-b408-2b9b10aad557",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "9b073cb9-c1b8-2c4e-1e1e-fa98533256a4",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "433d40c6-c261-f13f-c899-61d2cadf150f"
+   },
+   {
+    "id": "76273518-63b5-3848-40cd-8ad0c6067d18",
+    "type": "richText",
+    "name": "Text",
+    "defaultValue": {
+     "innerText": "Lorem ipsum dolor sit amet elit"
+    }
+   },
+   {
+    "id": "6e104e9a-c0db-75d4-b6ed-a8614fa001cf",
+    "type": "number",
+    "name": "Max Width",
+    "tooltip": "Set \"-1\" for no max width",
+    "defaultValue": 20
+   },
+   {
+    "id": "7b8f6f15-4912-9543-7450-2f0e2d03c70e",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "a18975a8-4357-ae6b-a114-3f7af38b8de1",
+    "type": "id",
+    "name": "ID",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Inherit",
+    "isSelected": true
+   },
+   {
+    "id": "3fbd0d32-5675-1947-73b3-abb16c1fb986",
+    "name": "Text Small",
+    "isSelected": false
+   },
+   {
+    "id": "9027c8ae-1ba5-f702-ea6e-4a1c3fca9f64",
+    "name": "Text Main",
+    "isSelected": false
+   },
+   {
+    "id": "74a3180a-e505-b452-032f-599c8e557249",
+    "name": "Text Large",
+    "isSelected": false
+   },
+   {
+    "id": "823daff2-fd84-8da0-4ed1-92a39b869ad0",
+    "name": "H6",
+    "isSelected": false
+   },
+   {
+    "id": "326a9562-3263-06da-e8ef-16981fd70f1c",
+    "name": "H5",
+    "isSelected": false
+   },
+   {
+    "id": "7c7eb163-b37d-338d-2369-5eae7e6d458a",
+    "name": "H4",
+    "isSelected": false
+   },
+   {
+    "id": "701c4b6c-37cf-de59-d80d-80a1822c4994",
+    "name": "H3",
+    "isSelected": false
+   },
+   {
+    "id": "433d40c6-c261-f13f-c899-61d2cadf150f",
+    "name": "H2",
+    "isSelected": false
+   },
+   {
+    "id": "792802b6-ccdb-f982-5023-5fa970cf03d0",
+    "name": "H1",
+    "isSelected": false
+   },
+   {
+    "id": "41c609dc-9c80-9eef-75df-03bf0eea00b4",
+    "name": "Display",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "99ca2e6d-2b82-bb82-6df8-bd4932d075bd",
+  "name": "Typography Paragraph",
+  "group": "Typography",
+  "instanceCount": 35,
+  "props": [
+   {
+    "id": "83aee4e0-1bb6-ae6a-0d9c-f0f9cfa21bd4",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "4e33e904-7e2a-6463-0eef-5719f108b265",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "1a52e4bc-3278-9643-82b1-cfa819b4570a",
+    "type": "richText",
+    "name": "Text",
+    "defaultValue": {
+     "innerText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+   },
+   {
+    "id": "dc33d40a-caf1-af84-9353-0335b7334cd6",
+    "type": "number",
+    "name": "Max Width",
+    "tooltip": "Set \"-1\" for no max width",
+    "defaultValue": 60
+   },
+   {
+    "id": "6287a7d3-3f29-0a33-04e5-44bca96fdd3f",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "9d84965e-4dbb-fcea-dab3-0c9b51ef32a2",
+    "type": "id",
+    "name": "ID",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Inherit",
+    "isSelected": true
+   },
+   {
+    "id": "4099173f-f581-635c-a5fe-cf4a89c62029",
+    "name": "Text Small",
+    "isSelected": false
+   },
+   {
+    "id": "61d538b2-709c-eb7a-4258-8c0890dc07fc",
+    "name": "Text Main",
+    "isSelected": false
+   },
+   {
+    "id": "fdb8e663-01e0-aae6-13eb-e6dfca16b689",
+    "name": "Text Large",
+    "isSelected": false
+   },
+   {
+    "id": "b8555f10-fa7d-e9ba-e262-f9aa44c27c1c",
+    "name": "H6",
+    "isSelected": false
+   },
+   {
+    "id": "5c484503-e2a0-ac99-680d-56013d859efa",
+    "name": "H5",
+    "isSelected": false
+   },
+   {
+    "id": "93e8af18-8413-e3ac-0442-72629401a3db",
+    "name": "H4",
+    "isSelected": false
+   },
+   {
+    "id": "ad482112-9d0e-852c-0f6e-ba1e5a3aee59",
+    "name": "H3",
+    "isSelected": false
+   },
+   {
+    "id": "efb733fe-da83-69a3-ea4a-b3f2f89d0389",
+    "name": "H2",
+    "isSelected": false
+   },
+   {
+    "id": "3ddfa43e-abc1-422e-6e6d-23dfb7da71f3",
+    "name": "H1",
+    "isSelected": false
+   },
+   {
+    "id": "eee56f15-d7ce-d101-2f8c-83b3bbd55d4a",
+    "name": "Display",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "cfe16031-f44d-4a67-3ea7-9298adf7238a",
+  "name": "Block",
+  "group": "Wrapper",
+  "instanceCount": 0,
+  "props": [
+   {
+    "id": "4a40534b-0b41-efea-4a8a-02c6d39a9ae2",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "55ce36d0-6387-6d72-c58c-8663f0b9bad0",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "79f22146-ea0c-858d-f929-54abc72a2419",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   },
+   {
+    "id": "2ac1c436-173e-7b5c-9c8c-faff425035d6",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "0488e49e-60f2-4ef0-e1ed-cedb36483e1c",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "fb202fd6-73cc-6a50-139e-c82bfa9f1e5c",
+    "type": "slot",
+    "name": "Slot content"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "39a856c3-f857-7c26-307f-b73399139f4a",
+  "name": "Check UI",
+  "group": "Miscellaneous",
+  "description": "Used inside Form Checkbox and Form Radio Components",
+  "instanceCount": 5,
+  "props": [
+   {
+    "id": "ceea9dae-1800-0050-d339-30851b2ad651",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "716c5051-d03b-9366-b6e9-0ae69d8b7691",
+    "type": "string",
+    "name": "Type",
+    "defaultValue": "checkbox"
+   },
+   {
+    "id": "ad5a1c11-5be0-7b8e-c294-b05d018ff3d0",
+    "type": "textContent",
+    "name": "Label",
+    "tooltip": "Field label shown on page",
+    "defaultValue": "I agree to the terms"
+   },
+   {
+    "id": "74ea5995-c144-55d6-8764-af19c5f8ab6a",
+    "type": "string",
+    "name": "Name",
+    "defaultValue": "Name"
+   },
+   {
+    "id": "ff445480-32d9-18a7-adc8-b6c46609bf85",
+    "type": "string",
+    "name": "Value",
+    "defaultValue": "Value"
+   },
+   {
+    "id": "dacd2e6f-364b-6fb9-00ab-4364bb1f41c0",
+    "type": "string",
+    "name": "Required",
+    "tooltip": "Add a space to make the field required",
+    "defaultValue": ""
+   },
+   {
+    "id": "a5f7227d-e1f9-196a-e1ba-3580cedb3591",
+    "type": "string",
+    "name": "Checked",
+    "tooltip": "Add a space to make the field checked by default",
+    "defaultValue": ""
+   },
+   {
+    "id": "06bb7ba2-00f2-4e0d-4f78-23b5bd9ba61d",
+    "type": "string",
+    "name": "Input Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "5cc65a2a-bd89-1cae-ad24-48e67ea9325c",
+    "type": "string",
+    "name": "Input Attribute Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "66e63526-7f08-ac71-c50b-7c64d5a41947",
+    "type": "string",
+    "name": "Label Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "f25287a7-00b2-6f3e-70b0-891a712df35b",
+    "type": "string",
+    "name": "Label Attribute Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Checkbox",
+    "isSelected": true
+   },
+   {
+    "id": "c18f59b8-0331-9f8c-c106-08818710cc20",
+    "name": "Radio",
+    "isSelected": false
+   },
+   {
+    "id": "05ff758a-80c8-4344-649b-149f87b62cc9",
+    "name": "Toggle",
+    "isSelected": false
+   },
+   {
+    "id": "e3978449-fef8-38a6-7f29-4e26ca4f8f53",
+    "name": "Button",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "c2fd5c20-65cf-6b26-fc6c-059fb6547f9c",
+  "name": "Form Radio",
+  "group": "Form",
+  "instanceCount": 3,
+  "props": [
+   {
+    "id": "14c65806-90b5-2012-7f52-79d92d5c8e49",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "51c4c59b-1108-cb29-21c7-430147ed6656",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "207e711d-e904-8e4c-bb4c-1b2c0cce9aab",
+    "type": "string",
+    "name": "Group Name",
+    "tooltip": "All radios within the same group should use the same group name",
+    "defaultValue": "Group Name"
+   },
+   {
+    "id": "c3778b1c-e9f9-7ed9-b7c9-f987a278ddb0",
+    "type": "textContent",
+    "name": "Label",
+    "tooltip": "Label text shown on page",
+    "defaultValue": "Label"
+   },
+   {
+    "id": "f40177ce-d565-49b5-cf28-b289c9b9bf6c",
+    "type": "string",
+    "name": "Value",
+    "tooltip": "Field value when checked",
+    "defaultValue": "Value"
+   },
+   {
+    "id": "35035b36-4f3e-9af6-f290-b505cdd89741",
+    "type": "string",
+    "name": "Required",
+    "tooltip": "Add a space to make the field required",
+    "defaultValue": ""
+   },
+   {
+    "id": "5589ba93-4817-72af-333b-8330e9fddb83",
+    "type": "string",
+    "name": "Checked",
+    "tooltip": "Add a space to make the field checked by default",
+    "defaultValue": ""
+   },
+   {
+    "id": "48e04092-ed91-7e65-ecc1-1d736918b0ac",
+    "type": "string",
+    "name": "Role",
+    "tooltip": "Switch to \"listitem\" if used in a list",
+    "defaultValue": "none"
+   },
+   {
+    "id": "731df109-e5e2-67fc-44a6-93053bc16a41",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "4f6171cd-2cfd-7132-7d0a-1a9026f2caf5",
+    "type": "string",
+    "name": "Input Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "89ae6db6-5364-e28c-0119-3100c945e0fa",
+    "type": "string",
+    "name": "Input Attribute Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "14180b98-1b44-4e8d-7073-d29ce4fac93b",
+    "type": "string",
+    "name": "Label Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "279c2f47-f689-2ac2-7ac3-5da32f7ec579",
+    "type": "string",
+    "name": "Label Attribute Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "4691487f-404c-ddef-cd99-f79676913b7a",
+  "name": "Content Wrapper",
+  "group": "Wrapper",
+  "instanceCount": 0,
+  "props": [
+   {
+    "id": "94ad3988-544b-a395-b44a-e89b531c663a",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "939b4cec-eeb4-435c-14dd-3d7c4bfab190",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "e85a4315-14bc-e5ef-0d3e-2c8c9ed7d2f1"
+   },
+   {
+    "id": "f42dc87e-16bd-9c7c-dd22-249769aac817",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "04e224f1-5f0b-a3a9-8e01-149915ca9ee8",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   },
+   {
+    "id": "866010cb-5349-f64f-0842-0eef196ae8de",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Inherit",
+    "isSelected": true
+   },
+   {
+    "id": "e85a4315-14bc-e5ef-0d3e-2c8c9ed7d2f1",
+    "name": "Left",
+    "isSelected": false
+   },
+   {
+    "id": "4f54624e-ceb1-0769-a238-365d5e220b70",
+    "name": "Center",
+    "isSelected": false
+   },
+   {
+    "id": "405b6754-709a-81de-bf32-f0102c0c7aa2",
+    "name": "Right",
+    "isSelected": false
+   },
+   {
+    "id": "e98b91c1-a8bf-9b6d-a119-f398c9e3f46b",
+    "name": "Center Mobile",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "7d7894ee-390d-226d-3dd5-a9571f6c41f5",
+  "name": "Grid",
+  "group": "Wrapper",
+  "instanceCount": 8,
+  "props": [
+   {
+    "id": "f0197768-b889-207d-d719-88bae56ce584",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "627d0b36-e41d-bf6f-08c8-00ecca7226d1",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "36a4b313-b94e-f017-af51-587183913231",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "25c90e4e-020d-1ddc-99a3-9b4abbbc508c",
+    "type": "number",
+    "name": "Large Screen",
+    "tooltip": "Column count on large screens and autofit / autofill max column count",
+    "defaultValue": 2
+   },
+   {
+    "id": "3a931472-3bfd-9bb7-aac0-6c944a5b2275",
+    "type": "number",
+    "name": "Medium Screen",
+    "tooltip": "0 will inherit from the previous screen size",
+    "defaultValue": 1
+   },
+   {
+    "id": "e3b256f0-ce29-e4ec-b236-4969b12d77d2",
+    "type": "number",
+    "name": "Small Screen",
+    "tooltip": "0 will inherit from the previous screen size",
+    "defaultValue": 0
+   },
+   {
+    "id": "6bd48592-c348-efdc-42e9-e51457233889",
+    "type": "number",
+    "name": "Smallest Screen",
+    "tooltip": "0 will inherit from the previous screen size",
+    "defaultValue": 0
+   },
+   {
+    "id": "9096b999-5678-82ea-54ac-a9a75692666d",
+    "type": "number",
+    "name": "Minimum Column Size",
+    "tooltip": "For autofit or autofill grids",
+    "defaultValue": 12
+   },
+   {
+    "id": "f53522d8-67ed-0b1a-c605-0f66c49a1990",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   },
+   {
+    "id": "3360065c-d779-b076-0445-a2b7b2c3f772",
+    "type": "string",
+    "name": "Role",
+    "tooltip": "Switch to \"list\" if grid will contain a list of items",
+    "defaultValue": "none"
+   },
+   {
+    "id": "c3b7766e-0674-72dd-5622-802f6d269447",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Default",
+    "isSelected": true
+   },
+   {
+    "id": "b8204f2e-764d-b421-dc96-2c59d3054271",
+    "name": "Self Contained",
+    "isSelected": false
+   },
+   {
+    "id": "d58244bf-290f-ebb3-3aa0-352d6fa8e84f",
+    "name": "Autofit",
+    "isSelected": false
+   },
+   {
+    "id": "129319ac-a2cd-9e88-2ebd-a33b4bb85fa5",
+    "name": "Autofill",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "40c5c120-b67e-abdf-9581-f3dc48d20a3c",
+  "name": "Form Fieldset",
+  "group": "Form",
+  "description": "Holds Checkbox or Radio elements",
+  "instanceCount": 6,
+  "props": [
+   {
+    "id": "a4ac7201-f1f2-191a-8ab0-6a7d64239164",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "760b4142-154a-2f18-170c-ea9506d7d5ff",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "73d54d34-13fb-ff06-c431-075189d94142",
+    "type": "variant",
+    "name": "Legend Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "eb5cbdc2-04db-ea24-498f-7ea1421a920b",
+    "type": "textContent",
+    "name": "Legend Text",
+    "defaultValue": "Legend"
+   },
+   {
+    "id": "c2506e6f-879c-576a-b033-036b90d4ca71",
+    "type": "string",
+    "name": "Slot Role",
+    "tooltip": "Switch to \"list\" if containing a list of items",
+    "defaultValue": "none"
+   },
+   {
+    "id": "20e08b85-1743-b125-6ac4-37715a887598",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "5845a851-7553-9c73-df00-63f5cb96341c",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "6b2205ec-6856-ee83-b2e7-eaa91a9cd8b8",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "2b9f6538-be8d-aa16-06d1-41b46c3c3810",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Flex Vertical",
+    "isSelected": true
+   },
+   {
+    "id": "ccbf2df7-16d0-30d7-0afb-0df098785596",
+    "name": "Flex Horizontal",
+    "isSelected": false
+   },
+   {
+    "id": "14c165fa-7397-02ef-8dc0-6e307b6c980f",
+    "name": "Grid 2 Column",
+    "isSelected": false
+   },
+   {
+    "id": "5fdb0361-c340-58a0-00d3-b0e0b17257ad",
+    "name": "Grid 3 Column",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "50094686-3809-242d-2cc1-5c609bf19df4",
+  "name": "Form Textarea",
+  "group": "Form",
+  "instanceCount": 1,
+  "props": [
+   {
+    "id": "1ad43fa5-0713-044b-a419-e8db6a3032ec",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "7c930ef1-908c-f43a-1917-9f5f04635940",
+    "type": "variant",
+    "name": "Label Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "29486535-f71e-3cf8-c511-96438f6ff049",
+    "type": "textContent",
+    "name": "Label",
+    "tooltip": "Field label shown on page",
+    "defaultValue": "Label"
+   },
+   {
+    "id": "60100283-15ad-1ee4-6d92-9bcc9a78445c",
+    "type": "string",
+    "name": "Name",
+    "tooltip": "Field title for submission results",
+    "defaultValue": "Name"
+   },
+   {
+    "id": "1f83b501-41d1-9c43-cb16-19fe40874ef5",
+    "type": "string",
+    "name": "Placeholder",
+    "defaultValue": ""
+   },
+   {
+    "id": "8c987205-484a-720f-dde6-1b3cbe4f1f04",
+    "type": "string",
+    "name": "Required",
+    "tooltip": "Add a space to make the field required",
+    "defaultValue": ""
+   },
+   {
+    "id": "9cfc80d8-c99d-34d4-0f41-cac99acd5870",
+    "type": "string",
+    "name": "Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "21923e74-de95-dec0-343a-50a41c9b03b7",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "59119153-8e24-c7bf-8026-2cc4324133ca",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "a74cece2-90cf-582c-e2ed-49cbb2396524",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "f4898e4a-ac54-c8bb-94d2-4d0cfbb94746",
+  "name": "Form Select",
+  "group": "Form",
+  "instanceCount": 5,
+  "props": [
+   {
+    "id": "0c373f60-4c0b-6b06-4d00-65e3cc579068",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "e2cc703f-e6ac-f763-4dc2-7e49321f0bca",
+    "type": "variant",
+    "name": "Label Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "580f89f8-d7d9-297b-76d6-b2f3a9398ec0",
+    "type": "textContent",
+    "name": "Label",
+    "tooltip": "Field label shown on page",
+    "defaultValue": "Label"
+   },
+   {
+    "id": "814dbc83-9f33-e81c-f818-124e97690661",
+    "type": "string",
+    "name": "Name",
+    "tooltip": "Field title for submission results",
+    "defaultValue": "Name"
+   },
+   {
+    "id": "c4422fa6-256b-379e-8a9c-706e46211163",
+    "type": "string",
+    "name": "Required",
+    "tooltip": "Add a space to make the field required",
+    "defaultValue": ""
+   },
+   {
+    "id": "975a3c4c-bb40-3b65-2282-abea813d72ee",
+    "type": "string",
+    "name": "Allow Multi Select",
+    "tooltip": "Add a space to allow multi select",
+    "defaultValue": ""
+   },
+   {
+    "id": "5108f55b-83bc-2747-3e16-9c85c463a4f5",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "71f4adbf-bdda-a120-5003-ee63b60e0579",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "0eb57343-9d72-5e31-3481-eae35c352fc9",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "2f8c4ce9-a6af-ec59-9729-a73d53ff0a7c",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "68b8d65e-3c81-d6e1-09cb-3761bfce6da6",
+  "name": "Form Select Option",
+  "group": "Form",
+  "description": "This goes inside a select element.",
+  "instanceCount": 29,
+  "props": [
+   {
+    "id": "a2e5dc4e-0677-d11c-829d-b675e3b61013",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "2311c220-55b4-a91b-7b32-4dda52b26add",
+    "type": "textContent",
+    "name": "Text",
+    "defaultValue": "Option 1"
+   },
+   {
+    "id": "26e443cb-54b4-662a-6d9c-37203b93a1b9",
+    "type": "string",
+    "name": "Value",
+    "defaultValue": "Option 1"
+   },
+   {
+    "id": "16a66c63-b459-1d4f-59c8-6521ebadecf3",
+    "type": "string",
+    "name": "Selected",
+    "tooltip": "Add a space to make option selected by default",
+    "defaultValue": ""
+   },
+   {
+    "id": "413380a5-46eb-7623-0193-60ffcb98507b",
+    "type": "string",
+    "name": "Hidden",
+    "tooltip": "Add a space to make option hidden from list (sometimes used on placeholder option)",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "24cdd811-e229-c75c-a667-4d66445404ee",
+  "name": "Typography Tag",
+  "group": "Typography",
+  "instanceCount": 1,
+  "props": [
+   {
+    "id": "0273a003-89b4-fd48-6f81-c3192895243d",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "9432753d-2788-e263-1be6-29717324d813",
+    "type": "textContent",
+    "name": "Text",
+    "defaultValue": "Text Block"
+   },
+   {
+    "id": "41a571e3-1560-2b34-1818-622f3f2a17ed",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "15027333-0d6a-85d7-af87-d03add4a968b",
+  "name": "Logo",
+  "group": "SVG",
+  "instanceCount": 16,
+  "props": [
+   {
+    "id": "0ff2ad81-5ea1-423a-8e87-ea34bde68c87",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "ba476a33-ce72-737e-dc76-bf1182371201",
+  "name": "Visual Video",
+  "group": "Visual",
+  "instanceCount": 0,
+  "props": [
+   {
+    "id": "e88f8693-1154-9026-fe44-1c54f3713639",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "cb04b5a4-b14f-2fbc-8493-1024e8b57998",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "0b00a75a-35ba-66c2-fce0-21c117d62ce0"
+   },
+   {
+    "id": "c45b9448-2901-afe1-0ec8-a792f6e5246d",
+    "type": "string",
+    "name": "Url",
+    "defaultValue": "https://timothyricks.us.getafile.online/background-video"
+   },
+   {
+    "id": "c5424dcd-f332-726a-182f-16e003b92a07",
+    "type": "string",
+    "name": "Autoplay",
+    "defaultValue": "autoplay"
+   },
+   {
+    "id": "0326952a-e1f0-9f11-3669-6fb34e2b173f",
+    "type": "string",
+    "name": "Loop",
+    "defaultValue": "loop"
+   },
+   {
+    "id": "76f96147-800c-d0ae-7b73-2afc3316da32",
+    "type": "string",
+    "name": "Muted",
+    "defaultValue": "muted"
+   },
+   {
+    "id": "8ba57d9b-c657-0760-f2e1-374ef3cf3db8",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "56239ef6-ce12-a95e-5abf-3b3e29c25aae",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   },
+   {
+    "id": "d6fab666-e51a-ed7a-ff67-a32ba095db37",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "493d54e3-848b-1d62-f80a-d5283768c946",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Wide 2 / 1",
+    "isSelected": true
+   },
+   {
+    "id": "0b00a75a-35ba-66c2-fce0-21c117d62ce0",
+    "name": "Wide 16 / 9",
+    "isSelected": false
+   },
+   {
+    "id": "a9490bed-5b56-7b46-8413-993d16d77e88",
+    "name": "Wide 3 / 2",
+    "isSelected": false
+   },
+   {
+    "id": "8157ca33-45d5-df1a-bd25-894298c8e117",
+    "name": "Wide 5 / 4",
+    "isSelected": false
+   },
+   {
+    "id": "ec7f8a9f-99ac-b5a5-140b-730400a62670",
+    "name": "Square 1 / 1",
+    "isSelected": false
+   },
+   {
+    "id": "f3f45657-6a73-93f9-25db-a80af56ad72a",
+    "name": "Tall 4 / 5",
+    "isSelected": false
+   },
+   {
+    "id": "c3ccbb6c-6fa7-1113-0f2e-08b77dffca68",
+    "name": "Tall 2 / 3",
+    "isSelected": false
+   },
+   {
+    "id": "db26956a-7929-76af-05b0-02971cbab2f4",
+    "name": "Cover",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "219abfbb-a07c-d448-250c-6bdda9f81a14",
+  "name": "Media Overlay",
+  "group": "Visual",
+  "instanceCount": 3,
+  "props": [
+   {
+    "id": "00f06371-55ed-02ff-9922-cc11bdafdaa8",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "f938dc12-5258-40e7-07d5-701551ddbb9e",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "93fd6e68-07f9-3f28-8aed-3ed32bd83b95",
+    "type": "number",
+    "name": "Overlay Strength",
+    "defaultValue": 70
+   },
+   {
+    "id": "5e9b4d1c-cbaa-21c4-0722-865e2e4f36d4",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   },
+   {
+    "id": "9653c0cc-21fc-fb82-1373-c98b1644e5a8",
+    "name": "Gradient",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "f6291c55-7146-0e47-b2f4-77ff85d63d60",
+  "name": "Contact Form",
+  "group": "Form",
+  "instanceCount": 1,
+  "props": [
+   {
+    "id": "3c0262ce-f20f-ae59-067a-5fdc3e435864",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "ddab0158-e1d2-8fe1-ee3c-0850fd28b732",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "baf5fd6d-12da-786a-f303-1676d3e63f09",
+  "name": "Slider",
+  "group": "Interactive",
+  "instanceCount": 2,
+  "props": [
+   {
+    "id": "a29a8e66-8860-d30a-54df-fbab95ebb7e3",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "9af63a7f-5438-6cac-b11b-9a5465fdccfd",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "7d8ce280-d5e0-ab72-4863-9da01ad6054a",
+    "type": "string",
+    "name": "Slides Per View",
+    "defaultValue": "--lg: 4; --md: 3; --sm: 2; --xs: 1;"
+   },
+   {
+    "id": "694ed6ee-39f1-ac84-a6e3-bc19df6c8f26",
+    "type": "visibility",
+    "name": "Controls Visibility",
+    "group": "Settings"
+   },
+   {
+    "id": "a064bccc-cfc3-6c68-10ad-8db51a53be7d",
+    "type": "boolean",
+    "name": "Follow Finger",
+    "group": "Settings",
+    "tooltip": "If set to false, slider will be swipeable but not draggable.",
+    "defaultValue": true
+   },
+   {
+    "id": "6fd69ced-9d79-d311-d542-7ec3717f4f7d",
+    "type": "boolean",
+    "name": "Free Mode",
+    "group": "Settings",
+    "tooltip": "If set to true, slides will not snap into place on release.",
+    "defaultValue": false
+   },
+   {
+    "id": "d4cb2d0c-bf08-6800-1230-9951c1ada087",
+    "type": "boolean",
+    "name": "Mousewheel",
+    "group": "Settings",
+    "tooltip": "If set to false, the slider can't be controlled by the keyboard arrow keys.",
+    "defaultValue": true
+   },
+   {
+    "id": "4be66041-2bdd-884d-32b9-7ef8db896812",
+    "type": "boolean",
+    "name": "Slide To Clicked Slide",
+    "group": "Settings",
+    "tooltip": "If set to true, the slide will move into view when we click on it.",
+    "defaultValue": false
+   },
+   {
+    "id": "20c759b2-8100-71da-0080-060940a04e60",
+    "type": "number",
+    "name": "Speed",
+    "group": "Settings",
+    "defaultValue": 600
+   },
+   {
+    "id": "f8cc216e-c84b-7fbf-2e30-6b8910de0796",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "d2fcf392-f8ff-3b6d-8abf-96d3ae3860ae",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Overflow Visible",
+    "isSelected": true
+   },
+   {
+    "id": "bfb8c45c-dbfa-13cc-2dfc-0c02a34504e4",
+    "name": "Overflow Hidden",
+    "isSelected": false
+   },
+   {
+    "id": "b8ee48da-439e-7156-5d2e-5b4f080e200e",
+    "name": "Crop Left",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "a861c456-45ea-fe24-ab52-c63303a056e4",
+  "name": "Global Styles",
+  "group": "Global",
+  "instanceCount": 7,
+  "props": [],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "7941d471-12eb-22ce-6420-784e5a3b04f8",
+  "name": "Card Primary",
+  "group": "Card",
+  "instanceCount": 26,
+  "props": [
+   {
+    "id": "413c2e10-0d1d-668a-59a3-e9b519a3a997",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "3268fbae-5eb0-86b0-534a-c61ed07d8106",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "fa373c18-6bd1-301c-ab09-b6353299d47d",
+    "type": "headingTag",
+    "name": "Heading Tag",
+    "defaultValue": "h3"
+   },
+   {
+    "id": "b8c139c4-494c-1c28-d827-f525248870f8",
+    "type": "textContent",
+    "name": "Heading Text",
+    "defaultValue": "Lorem ipsum"
+   },
+   {
+    "id": "f424ce58-1432-4493-b296-c51cf6c8c7dc",
+    "type": "richText",
+    "name": "Paragraph Text",
+    "defaultValue": {
+     "innerText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+    }
+   },
+   {
+    "id": "12f76724-0b23-5dcc-15fd-e0b0ea3ac64f",
+    "type": "visibility",
+    "name": "Link Visibility"
+   },
+   {
+    "id": "d28cd67e-0ce6-aed7-1ad3-14a0dba51742",
+    "type": "textContent",
+    "name": "Link Text"
+   },
+   {
+    "id": "bb5c3a86-443d-2095-8245-be4cf5e00804",
+    "type": "link",
+    "name": "Link Url",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   },
+   {
+    "id": "1d2f5c24-b280-5459-c4a6-066e2ec6c77d",
+    "type": "link",
+    "name": "External Link",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   },
+   {
+    "id": "cd6a4e4d-d941-f45c-4c16-55d03bbc56ab",
+    "type": "image",
+    "name": "Image"
+   },
+   {
+    "id": "e63d6a26-19c6-2350-e58e-22b8f9f96cae",
+    "type": "string",
+    "name": "Role",
+    "tooltip": "Set to \"listitem\" if used in a list",
+    "defaultValue": "none"
+   },
+   {
+    "id": "1b8b3666-cb54-f635-bae3-5985204eeab8",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "56199f3e-71a5-63ea-7964-c901cf4dfd4d",
+    "type": "string",
+    "name": "Content Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "7219df95-2957-5773-7b20-71db6256f364",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Default",
+    "isSelected": true
+   },
+   {
+    "id": "51efa20c-c7be-48fe-973a-11367f19d622",
+    "name": "Cover",
+    "isSelected": false
+   },
+   {
+    "id": "da648fa9-bbba-c8cb-e549-1d22cb8af97b",
+    "name": "Stacked",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "bb0688d1-65b6-14b6-81e5-21e2cd39bbd0",
+  "name": "Button Arrow",
+  "group": "Button",
+  "instanceCount": 13,
+  "props": [
+   {
+    "id": "a811ad81-2da9-942d-e2cd-7e4d900a8d73",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "bb0688d1-65b6-14b6-81e5-21e2cd39bbd9",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "6f1d1fca-ea56-0081-e679-5bd3fb54baf2",
+    "type": "variant",
+    "name": "Arrow Direction",
+    "defaultValue": "base"
+   },
+   {
+    "id": "74fae974-c32d-5212-8652-f1082eff2330",
+    "type": "textContent",
+    "name": "Text",
+    "tooltip": "This is the text screen readers will read when focused on the button.",
+    "defaultValue": "Next"
+   },
+   {
+    "id": "7f9b9d9a-f1e9-5c66-9bb2-26df9a33cb17",
+    "type": "link",
+    "name": "Link",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   },
+   {
+    "id": "ad0ebc7c-5c1f-13b7-ce62-8aea3b64ee0c",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "5ddfa01f-f635-832b-6023-31be186b003b",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "861877cc-ebb8-1e75-b91f-013377c05fe8",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Primary / Medium",
+    "isSelected": true
+   },
+   {
+    "id": "bb0688d1-65b6-14b6-81e5-21e2cd39bbda",
+    "name": "Secondary / Medium",
+    "isSelected": false
+   },
+   {
+    "id": "d7d7e32c-ac47-de0c-eb2d-07f19dfa19d2",
+    "name": "Primary / Large",
+    "isSelected": false
+   },
+   {
+    "id": "6c75cae2-0734-1bbf-191f-bfe0f8ed1797",
+    "name": "Secondary / Large",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "eaea4294-a1cc-0010-873e-e8e451c528bd",
+  "name": "Stroke Path",
+  "group": "SVG",
+  "instanceCount": 99,
+  "props": [
+   {
+    "id": "e28c344c-9016-9678-dc8c-74ede8c675a0",
+    "type": "string",
+    "name": "Path",
+    "defaultValue": "M18 24.8437L31 12.8438L18 0.843749"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "e58f0b22-9dc9-edee-5b39-1f735f22e366",
+  "name": "Accordion List",
+  "group": "Interactive",
+  "instanceCount": 1,
+  "props": [
+   {
+    "id": "8048f190-71fa-2367-d7be-c9acdfcc6572",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "e79125f9-cd38-453c-38bd-817ca040bd18",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "4868b674-2f4a-22c1-d988-43d096b8fe78",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   },
+   {
+    "id": "714120ad-6349-81b4-b28a-866a0e573819",
+    "type": "boolean",
+    "name": "Close Previous",
+    "tooltip": "If set to true, currently open accordion will close when new one opens.",
+    "defaultValue": true
+   },
+   {
+    "id": "b284cdc4-bc82-c93e-0b0e-6e31305c2a19",
+    "type": "boolean",
+    "name": "Close On Second Click",
+    "tooltip": "If set to true, accordion will close the second time we click on it.",
+    "defaultValue": true
+   },
+   {
+    "id": "778d62c0-181a-c5d7-cf69-556a3ccf8484",
+    "type": "boolean",
+    "name": "Open On Hover",
+    "tooltip": "If set to true, accordion will open when we hover over it.",
+    "defaultValue": false
+   },
+   {
+    "id": "b62ea76c-9df4-5724-d8d7-5479b998cba2",
+    "type": "number",
+    "name": "Open By Default: Item #",
+    "tooltip": "If set to 1, accordion item 1 will be opened by default.",
+    "defaultValue": 0
+   },
+   {
+    "id": "6aafb57b-8892-cc29-bfa2-610faf201329",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "7125454f-d020-9f09-d88b-18afae6035c6",
+  "name": "Accordion Item",
+  "group": "Interactive",
+  "instanceCount": 6,
+  "props": [
+   {
+    "id": "919d2f47-6d24-24d2-2fc3-1582ae99c5c1",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "c1eb0ac0-16f2-e44d-5ce4-afed40a49aa3",
+    "type": "textContent",
+    "name": "Heading Text",
+    "defaultValue": "This is some text inside of a div block."
+   },
+   {
+    "id": "38070ead-f98f-7e58-624f-e8a4d1a76c35",
+    "type": "richText",
+    "name": "Content",
+    "defaultValue": {
+     "innerText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+   },
+   {
+    "id": "364ccc26-c7f2-88db-34d2-727bb4a02006",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "43ba6c77-0f82-87dd-2627-66c30f96fd0b",
+  "name": "Nav",
+  "group": "Global",
+  "instanceCount": 5,
+  "props": [
+   {
+    "id": "cd3a70a2-6531-fc84-1158-965d098fb4cd",
+    "type": "variant",
+    "name": "Nav Position",
+    "defaultValue": "base"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Default",
+    "isSelected": true
+   },
+   {
+    "id": "dd866659-1d7d-6447-6461-66ca86ca367f",
+    "name": "Overlap",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "f898fa14-e9c4-646a-b332-c95900470afa",
+  "name": "Menu",
+  "group": "Miscellaneous",
+  "instanceCount": 10,
+  "props": [
+   {
+    "id": "ff0600e1-1d70-83b4-c673-07c1a69e7e69",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Mobile",
+    "isSelected": true
+   },
+   {
+    "id": "23049969-09ac-2789-520b-3c6ae895bbc6",
+    "name": "Desktop",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "2f85113a-1fe0-0576-7e21-f2db3933ca88",
+  "name": "Nav Banner",
+  "group": "Miscellaneous",
+  "instanceCount": 5,
+  "props": [
+   {
+    "id": "a0992a67-f536-7702-d2a9-f9ec0b74c66e",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "62a6c03b-00f8-441b-d5d5-2f3633852b50",
+    "type": "textContent",
+    "name": "Text",
+    "defaultValue": "Important Update Banner"
+   },
+   {
+    "id": "3bec8c2a-4578-8fcb-0989-11de1074c2fd",
+    "type": "link",
+    "name": "Link",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "97fbbe61-1d27-ac15-fbd6-28ecccdda58f",
+  "name": "Icon Search",
+  "group": "SVG",
+  "instanceCount": 11,
+  "props": [],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "77d4fd3a-1a20-3e92-dec1-0c3f0f4977a4",
+  "name": "Modal",
+  "group": "Interactive",
+  "instanceCount": 1,
+  "props": [
+   {
+    "id": "1cb17819-f760-cc2a-1a1e-7536b5fe2a26",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "67d179d4-ce97-2b94-b884-220c7f515bbd",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "4f2f48e2-bd75-4865-bc87-b0442584b287",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "0633dcdf-a592-b415-680f-231ccdb9057f",
+    "type": "boolean",
+    "name": "Show In Designer",
+    "tooltip": "If set to true, modal will be visible in designer.",
+    "defaultValue": false
+   },
+   {
+    "id": "3d555208-de16-7789-9522-8187c304c6ac",
+    "type": "string",
+    "name": "Modal ID",
+    "tooltip": "Each modal must have a unique ID. When using a modal inside a CMS Item, use the CMS Item's slug as the ID.",
+    "defaultValue": "modal-1"
+   },
+   {
+    "id": "e14b571f-12cc-b059-83d1-1db2a1d0155c",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Small",
+    "isSelected": true
+   },
+   {
+    "id": "ce8c84b8-072d-28eb-fa41-e255213771e0",
+    "name": "Side Panel",
+    "isSelected": false
+   },
+   {
+    "id": "abed2e46-044e-db8d-e420-f41a8503c278",
+    "name": "Full Screen",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "c144d67f-2c62-4dbf-0fd8-0b6056b717e6",
+  "name": "Button Close",
+  "group": "Button",
+  "instanceCount": 4,
+  "props": [
+   {
+    "id": "a811ad81-2da9-942d-e2cd-7e4d900a8d73",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "c144d67f-2c62-4dbf-0fd8-0b6056b717eb",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "74fae974-c32d-5212-8652-f1082eff2330",
+    "type": "textContent",
+    "name": "Text",
+    "tooltip": "This is the text screen readers will read when focused on the button.",
+    "defaultValue": "Close"
+   },
+   {
+    "id": "7f9b9d9a-f1e9-5c66-9bb2-26df9a33cb17",
+    "type": "link",
+    "name": "Link",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   },
+   {
+    "id": "ad0ebc7c-5c1f-13b7-ce62-8aea3b64ee0c",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "5ddfa01f-f635-832b-6023-31be186b003b",
+    "type": "string",
+    "name": "Attribute 1 Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "861877cc-ebb8-1e75-b91f-013377c05fe8",
+    "type": "string",
+    "name": "Attribute 1 Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "e8cc271e-fcad-3942-fdbe-dd6b8e9408be",
+    "type": "string",
+    "name": "Attribute 2 Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "fc222a5f-0936-cec9-a3a5-548abeaebcbb",
+    "type": "string",
+    "name": "Attribute 2 Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Primary / Medium",
+    "isSelected": true
+   },
+   {
+    "id": "c144d67f-2c62-4dbf-0fd8-0b6056b717ec",
+    "name": "Secondary / Medium",
+    "isSelected": false
+   },
+   {
+    "id": "7198e0ca-f9f4-9662-3fe9-d7114404c9cb",
+    "name": "Primary / Large",
+    "isSelected": false
+   },
+   {
+    "id": "c6d40e5e-3298-1af4-067d-37896ebd2a45",
+    "name": "Secondary / Large",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "29394d2f-cd0c-8059-7e15-66f93814999f",
+  "name": "Footer",
+  "group": "Global",
+  "instanceCount": 5,
+  "props": [],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "149ad978-220d-f7e9-ef48-38aa3cb30722",
+  "name": "Tab",
+  "group": "Interactive",
+  "instanceCount": 2,
+  "props": [
+   {
+    "id": "23b785c7-51e5-dbdc-4252-f5fc51baab21",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "11c846b3-38dc-1b67-f86a-ccfb96f84523",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "5440f110-97f5-4aec-0701-0053fcb1d439",
+    "type": "visibility",
+    "name": "Controls Visibility",
+    "tooltip": "Show next and previous buttons"
+   },
+   {
+    "id": "63d32a32-b1f7-59d4-f367-7802c8d5eda1",
+    "type": "string",
+    "name": "Component ID",
+    "tooltip": "Give the component a unique ID to anchor link to it from a separate page.",
+    "defaultValue": ""
+   },
+   {
+    "id": "5de4d96a-4c27-0df6-f8fc-ff744a7a33ac",
+    "type": "boolean",
+    "name": "Preview Content",
+    "tooltip": "Set to true to preview all tab content in designer view.",
+    "defaultValue": false
+   },
+   {
+    "id": "41c5a638-6881-4747-121f-2ff99e9b4517",
+    "type": "boolean",
+    "name": "Slide Tabs",
+    "tooltip": "If set to true, tab content will slide from side to side instead of fading out.",
+    "defaultValue": false
+   },
+   {
+    "id": "586bb9b0-8b82-bff0-ac06-31c28dc72182",
+    "type": "string",
+    "name": "Autoplay Duration",
+    "tooltip": "Set a duration in seconds such as \"4\" to make the tabs autoplay.",
+    "defaultValue": ""
+   },
+   {
+    "id": "6aef5cb5-7884-60bb-3f54-392bb49acef8",
+    "type": "number",
+    "name": "Transition Duration",
+    "defaultValue": 0.6
+   },
+   {
+    "id": "e21a76f5-a8d1-c13c-0afd-c61566e8cb7a",
+    "type": "boolean",
+    "name": "Loop Controls",
+    "tooltip": "If true, the next button will loop instead of disabling when reaching end of list.",
+    "defaultValue": false
+   },
+   {
+    "id": "7fd7e213-7726-badd-e26a-44e5b4ed2baf",
+    "type": "boolean",
+    "name": "Pause On Hover",
+    "tooltip": "If set to true, the autoplay will pause whenever we hover over the component.",
+    "defaultValue": false
+   },
+   {
+    "id": "74c75a3e-ad3a-63ec-9c6f-42694fd5016e",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "a116e804-f3a7-0731-dc06-24e8bbef616f",
+    "type": "slot",
+    "name": "Slot"
+   },
+   {
+    "id": "6146fed7-12df-cbd4-69be-2dfb16cff48c",
+    "type": "slot",
+    "name": "Slot"
+   },
+   {
+    "id": "6b64e0f6-25a2-3f5c-b837-287f6e11ddf0",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   },
+   {
+    "id": "490ac534-1fb5-5322-5b2f-0dc20ea2f909",
+    "name": "Horizontal",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "fadb3dda-30e2-1019-1230-faffe6f79f30",
+  "name": "Tab Link",
+  "group": "Interactive",
+  "instanceCount": 6,
+  "props": [
+   {
+    "id": "ba9195d1-b8b5-da9b-9817-1277d79bce0d",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "1493a6b0-7e7d-f362-f1b2-cada071733a3",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "48481d7a-05ec-85d9-d7de-daa3bc1d9fe0",
+    "type": "textContent",
+    "name": "Text",
+    "defaultValue": "Tab Link"
+   },
+   {
+    "id": "30e91f91-253c-ffd9-9108-98df295aaeff",
+    "type": "string",
+    "name": "Item ID",
+    "tooltip": "To anchor link to this item from another page, give this item a unique ID.",
+    "defaultValue": ""
+   },
+   {
+    "id": "80ca96fd-1788-81a0-6a15-468b1e300e94",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Link",
+    "isSelected": true
+   },
+   {
+    "id": "8ffc88d1-7ba2-15f6-9b67-306f6d86c1bd",
+    "name": "Button",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "72bf430a-f112-9342-5a92-78c9db50135b",
+  "name": "Typography Plain",
+  "group": "Typography",
+  "instanceCount": 0,
+  "props": [
+   {
+    "id": "ed29a7c1-4098-e8ad-76c2-ebd459bdbd16",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "1aba392c-b3a2-33b1-9f70-9ded99367006",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "2099ba42-5340-fb8d-cff9-5e16277f414f",
+    "type": "textContent",
+    "name": "Text",
+    "defaultValue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+   },
+   {
+    "id": "509927e2-e5dc-dad7-dc13-9390c8f0f11e",
+    "type": "number",
+    "name": "Max Width",
+    "tooltip": "Set \"-1\" for no max width",
+    "defaultValue": -1
+   },
+   {
+    "id": "70790b02-5fd4-1f0d-d10d-d6b62d6afb38",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "63f3f53a-d02c-ee59-a71e-bc1da725afd8",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Inherit",
+    "isSelected": true
+   },
+   {
+    "id": "fe6f474d-1651-566b-eeff-3c86e8cbf153",
+    "name": "Text Small",
+    "isSelected": false
+   },
+   {
+    "id": "26cc9f23-e71c-deee-cd61-36dc24f35fae",
+    "name": "Text Main",
+    "isSelected": false
+   },
+   {
+    "id": "c8b8ac88-1ac7-e9f6-41cc-82c548bf142d",
+    "name": "Text Large",
+    "isSelected": false
+   },
+   {
+    "id": "47e40b0d-02af-2673-f429-546cac42dc5a",
+    "name": "H6",
+    "isSelected": false
+   },
+   {
+    "id": "12e93187-f8ac-b1a1-2e50-59d85a6bf516",
+    "name": "H5",
+    "isSelected": false
+   },
+   {
+    "id": "f196774e-dbfd-d1b4-1196-b3e824fc5f7d",
+    "name": "H4",
+    "isSelected": false
+   },
+   {
+    "id": "7bfbf33b-fb56-d8df-e2d2-8fe65a7f2e44",
+    "name": "H3",
+    "isSelected": false
+   },
+   {
+    "id": "9af60b09-c3a1-8c2a-eb78-8e29460ca7a9",
+    "name": "H2",
+    "isSelected": false
+   },
+   {
+    "id": "83c598b0-8cc2-f955-1996-fcb8fb10bf70",
+    "name": "H1",
+    "isSelected": false
+   },
+   {
+    "id": "8ee37a78-065b-6879-973d-319c65e28313",
+    "name": "Display",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "86c2893a-48c6-c1d1-7a1d-c1d9f1e2429e",
+  "name": "Form Input",
+  "group": "Form",
+  "instanceCount": 6,
+  "props": [
+   {
+    "id": "2c5967f3-ffc5-9cd2-50f6-06ed9982c2a2",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "2d65d43e-7557-d0d1-cbb6-95a2cc654cb0",
+    "type": "variant",
+    "name": "Label Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "49de020c-2a2f-cd9e-f9be-ec9481770d82",
+    "type": "textContent",
+    "name": "Label",
+    "defaultValue": "Label"
+   },
+   {
+    "id": "b68d9a88-9f69-3464-634d-83eef89bb7aa",
+    "type": "string",
+    "name": "Name",
+    "tooltip": "Field title for submission results",
+    "defaultValue": "Field Name"
+   },
+   {
+    "id": "79284fcc-6fee-0980-a2f7-9515271681c9",
+    "type": "string",
+    "name": "Placeholder",
+    "defaultValue": "Placeholder"
+   },
+   {
+    "id": "f8cd5db3-bad6-edaf-2277-a0b213097b70",
+    "type": "string",
+    "name": "Required",
+    "tooltip": "Add a space to make the field required",
+    "defaultValue": ""
+   },
+   {
+    "id": "f17950b0-437b-0147-5b8e-5bb08470e519",
+    "type": "string",
+    "name": "Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "a7c4de50-b7db-76c7-b005-ec45f3ab568e",
+    "type": "string",
+    "name": "Type",
+    "tooltip": "text, email, password, tel, url, search, number, date",
+    "defaultValue": "text"
+   },
+   {
+    "id": "1f61063a-ec49-fc31-c446-fb991376a8bd",
+    "type": "string",
+    "name": "Input Mode",
+    "tooltip": "Touch device keyboard type: none, text, decimal, numeric, tel, search, email, url",
+    "defaultValue": "text"
+   },
+   {
+    "id": "5bd5a20f-2338-442f-fb15-29eb00396fc9",
+    "type": "string",
+    "name": "Auto Complete",
+    "tooltip": "on, off, name, given-name, family-name, email, tel, organization-title, organization, street-address, address-line1, country, country-name, postal-code, gender, birthday, bday-year, language, photo, url, home, work, mobile",
+    "defaultValue": ""
+   },
+   {
+    "id": "1720d4b5-a321-f956-0700-d1b3d9b3764c",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "14cb1de0-b8de-1222-6b97-e04fd4eeddef",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "ef68eba8-651d-16f0-06ea-17c43c4de548",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "b4da0210-a11e-8169-6bd3-3724db9bdc24",
+  "name": "Form Label Text",
+  "group": "Form",
+  "instanceCount": 19,
+  "props": [
+   {
+    "id": "0d4abb0f-34ee-e243-ff9b-2f720b959a39",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "558e34e3-97f9-fcda-de85-cbb2f3a7ba4a",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "b4da0210-a11e-8169-6bd3-3724db9bdc28",
+    "type": "textContent",
+    "name": "Text",
+    "tooltip": "Field label shown on page",
+    "defaultValue": "Name"
+   },
+   {
+    "id": "dd621481-c0c2-e24c-5286-c10187c8be10",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Visible",
+    "isSelected": true
+   },
+   {
+    "id": "46933b79-cf19-81b4-bc00-8af5c19b08b3",
+    "name": "Hidden",
+    "isSelected": false
+   },
+   {
+    "id": "e8e97384-daa0-7ce7-bc12-14efcd69bcd4",
+    "name": "Bold",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "3763bb36-8635-2157-d0a6-9adad3740030",
+  "name": "Footer Group",
+  "group": "Miscellaneous",
+  "instanceCount": 20,
+  "props": [
+   {
+    "id": "745290ad-c0fa-9ddb-9e65-81fc6633e28d",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "371b40c8-1a98-e4f0-f2f3-7185d7f64931",
+    "type": "textContent",
+    "name": "Title",
+    "defaultValue": "Heading Text"
+   },
+   {
+    "id": "b6c5aaae-1b70-aef4-0b4d-7562ace7ec88",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "f5219fe8-69c7-b978-3e87-e9a133727619",
+  "name": "Footer Link",
+  "group": "Miscellaneous",
+  "instanceCount": 80,
+  "props": [
+   {
+    "id": "3adba56e-2c8a-dc07-3e3b-bb19d9cfe7e8",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "4b60c499-7b03-f6fe-4a97-098761f9606a",
+    "type": "textContent",
+    "name": "Text",
+    "defaultValue": "Link Text Here"
+   },
+   {
+    "id": "d95ebae6-70ca-4262-a91c-d7f29abd3e6d",
+    "type": "link",
+    "name": "Link",
+    "defaultValue": {
+     "mode": "url",
+     "to": "#"
+    }
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "fe24f7c4-38b4-ee27-5ffe-b0e6616f827e",
+  "name": "Visual Image",
+  "group": "Visual",
+  "instanceCount": 20,
+  "props": [
+   {
+    "id": "6b1fc259-0b29-6b15-dc25-38980e6640f0",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "5607babe-7080-b9e6-7465-5a2ac0285033",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "27d05669-180c-3169-9b64-0eda31f8d4d3"
+   },
+   {
+    "id": "71ba5ca3-44b2-2c6c-e206-c8e78a8633fc",
+    "type": "image",
+    "name": "Image"
+   },
+   {
+    "id": "34a719d1-97f2-a2af-5330-7c5d7819f811",
+    "type": "altText",
+    "name": "Alt Text",
+    "defaultValue": "inherit"
+   },
+   {
+    "id": "7bbc344a-75ae-a432-8273-61bdb4e43408",
+    "type": "string",
+    "name": "Loading",
+    "tooltip": "Switch the value to \"eager\" when image is used at the top of the page.",
+    "defaultValue": "lazy"
+   },
+   {
+    "id": "de98b5bf-1db4-07ec-a7cf-ff544dc9873d",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   },
+   {
+    "id": "7828e6f4-fc74-6ebe-62bc-31b63d9cb4da",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "5fc5d498-427c-2194-92a7-2b7b934a375c",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "0d0fe0d4-f574-1dae-c330-cc4639a1a0e3",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Wide 2 / 1",
+    "isSelected": true
+   },
+   {
+    "id": "27d05669-180c-3169-9b64-0eda31f8d4d3",
+    "name": "Wide 16 / 9",
+    "isSelected": false
+   },
+   {
+    "id": "57c7d8f5-d942-5de8-0712-e12fff699502",
+    "name": "Wide 3 / 2",
+    "isSelected": false
+   },
+   {
+    "id": "8e41429f-9f9e-7697-357e-815bd3e59383",
+    "name": "Wide 5 / 4",
+    "isSelected": false
+   },
+   {
+    "id": "a5f35569-5171-ee3d-f7bb-c5b2372249ac",
+    "name": "Square 1 / 1",
+    "isSelected": false
+   },
+   {
+    "id": "35ea7d22-774e-1ba9-1dcc-8a392636f83d",
+    "name": "Tall 4 / 5",
+    "isSelected": false
+   },
+   {
+    "id": "a93327ec-aace-62d3-860b-21ee12acd25a",
+    "name": "Tall 2 / 3",
+    "isSelected": false
+   },
+   {
+    "id": "4972adff-107c-1f37-d19c-526a2bf55c28",
+    "name": "Cover",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "83e1c15c-c790-5f9b-37bf-063230b20546",
+  "name": "iFrame",
+  "group": "Visual",
+  "instanceCount": 0,
+  "props": [
+   {
+    "id": "e8ac569d-5ae2-8634-5c13-388d4289527f",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "527bd78d-3b94-8d7f-3acc-a1cb41422d6a",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "b8bfc377-c668-18d8-4bc0-ec385b8228bf",
+    "type": "string",
+    "name": "Style",
+    "defaultValue": ""
+   },
+   {
+    "id": "3a70ca77-ee71-c110-960d-e5a332f23876",
+    "type": "string",
+    "name": "URL",
+    "defaultValue": "https://www.youtube.com/embed/GPRcAZLuT3U"
+   },
+   {
+    "id": "5a3086d7-06f9-7f5f-6fbd-2dc1890c9e25",
+    "type": "string",
+    "name": "Title",
+    "defaultValue": "YouTube video player"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "4609fdda-3f8a-fc38-e928-f7583be7ab2c",
+  "name": "Form Range",
+  "group": "Form",
+  "instanceCount": 1,
+  "props": [
+   {
+    "id": "2c5967f3-ffc5-9cd2-50f6-06ed9982c2a2",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "1720d4b5-a321-f956-0700-d1b3d9b3764c",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "2d65d43e-7557-d0d1-cbb6-95a2cc654cb0",
+    "type": "variant",
+    "name": "Label Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "49de020c-2a2f-cd9e-f9be-ec9481770d82",
+    "type": "textContent",
+    "name": "Label",
+    "defaultValue": "Label"
+   },
+   {
+    "id": "b68d9a88-9f69-3464-634d-83eef89bb7aa",
+    "type": "string",
+    "name": "Name",
+    "tooltip": "Field title for submission results",
+    "defaultValue": "Field Name"
+   },
+   {
+    "id": "31f98933-c2ac-09be-5abc-f1edd73ceb83",
+    "type": "string",
+    "name": "ID",
+    "defaultValue": "field-id"
+   },
+   {
+    "id": "9c285639-5ce3-b938-29c0-ea6d1d12ed9d",
+    "type": "number",
+    "name": "Value",
+    "defaultValue": 50
+   },
+   {
+    "id": "2c43952d-1b69-568d-110d-db579f2f0914",
+    "type": "number",
+    "name": "Min",
+    "defaultValue": 0
+   },
+   {
+    "id": "d0c901ad-79b1-c414-7212-f05600959650",
+    "type": "number",
+    "name": "Max",
+    "defaultValue": 100
+   },
+   {
+    "id": "1082c6ef-691c-40c1-7004-1267fdf67be7",
+    "type": "number",
+    "name": "Step",
+    "defaultValue": 1
+   },
+   {
+    "id": "ea263261-8190-cbdf-bbf3-141e21298cf4",
+    "type": "textContent",
+    "name": "Output Unit",
+    "defaultValue": "%"
+   },
+   {
+    "id": "f8cd5db3-bad6-edaf-2277-a0b213097b70",
+    "type": "string",
+    "name": "Required",
+    "tooltip": "Add a space to make the field required",
+    "defaultValue": ""
+   },
+   {
+    "id": "14cb1de0-b8de-1222-6b97-e04fd4eeddef",
+    "type": "string",
+    "name": "Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "ef68eba8-651d-16f0-06ea-17c43c4de548",
+    "type": "string",
+    "name": "Attribute Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "0e88fa35-88e2-6fb5-8e46-3b73deb96f75",
+  "name": "Form Checkbox",
+  "group": "Form",
+  "instanceCount": 2,
+  "props": [
+   {
+    "id": "14c65806-90b5-2012-7f52-79d92d5c8e49",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "51c4c59b-1108-cb29-21c7-430147ed6656",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "c3778b1c-e9f9-7ed9-b7c9-f987a278ddb0",
+    "type": "textContent",
+    "name": "Label",
+    "tooltip": "Label text shown on page",
+    "defaultValue": "Field Label"
+   },
+   {
+    "id": "207e711d-e904-8e4c-bb4c-1b2c0cce9aab",
+    "type": "string",
+    "name": "Name",
+    "tooltip": "Field title for submission results",
+    "defaultValue": "Field Name"
+   },
+   {
+    "id": "35035b36-4f3e-9af6-f290-b505cdd89741",
+    "type": "string",
+    "name": "Required",
+    "tooltip": "Add a space to make the field required",
+    "defaultValue": ""
+   },
+   {
+    "id": "5589ba93-4817-72af-333b-8330e9fddb83",
+    "type": "string",
+    "name": "Checked",
+    "tooltip": "Add a space to make the field checked by default",
+    "defaultValue": ""
+   },
+   {
+    "id": "80c28233-4dfd-cce7-fb6c-7fd399d38749",
+    "type": "string",
+    "name": "Role",
+    "tooltip": "Switch to \"listitem\" if used in a list",
+    "defaultValue": "none"
+   },
+   {
+    "id": "731df109-e5e2-67fc-44a6-93053bc16a41",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "4f6171cd-2cfd-7132-7d0a-1a9026f2caf5",
+    "type": "string",
+    "name": "Input Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "89ae6db6-5364-e28c-0119-3100c945e0fa",
+    "type": "string",
+    "name": "Input Attribute Value",
+    "defaultValue": ""
+   },
+   {
+    "id": "14180b98-1b44-4e8d-7073-d29ce4fac93b",
+    "type": "string",
+    "name": "Label Attribute Name",
+    "defaultValue": ""
+   },
+   {
+    "id": "279c2f47-f689-2ac2-7ac3-5da32f7ec579",
+    "type": "string",
+    "name": "Label Attribute Value",
+    "defaultValue": ""
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ },
+ {
+  "id": "7079fed5-17cb-c5c6-24bf-0555d09731f4",
+  "name": "Layout",
+  "group": "Wrapper",
+  "instanceCount": 29,
+  "props": [
+   {
+    "id": "9db74e83-9999-6fda-a1c1-f9af4ced5921",
+    "type": "visibility",
+    "name": "Visibility"
+   },
+   {
+    "id": "d79d1d2a-f1f8-6796-b262-f9bcbc51e82b",
+    "type": "variant",
+    "name": "Variant",
+    "defaultValue": "base"
+   },
+   {
+    "id": "44a2215d-9eaf-991c-3c4a-96b94a669ff0",
+    "type": "string",
+    "name": "Classes",
+    "defaultValue": ""
+   },
+   {
+    "id": "987708fe-21e0-32a0-d1c7-da81cb6b4d3c",
+    "type": "string",
+    "name": "Column 1 Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "ffd04fd9-98dd-0162-8f2b-0aa5e248a149",
+    "type": "string",
+    "name": "Column 2 Classes",
+    "defaultValue": " "
+   },
+   {
+    "id": "6afb5ad3-22e3-d4b2-696c-41177a1b92f2",
+    "type": "slot",
+    "name": "Slot",
+    "tooltip": "Can contain headings, paragraphs, buttons, and other primary content"
+   },
+   {
+    "id": "77e7bf5e-52be-12b2-b69e-a690c0105cdd",
+    "type": "slot",
+    "name": "Slot",
+    "tooltip": "Can contain images, videos, forms, sliders, and other secondary content. For breakout, full, contain, and card variants, this slot needs to contain a visual."
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Stack",
+    "isSelected": true
+   },
+   {
+    "id": "d69d5003-e9bc-b347-4e02-eb46976beb1c",
+    "name": "Stack Centered",
+    "isSelected": false
+   },
+   {
+    "id": "1b1d171f-31c6-739b-bff9-2d7efa9674c4",
+    "name": "Auto Width",
+    "isSelected": false
+   },
+   {
+    "id": "558793eb-2b07-490b-9842-2d7e6f6bf325",
+    "name": "Columns",
+    "isSelected": false
+   },
+   {
+    "id": "1261a7e4-2c05-3b0b-2126-d399890906b8",
+    "name": "Columns Reversed",
+    "isSelected": false
+   },
+   {
+    "id": "81232c92-6578-ef9a-1e3e-35e3204ae0fd",
+    "name": "Sticky Left",
+    "isSelected": false
+   },
+   {
+    "id": "4fee4cc0-701f-2817-944f-2c0261b9c2f3",
+    "name": "Breakout",
+    "isSelected": false
+   },
+   {
+    "id": "6bb5e515-55a9-1fc8-d29b-ff898d8b40f7",
+    "name": "Breakout Reversed",
+    "isSelected": false
+   },
+   {
+    "id": "58b19052-6f23-ab5e-5e89-54288af57e85",
+    "name": "Full",
+    "isSelected": false
+   },
+   {
+    "id": "560ed4d9-9e8c-5c39-4619-fc154cdf9f19",
+    "name": "Full Reversed",
+    "isSelected": false
+   },
+   {
+    "id": "31f8ed75-2c88-945a-a737-1b9b50b4494b",
+    "name": "Contain",
+    "isSelected": false
+   },
+   {
+    "id": "329f6899-ba0f-e4db-0449-3c5b8ba4f388",
+    "name": "Contain Reversed",
+    "isSelected": false
+   },
+   {
+    "id": "ebfcdcb1-ac53-1b15-fcb9-eaeda25808f5",
+    "name": "Card",
+    "isSelected": false
+   }
+  ]
+ },
+ {
+  "id": "36c4e59e-9d5d-4bbe-5a26-79bcfc357e50",
+  "name": "Dropdown",
+  "group": "Interactive",
+  "instanceCount": 1,
+  "props": [
+   {
+    "id": "2a74e500-9c46-1d35-4e75-3b7e05d28152",
+    "type": "boolean",
+    "name": "Visibility",
+    "defaultValue": true
+   },
+   {
+    "id": "f0427a72-8901-aaee-d140-de88a433a734",
+    "type": "textContent",
+    "name": "Text",
+    "defaultValue": "Dropdown Text"
+   },
+   {
+    "id": "d13f01de-2d1f-b338-8391-0dc9fd5c22a4",
+    "type": "boolean",
+    "name": "Preview",
+    "tooltip": "If set to true, dropdown will be previewed as open in designer view.",
+    "defaultValue": false
+   },
+   {
+    "id": "6eaaabdb-6916-4189-916c-5008680bc997",
+    "type": "boolean",
+    "name": "Open On Hover In",
+    "defaultValue": false
+   },
+   {
+    "id": "c8deb444-ea4d-dad6-8f14-8d79311a7236",
+    "type": "boolean",
+    "name": "Close On Hover Out",
+    "defaultValue": false
+   },
+   {
+    "id": "50bb742d-6185-b381-09b9-df743b46c271",
+    "type": "slot",
+    "name": "Slot"
+   }
+  ],
+  "variants": [
+   {
+    "id": "base",
+    "name": "Base",
+    "isSelected": true
+   }
+  ]
+ }
+]

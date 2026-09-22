@@ -1,0 +1,141 @@
+ - Template Grading Rubric | Webflow Marketplace - - - - - - - - - - 
+ - 
+ Get 50% off on all templates until Dec 3, 11:59pm PT! Code: 1128CWWFTS123 
+ Skip to main content 
+ Get started  — it's free 
+ - Dashboard 
+- Product
+ - Designer
+- CMS
+- Ecommerce
+- Interactions
+- Localization
+- Edit mode
+- SEO
+- Security
+- Hosting
+- Marketplace
+ - Overview
+- Apps
+- Libraries
+- Hire a Certified Partner
+- Templates
+- Made in Webflow
+- Learn 
+- Resources
+ - Community
+- Ebooks
+- Forum
+- Blog
+- Support
+ Get started — it's free 
+ Trusted by teams at
+ How we evaluate quality for template submissions
+ Submissions that fall within the “satisfactory” range are eligible for feedback and revision, with the understanding that failure to fully meet “good” quality standards as defined in our rubric after 2 rounds of feedback may result in a rejection.
+ Design criteria
+ Functionality criteria
+ Criteria
+ Satisfactory
+ Good
+ Exceptional
+ Overall user experience
+ The UX serves its purpose, despite lacking some visual design best practices . It is usable, though not 100% intuitive.  Typography, legibility adhere to submission guidelines . Overall the template might feel a bit dated, not adhering to modern trends.
+ The UX feels better-than-average, it lures the user in aesthetically and is free of elements that confuse, strain, or distract. It has a strong command of visual design best practices .  It feels on-trend.
+ The UX is purely delightful. The aesthetics lure the user in and incorporate an innovative “wow factor” or two without creating confusion, strain or distractions. It shows mastery of visual design best practices . Feels original, has potential to set trends.  
+ Design Quality 
+ Graphic Design
+ The visuals may lack originality, and/or technical quality (low res), branding best practices (maintaining stylistic consistency, while implementing variety), and may seem dated, but are mostly relevant and strategically placed. They add either aesthetic or informational value, though can get distracting or confusing at times. Needs to put more effort into the application of visual design principles . 
+ The visuals may lack innovation but are still high-quality, relevant, aesthetically pleasing, and are strategically placed. Cohesive branding is there. They add both aesthetic and informational value. There is room for improvement with 1 or 2 visual design principles .
+ The website entices the user with high-quality, innovative, stunning visuals. Graphics add both aesthetic and informational value. Site demonstrates mastery of visual design principles .
+ Typography
+ Typography, is legible/readable but may need to implement better hierarchy, falls short of some submission guidelines 
+ Typography, is legible/readable, uses good hierarchy, and meets submission guidelines , though there may be room for improvement.
+ Typography, is legible/readable, hierarchy is implemented perfectly, and meets all submission guidelines 
+ Interaction Design
+ Interactions serve either a functional or aesthetic purpose but are superfluous in some areas, at times distract more than engage, create some cognitive overload , and while they are mostly intuitive, there are areas where they don't follow web conventions and thus do not behave as-expected.
+ Interactions might not create a memorable brand experience, but they do help direct the user, and promote information processing, i.e., they reduce, rather than add to cognitive load
+ Interactions are treated as brand attributes with personality, follow a pleasant cadence, and at the same time,  promote information processing i.e., they reduce, rather than add to cognitive load .
+ Layout and Structure 
+ Hierarchy
+ Fully processing information on the site takes some effort. Placement and composition of several elements, could be improved to promote visual hierarchy . Content aligns with the primary tag (i.e., food photos for a restaurant site) and  information architecture makes sense.
+ Fully processing information on the site feels easy.  Placement and composition of some elements could be improved to promote visual hierarchy . Content aligns with the primary tag, and there is clear intention behind the information architecture.    
+ The design clearly empathizes with the end user and their goals. Users stay engaged with thoughtful information architecture . Fully processing information on the site feels effortless, even fun.    Visual hierarchy is impeccable.
+ Layout Design Quality
+ Nearly all layout requirements from submission guidelines have been implemented.  Website layout may appear crammed or cluttered and needs better organization. May lack originality and/or variety. Gestalt web design principles are lacking in glaring ways.
+ Layout requirements from submission guidelines have been implemented.   Website layouts have good variety from page to page, consistent spacing, and do not appear crammed or cluttered. Website consistently adheres to Gesalt web design principles .
+ Layout requirements from submission guidelines have been implemented   Everything is functional and behaves as-expected.  Key elements are laid out in a way that demonstrates mastery of Gesalt web design principles .
+ Responsive design
+ Site is fully responsive with a minimal number of bugs to resolve on different screen sizes.
+ Site is fully responsive with no more than 2 bugs to resolve on different screen sizes.
+ Site is fully responsive with no bugs or other visual hierarchy issues to resolve on different screen sizes.
+ Criteria
+ Satisfactory
+ Good
+ Exceptional
+ Conversion best practices
+ Better implementation of conversion centered design is needed. Action items (i.e. CTA buttons, carts, form fills, etc.) are not immediately obvious to the user, but are not hard to find with some minimal effort.
+ The template has good implementation of conversion-centered design . Template makes it easy to convert without the need to dig at all. Action items (i.e. CTA buttons, carts, form fills, etc.) are ubiquitous, placed in high-traffic locations such as the nav menu or homepage hero, stand out, and repeat appropriately throughout the site. There is some room for improvement in the user journey to make converting even easier.
+ Template expertly implements conversion-centered design. For example, if the goal is to direct the end-user to a contact page, the user journey will be designed with that in mind, making it effortless for the user to get there.In addition to flawless strategic placement of calls to action, the template takes persuasion into consideration. For example, it creates intentional spaces for the customer to establish credibility, lure, objection-handling (where relevant), social proof, ease-of-use, results data (where relevant) for whatever products and/or services their website exists to promote.
+ Responsive design
+ Site is fully responsive with a minimal number of bugs to resolve on different screen sizes.
+ Site is fully responsive with no more than 2 bugs to resolve on different screen sizes.
+ Site is fully responsive with no bugs or other visual hierarchy issues to resolve on different screen sizes.
+ Site optimization 
+ SEO score of 51-70 on pagespeed insights ‍ Performance score of 51-70 on pagespeed insights ‍ Best practices score of 51-70 on pagespeed insights 
+ SEO score of 70-90 on pagespeed insights ‍ Performance score of 51-70 on pagespeed insights ‍ Best practices score of 51-70 on pagespeed insights 
+ SEO score of 90-100 on pagespeed insights ‍ Performance score of 70-90 on pagespeed insights ‍ Best practices score of 70-90 on pagespeed insights 
+ Accessibility 
+ Accessibility score of 51-70 on pagespeed insights Resource for designers: Webflow accessibility checklist 
+ Accessibility score of 70-90 on pagespeed insights ‍ Resource for designers: Webflow accessibility checklist 
+ High legibility, passing contrast ratios. Button & link names are unique & meaningful. Accessibility-centered design is evident. Near total adherence to Webflow accessibility checklist. Accessibility score of 90-100 on pagespeed insights 
+ Site References
+ A few examples of sites that are accepted based on the template quality criteria.
+ View details
+ Juniper 
+ Built by elemis 
+ Single page example
+ View details
+ Brick 
+ Built by Ragebite 
+ Multi page example
+ View details
+ Atlantic 
+ Built by Azwedo 
+ Multi layout example
+ View details
+ Wave Studio 
+ Built by Div Supply 
+ Ecommerce example
+ Explore
+ - Dashboard
+- Marketplace
+- Designers
+ Learn & get help
+ - Support
+- University
+- Courses
+- Blog
+- Ebooks
+- Forum
+- Community
+- Developers
+- Wishlist
+- Status
+ Company
+ - About
+- Careers
+- Sitemap
+- Become an affiliate
+ Terms & policies
+ - Terms of Service
+- Privacy policy
+- Cookie policy
+- Cookie preferences
+ Social
+ - 
+- 
+- 
+- 
+- 
+- 
+ 

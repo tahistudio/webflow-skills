@@ -1,0 +1,397 @@
+ - Submission Guidelines | Webflow - - - - - - - - - - 
+ - 
+ Get 50% off on all templates until Dec 3, 11:59pm PT! Code: 1128CWWFTS123 
+ Skip to main content 
+ Get started  — it's free 
+ - Dashboard 
+- Product
+ - Designer
+- CMS
+- Ecommerce
+- Interactions
+- Localization
+- Edit mode
+- SEO
+- Security
+- Hosting
+- Marketplace
+ - Overview
+- Apps
+- Libraries
+- Hire a Certified Partner
+- Templates
+- Made in Webflow
+- Learn 
+- Resources
+ - Community
+- Ebooks
+- Forum
+- Blog
+- Support
+ Get started — it's free 
+ Trusted by teams at
+ Submission Requirements
+ At Webflow we take a lot of pride in quality.  For a template to be published, it must meet all the requirements below, as well as achieve a score of “Good” on all areas of our quality rubric.
+ View our quality rubric
+ Submission Requirements
+ Templates must meet all of these requirements to be added to the Webflow Marketplace. Go through this checklist before sending your template for the first review.
+ Start Here
+ Required Pages
+ Design Systems
+ Interactions and GSAP
+ SEO
+ Accessibility
+ Images and Assets
+ Layout and Content
+ Forms and Conversion Design
+ Custom Code and Site Settings
+ CMS and Ecommerce
+ Template listing information
+ List your template outside of Webflow
+ Start Here 👋
+ Welcome 
+ Welcome to the Webflow Template review process! If you haven’t submitted a template before, this is the right place to start. We’re excited to see what you create. 
+ The review process
+ To be published in the template marketplace, a template must both:
+ - Pass a quality review based on the quality rubric (a pass is defined as achieving a score of at least “Good” on all rubric sections)
+- Meet all submission requirements (defined in this document) and meet all criteria listed on the Submission Checklist
+ What to expect after you submit
+ When you’re ready to submit , be sure to look through the Template listing information section of these guidelines. 
+ Each template is reviewed by our Marketplace team, typically within 3-5 days of submission. Depending on your submission quality, you may receive any of the following experiences: 
+ - Low quality submissions are rejected with feedback. We know that being rejected is frustrating, and do our best to provide feedback (and guidelines like this!) that are clear and actionable. 
+- High quality submissions with requirements issues will be given feedback, and one opportunity to ensure the template meets all submission requirements. Please note that feedback does not always capture all template issues, so be sure to re-review and update your whole template before re-opening the review. 
+ Required Pages
+ - Page Naming - Use Title Case for page names.
+- Page names must match their slug.
+- All required pages should have the following code to the page's custom head code: <meta name="robots" content="noindex"> 
+- Style Guide Page must be created and should include all tags (headings, paragraphs, links, buttons, etc).
+- Instructions Page must be created if advanced and complex  interactions or hidden components are used. This page should provide brief information on how to access and edit these components. If GSAP is included, the GSAP-specific documentation must be included. 
+- License Page must be created and have the slug set t0 /licenses.  - Paste this exact text at the top of the page: - “All graphical assets in this template are licensed for personal and commercial use. If you'd like to use a specific asset, please check the license below.”
+- Make sure the footer on every page includes a visible link to the Licenses page.
+- Include license info for all custom assets: list each custom-installed font with a license link, and ensure all images, icons, and other assets are free for personal and commercial use with source or license links provided.
+- For AI-generated images, identify the assets, name the tool or source used, and link to its applicable terms or license. See “AI-generated assets” under Images and Assets.
+ Design Systems 
+ Components
+ - Set up reusable Components for shared elements. Navbars, Footers, and CTAs should be set up as Components on each template page. 
+- Component names and variant names should follow title casing and be concise, consistent, and human-readable (see Global Naming Standards ).
+- Best Practices:  - Expose props/slots/style variants instead of duplicating structures.
+- Keep components modular for reusability.
+- Avoid nesting components like sliders or tabs inside each other (e.g., no slider inside a slider).
+ Typography 
+ - All copy/text should use unique, relevant wording based on the website type and avoid placeholder text like “lorem ipsum” for headings, paragraphs etc. 
+- Use percentage-based line heights for better responsiveness.
+- Text line-height should avoid text crashing on itself on all devices
+- Set the primary font on the Body element; apply secondary fonts (e.g., for headings) on individual tags and classes.
+- All text must use correct spelling and grammar.
+ Variables 
+ - Define reusable style Variables for - Colors (primary, secondary, background)
+- Typography (font families, sizes, weights) 
+- Spacing (margins, paddings)
+- *Brand specifics: Border radius, shadows, etc.
+- Variable names should use title casing with words separated by a space.
+- Use Variable Modes to support responsive values which target tablet, mobile landscape, and mobile portrait breakpoints.
+- Best Practises: - Avoid turning one-off or rarely used values into Variables.  
+- Organize variables into purposeful groups.
+- Ramps should be ordered light-to-dark or small-to-large for quick scanning.
+ Styles
+ - Style Selectors:   - To ensure consistent typography across your template, apply baseline styles to most (if not all) of the HTML Tags in Webflow: - All Headings: H1, H2, H3, H4, H5, H6
+- All Paragraphs
+- All Unordered Lists (bulleted)
+- All Ordered Lists (numbered)
+- All Blockquotes
+- All Figures (image + caption wrapper)
+- All Figure Captions
+- All Links
+- If you need a heading, paragraph, or other text element to look different than the default tag style, create a separate class with those specific override styles.
+- Use Variables to set up baseline tag styles.
+- Limit stacked combo classes to 3-4 per element.
+- Clean up and remove unused styles and classes regularly.
+- Best Practises: - Style hover, pressed, focus states .
+- Use consistent grids and spacing from the style guide. 
+- Naming Conventions: - Use one consistent class naming format across the template: - Default: Hero Container Element
+- Snake Case: hero_container_element
+- Pascal Case: HeroContainerElement
+- Camel Case: heroContainerElement
+- Kebab Case: hero-container-element
+- BEM: block__element--modifier
+- Except in the case of using a premade system or framework such as "Client First", "Mast', "Knockout' etc., all class names and combo class names in a template should use only one of the above class naming formats to maintain consistency.
+- Use descriptive names that reflect the element’s purpose.
+- Use combo classes (max 3 levels) for styling variations. - ✅ Good: section testimonials dark
+- ❌ Bad: section testimonials dark customers horizontal
+- Combo class naming should match the base class format. - Example: hero_container_element + service_dark (both Snake Case)
+- Avoid redundant styles, e.g., don't set text-align: left on a paragraph inside a left-aligned container.
+ Interactions and GSAP
+ Webflow Interactions, powered by GSAP, will become the default for Marketplace templates starting May 1, 2026 - Leverage interactions with GSAP in templates, and avoid legacy interactions.
+- Links and buttons need hover states to show that they are clickable.
+ - Use sentence case and descriptive names, e.g., - ✅ "Slide nav down on scroll"
+- ❌ "Show nav"
+- Use simple CSS transitions (e.g., transform, opacity) for hover and press states. Reserve complex interactions (multi-step, multi-element) for advanced use cases.
+- Provide pause/skip controls for background videos. 
+- Cleanup and delete unused interactions . 
+- Additional best practices include:  - Each breakpoint should be spot-checked: no text overflow, layouts should adapt, default font sizes.
+- To prevent layout shifts, explicit width and height attributes or aspect ratio boxes must be set for all images, and images must not be injected late into the page.
+- Animation performance: - Use GPU-friendly properties (transform, opacity)
+- Avoid animating top, left, width, height, filters, shadows, and blend modes
+- Minimize the affected animation area
+- Keep durations between 150–800ms
+- Use Initial Appearance to control element visibility in interactions - avoid using display: none, visibility: hidden, or opacity: 0 unless necessary. 
+ GSAP in Custom Code
+ If GSAP is included in custom code, add a section to your Instructions page titled “How to Edit GSAP Animations.” It must cover the following:
+ - Element Map - List all GSAP-animated selectors (class, ID, or attribute).
+- Briefly describe each animation (e.g., .hero-title fades in on scroll).
+- Customizing Key Variables - Show code snippets for common knobs: duration, delay, ease, ScrollTrigger, etc.
+- Explain how to change each variable (e.g., “To slow reveal, increase duration from 0.6 to 1.2 seconds”).
+- Removing GSAP Animations - Step-by-step instructions to disable/delete timeline/trigger without breaking layout: - Comment/remove related code snippets.
+- Delete matching ScrollTrigger if used.
+- Save & republish.
+- Note visual side effects (e.g., elements appear instantly).
+- Keep it short, skimmable, and include code in fenced blocks for easy copy/edit. Alternatively, you may make this a separate page “GSAP Guide”
+ Transitions
+ - Apply transitions to specific properties, not “All”.
+- Ensure consistent transition behavior across elements.
+- Example: Input focus and button hover should use the same timing values.
+- Set transitions on all properties that change on hover. - Example: If text color changes on button hover, apply a transition to color.
+ SEO 
+ - Match SEO settings with the homepage template name: - Static/CMS: {Template Name} - Webflow HTML website template
+- Ecommerce: {Template Name} - Webflow Ecommerce website template
+- Add "Powered by Webflow" in the footer with a link to Webflow's homepage.
+- Check main pages on https://pagespeed.web.dev/ for a passing SEO score as specified in our quality rubric. 
+- Each page, including CMS templates, must have: - Unique meta title (<60 characters)
+- Meta description (150–160 characters)
+- Open Graph metadata: titles, descriptions, and JPEG/PNG images (≥1200×630px, 1.91:1 ratio)
+- Include a custom branded 404 page with full navigation and CTAs.
+- Best Practises:  - Write meta tags naturally and for users.
+- Use concise, descriptive slugs (e.g., /blog/my-article).
+- Test OG tags and avoid unsupported formats like WebP.
+- Use one <h1> per page for the main heading. Multiple <h1>s are allowed if nested in <section> or <article>. Use <h2>–<h6> in correct hierarchical order based on content importance.
+ Accessibility
+ - Test all main pages in PageSpeed Insights to ensure passing Core Web Vitals on desktop and mobile.
+- Use clear, logical heading order with one  H1 per page. Headings <H1> - <H6> must follow a serial hierarchy without skipped levels. Use Webflow’s Audit Panel to see if you’ve skipped any heading levels and alt text.   
+- Follow Webflow’s accessibility checklis t for accessibility errors.
+- Ensure all elements meet WCAG color contrast , ensure contrast compliance for focus, hover, active states . Check contrast for text, borders, icons, and overlays.
+- Accessibility best practises:  - Organize content for screen readers and keyboard navigation.
+- Use semantic HTML tags and custom ARIA roles/labels as needed.
+- Use inclusive and plain language.
+- Use unique, descriptive link labels.
+- Add alt text for important images; mark decorative images correctly in the media library.
+- Avoid autoplaying media. 
+ Images and Assets 
+ - Use high-quality, up-to-date imagery and assets. Avoid outdated design elements such as cutout images, low-resolution graphics, or stock visuals that feel generic or overused. Opt for high-resolution images, cohesive iconography, and contemporary design elements that enhance the overall aesthetic and usability of the template.
+- Optimize all media before upload: - Compress images to ≤150KB where possible  
+- Max file size: 4MB  
+- Use modern image formats (WebP, AVIF, PNG, JPEG)  
+- Use Webflow-native image compression tools to compress images used in CMS to AVIF or WebP format. 
+- Use appropriate loading behavior: - Lazy-load all below-the-fold images by default  
+- Use eager loading only for above-the-fold essentials  
+- Enable responsive images in Project Settings 
+- Videos should be compressed.
+- Avoid autoplay videos without controls.
+ Licensed Assets 
+ - All assets (images, icons, etc.) must be allowed for resale by the copyright holder - we request all assets be free to use and have licenses linked.
+- Use only free, resale-safe, or CC0 assets from sources like Stock Up, Pexels, or Unsplash 
+- The use of premium or trademarked graphics assets are not allowed. (With the exception of social media icons that link to relevant accounts.) 
+- Avoid logos of brands like Google, Slack, etc. No trademarked logos, branded content or premium stock assets are allowed to be used on the templates. Only use fake logos or brands, use only free assets that are allowed for resale and free redistribution or CC0-licensed graphics.
+ AI-generated assets 
+ AI-generated images are allowed if they meet all Marketplace quality and content requirements.
+ - Confirm that the tool or source’s terms allow you to include and distribute the images in a template you sell, and allow buyers to use them for personal and commercial projects.
+- On the template’s Licenses page, identify which images are AI-generated, name the tool or source used, and link to its applicable terms or license. This documentation is required even if the provider does not require attribution.
+- Follow any additional attribution or disclosure requirements set by the provider.
+- You are responsible for ensuring that the images do not infringe third-party rights.
+ Logo ‍ 
+ - Nav logo must match the template name and be an image file for easy replacement. 
+- Logo should reflect a modern design incorporating a distinctive logomark and a clean, professional wordmark to enhance brand recognition and improve visual appeal. 
+ Layout and Content 
+ Layout Best Practises:  
+ - All links/buttons must link somewhere- no empty links
+- For repeating grid items, the main image should be a clickable link, not just a hidden text link.
+- Maintain consistent spacings, avoid crammed or cluttered layouts.
+- Use sections, containers, or labeled/formatted divs to structure the site. Compose sections from re-usable components. 
+- Use min-height instead of height for sections, especially hero sections to allow content growth.. 
+ Content Best Practises:  
+ - Content should align with the template's category. 
+- All content must be appropriate for a general, global audience: - ✅ Inclusive language and imagery
+- ❌ No obscene language, nudity, violent imagery, drug references, political or religious bias, or culturally insensitive material. Avoid reference to any particular political parties or religions.
+ Responsive Behaviour:  
+ - Fluid Layouts - Layouts must be fluid and responsive across all viewports. 
+- Optimize layouts for mobile usability, including appropriate margins, padding, type sizes, and button sizes.
+- Unit Usage - Use fluid units instead of absolute units like pixels.
+- It is a best practice to use REM units for typography
+- Maintain consistency in unit types across similar scenarios: - Example: If padding uses em, all padding should use em.
+- Responsive Components - All elements must function across media queries and all viewports. - Example: Tabs should stack on mobile.
+- Use a responsive spacing system that adapts to screen size. - Good example: 60px top/bottom padding on desktop, 20px on mobile. 
+ Rich Text  
+ - Any text element added inside Rich Text must be properly styled via Tag selectors.
+- For unique styles within a specific Rich Text, apply a class to that Rich Text and style its tags accordingly (e.g., If a text link is supposed to look different in a specific Rich Text compared to All Links on the site.).
+ Forms and Conversion Design
+ Conversion Design 
+ - Since templates will serve as real marketing websites for customers, they must be designed to convert as outlined in the quality rubri c.
+- Make sure navigation is clear, conversion paths are obvious, and each section supports the user's decision-making process
+- Place CTAs in high-traffic, easy-to-find locations.
+- Write leading headlines that create space for credibility, objection handling, social proof, ease-of-use, and results of products or services.
+- Good Example: A company template where the main goal is contact form submissions: - CTAs for the contact page stand out
+- The cart is easily accessible if the goal is to purchase a product
+- Every section guides the user toward the conversion goal using:
+- Social proof is added to build trust
+- Objection handling content
+- Explaining ease-of-use w/products or services
+- Showing results of products or services - ​​Good Example of a site with great, straight forward navigation, and here’s another Example of a site that has great leading headlines and sections designed to convert. 
+ Forms 
+ - Customize success messages to match the site’s design.
+- Customize input focus states for a consistent visual experience.
+- Ensure form text and placeholders are legible.
+- Give meaningful, descriptive names to forms and fields in form settings - these appear in email notifications and reports.
+- All forms must include field labels for accessibility compliance.
+- Use correct field types (e.g., email fields should not be set as text).
+ Custom Code and Site Settings
+ Custom code  
+ - Custom code (in site settings, in embeds, in page settings) is not allowed in Templates, except for: - GSAP Custom Code
+- Font smoothing in the project settings - Example: {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+- No-index code in the Licensing and Changelog pages: <meta name="robots" content="noindex">‍
+- SVG's - If you're using SVG's code it is required to add an Instructions page to the template with clear guidelines about how to use it.‍ 
+ Site Settings  
+ - Favicon and webclip must be included, should be custom and match the template's theme, and display properly.
+- Enable responsive images in Project Settings 
+- Form Notifications settings should be empty
+- Only Google fonts or free (OFL) fonts can be used - no Typekit or custom fonts.
+- All Integration settings should be as default. Do not generate an API token or add any third-party integrations to the project. 
+- The site's total weight should be less than 10mb.
+- Minify CSS.
+- Maps should not have the API key added.
+ CMS and Ecommerce
+ CMS Structure 
+ - Use collection pages for repeatable or relational content.
+- Ensure each CMS page includes dynamic SEO metadata for scalable SEO. 
+- Compress CMS media before upload (<4MB). Use responsive images and Webflow-native compression .
+- CMS Naming: - Collection names: Use Title Case with correctly defined singular/plural.
+- Should sound natural in: - “This is a Collection of {{plural-version}}”
+- “Create a new {{singular-version}}”
+- Slugs: Use short, singular, descriptive terms, e.g., article, project, member, client, event.
+- Collection field names should follow sentence case
+- Collection fields should include a short description.
+- Collection slugs must be singular (e.g., website.com/article/page).
+- Collection Fields should have clear help text to show how/what to use them (for).
+- Collections should have at least 3 items and a maximum of 7 items per collection with realistic dummy content.
+- All dynamic pages must have content and design that fits the template category. 
+- CMS best practises: - Choose field types as they can't be changed after creation.   - Use reference/multi-reference fields for relationships  
+- Use option fields when values are fixed 
+- Paginate large lists for performance.
+- Mark any essential fields as “required” to prevent incomplete data.
+- Use conditional visibility for fields (e.g., only show Facebook icon if a URL is provided).
+ Ecommerce Structure
+ - Do not add a business address or configure any Ecommerce settings (including store currency, shipping or tax zones, etc.). This will ensure, among other things, that all our stores will start with default currency settings.
+- In Ecommerce tab > Setup Guide, the following steps should remain unchecked: - Business address
+- Shipping method
+- Tax settings
+- Payment provider
+- Hosting
+- Checkout
+- Business address: - Once a business address has been added, it cannot be removed, so it is very important that the business address is not added when creating a template. For this reason, we can not also allow existing templates with a business address to stay in the template marketplace. 
+- Ecommerce Design - The following Ecommerce template pages shouldn't have any preloaders: - Products template
+- Categories template
+- Checkout
+- Order confirmation
+- Cart - Should be in the Navbar or otherwise visible on each page
+- Should contain standard elements (items, subtotal, checkout buttons) and be functional‍
+- Ideally, should contain all major supported payment methods - Regular checkout button
+- Webpayments (optional)
+- PayPal checkout
+- Checkout page should include: - Checkout form
+- Order items
+- Order summary
+- Checkout PayPal page should include - PayPal checkout form
+- Order items
+- Order summary
+- Styling should be consistent with Checkout page
+- Order confirmation page - Should include order confirmation element
+- Product template page should include: - Add to Cart element
+- Product description
+- Product image
+- Category template page should include: - Product categories list
+- Links to listed product pages
+- Product management - Products and categories should use consistent casing, correct spelling, and names that make sense, especially in custom fields
+- There should be a sufficient number of dummy products and categories included in the template for the design to look good
+- We recommend making sure at least some products have variants, when it makes sense for your template.
+ ‍
+ Template listing information
+ Follow the requirements below when completing the submission form:
+ Template Name:
+ - ‍Length : Limit names to 1-2 words (preferably 1) to maintain brevity and readability on listing cards.
+- Distinctiveness : Pick a unique, memorable name. Avoid duplicated names, names similar to existing templates or misspelled search terms (e.g., “Startuq”).
+- Relevance : Name should reflect the template’s theme or purpose (e.g., Orbit for a space site, Haven for wellness). Generic names like Template 01 are not allowed.
+- No Keyword Gaming : Don’t include multiple keywords, category names, or unnatural variations meant to boost search visibility (e.g., AI Startup Tech Creative).
+- Professional Tone : Avoid slang, special characters, symbols, odd capitalization, or misleading names (e.g., “StArTuPz!!!” or “AI_4_U”).
+- No Brand/Author Names : Don’t include your name or brand on the template name as these appear prominently on the template listing already. 
+ Categories
+ The category of your template will determine where it is found in the marketplace. Choose up to 2 categories that accurately represent your template.
+ Page count 
+ Templates can either be one page (i.e. landing page), multi page , or multi layout . Multi layout templates are defined as having at least three layout variations across three static pages (e.g. a template that includes 3 versions of Home, About, and Pricing pages). 
+ Thumbnail Image Guidelines:
+ - Main Thumbnail (Default View): Showcase the homepage or a key page to highlight the overall design and style. Keep it simple and clear, avoid complex multi-page views or angled/tiled mockups.
+- Second Thumbnail (Hover View): Show a different section from the main thumbnail image contents or a different page to demonstrate versatility. Maintain visual consistency of the secondary thumbnail image with the main thumbnail (same colors, style, and layout tone).
+- Avoid : - No badges (e.g., "New", icons for features, or triangulated corner labels).
+- No external logos or tool icons (like “CMS” or “Figma”).
+- No template or category names on image(s) (e.g., "Business", "Portfolio") 
+- No CTAs or sales messaging text (e.g., “Buy Now”, “See More”).
+- Excessive text, the layout should speak for itself
+ Selling Templates Outside the Webflow Marketplace 
+ Once your template has been approved, it will be automatically listed on the Webflow Marketplace, and you can also sell the template outside of Webflow using template fulfillment links .
+ Fulfillment links are unique URLs that let you automatically deliver your Webflow templates to customers who purchase them through other platforms—whether that’s your own website or a third-party marketplace.
+ Here’s how it works: 
+ - Generate a fulfillment link for each template you want to sell outside of Webflow.
+- List your template externally (e.g., on your personal site, creative marketplace, etc.) and set your own price.
+- Collect payment through your external sales platform.
+- Share the fulfillment link with your buyer after their purchase.
+- Buyers can instantly install the template in their Webflow workspace using the link. - If the buyer doesn’t yet have a Webflow account, they’ll be guided through a quick sign-up flow before installation. 
+ For more details about using fulfillment links, visit our Help Center .
+ Ready to submit?
+ Discover how to submit your own website templates and meet Webflow's quality guidelines, or explore our collection of stunning templates created by talented designers.
+ Get started
+ Frequently Asked Question
+ How does the template program work for creators?
+ Everything you need to know about becoming a Webflow template designer can be found on our admissions page .
+ Why was my template rejected?
+ Guideline infringements are the most common reason templates are rejected. Before submitting a template, make sure you deeply familiarize yourself with:
+ - Our submissions guidelines  
+- Our design quality rubric 
+- Our functionality rubric 
+ What should I do after a rejection?
+ We recommend taking a thorough look at our submissions guidelines, our design quality rubric and our functionality rubric. These resources will likely help you understand where improvements are needed. From there, we recommend looking at our example templates, and using resources like Webflow University to make the necessary improvements before resubmitting.
+ How many templates can I submit at once?
+ If you are a newcomer to the program, you may submit one template at a time. Designers may be eligible for multiple submissions at once after they have demonstrated a strong familiarity with our submission guidelines, quality rubric, and functionality rubric.
+ Get started for free
+ Try Webflow for as long as you like with our free Starter plan. Purchase a paid Site plan to publish, host, and unlock additional features. 
+ Get started — it's free 
+ Transforming the design process at
+ Explore
+ - Dashboard
+- Marketplace
+- Designers
+ Learn & get help
+ - Support
+- University
+- Courses
+- Blog
+- Ebooks
+- Forum
+- Community
+- Developers
+- Wishlist
+- Status
+ Company
+ - About
+- Careers
+- Sitemap
+- Become an affiliate
+ Terms & policies
+ - Terms of Service
+- Privacy policy
+- Cookie policy
+- Cookie preferences
+ Social
+ - 
+- 
+- 
+- 
+- 
+- 
+ 

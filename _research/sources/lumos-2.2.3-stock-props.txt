@@ -1,0 +1,459 @@
+### Button Main (group: Button , instances: 83 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Text | textContent | None | 
+  - Link | link | None | 
+  - External Link | link | None | 
+  - Type | string | None | button, submit, reset
+  - Classes | string | None | 
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  - Clickable Visibility | visibility | None | 
+  - Slot | slot | None | 
+  VARIANTS: Primary, Secondary, Link
+### Button Play (group: Button , instances: 5 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Text | textContent | None | This is the text screen readers will read when focused on th
+  - Link | link | None | 
+  - Classes | string | None | 
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  VARIANTS: Primary / Medium, Secondary / Medium, Primary / Large, Secondary / Large
+### Icon Arrow (group: SVG , instances: 39 )
+  - Direction | variant | None | 
+  VARIANTS: Right, Left, Top, Bottom
+### Icon X (group: SVG , instances: 5 )
+  VARIANTS: Base
+### Icon Arrow Full (group: SVG , instances: 14 )
+  - Variant | variant | None | 
+  VARIANTS: Right, Left, Top, Bottom
+### Global Guides (group: Global , instances: 5 )
+  VARIANTS: Base
+### Typography Eyebrow (group: Typography , instances: 14 )
+  - Visibility | visibility | None | 
+  - Text | richText | None | 
+  - Classes | string | None | 
+  VARIANTS: Base
+### Starter JS (group: Utility , instances: 0 )
+  VARIANTS: Base
+### Starter CSS (group: Utility , instances: 0 )
+  VARIANTS: Base
+### • Section Custom (duplicate this) (group: • Section , instances: 0 )
+  - Visibility | visibility | Section | 
+  - Theme | variant | Section | 
+  - Eyebrow Text | richText | Content | 
+  - Heading Text | richText | Content | 
+  - Paragraph Text | richText | Content | 
+  - Text | textContent | Button 1 | 
+  - Link | link | Button 1 | 
+  - Text | textContent | Button 2 | 
+  - Link | link | Button 2 | 
+  - Visibility | visibility | Image | 
+  - File | image | Image | 
+  - Loading | string | Image | 
+  - Url | string | Video | 
+  - Padding Top | variant | Section | 
+  - Padding Bottom | variant | Section | 
+  - ID | id | Section | 
+  VARIANTS: Inherit, Light, Dark, Brand
+### Clickable (group: Utility , instances: 131 )
+  - Variant | variant | None | 
+  - Visibility | visibility | None | 
+  - Screen Reader Text | textContent | None | This is the text screen readers will read when focused on th
+  - Link | link | None | 
+  - External Link | link | None | 
+  - Type | string | None | button, submit, reset
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  VARIANTS: Focus Ring Outside, Focus Ring Inside
+### Spacer (group: Utility , instances: 36 )
+  - Visibility | boolean | None | 
+  - Variant | variant | None | 
+  VARIANTS: None, Even, Small, Main, Large, Page Top
+### Section (group: Wrapper , instances: 17 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Padding Top | variant | None | 
+  - Padding Bottom | variant | None | 
+  - Section Classes | string | None | 
+  - Container Classes | string | None | 
+  - Style | string | None | 
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  - ID Attribute Name | string | None | Type "id" in this field when applying an id to the section
+  - ID Attribute Value | id | None | 
+  - Container Slot | slot | None | 
+  - Slot | slot | None | 
+  VARIANTS: Inherit, Light, Dark, Brand
+### Button Wrapper (group: Wrapper , instances: 30 )
+  - Visibility | visibility | None | 
+  - Classes | string | None | 
+  - Style | string | None | 
+  - Slot | slot | None | 
+  VARIANTS: Base
+### Typography Heading (group: Typography , instances: 37 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Text | richText | None | 
+  - Max Width | number | None | Set "-1" for no max width
+  - Classes | string | None | 
+  - ID | id | None | 
+  VARIANTS: Inherit, Text Small, Text Main, Text Large, H6, H5, H4, H3, H2, H1, Display
+### Typography Paragraph (group: Typography , instances: 35 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Text | richText | None | 
+  - Max Width | number | None | Set "-1" for no max width
+  - Classes | string | None | 
+  - ID | id | None | 
+  VARIANTS: Inherit, Text Small, Text Main, Text Large, H6, H5, H4, H3, H2, H1, Display
+### Block (group: Wrapper , instances: 0 )
+  - Visibility | visibility | None | 
+  - Classes | string | None | 
+  - Style | string | None | 
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  - Slot content | slot | None | 
+  VARIANTS: Base
+### Check UI (group: Miscellaneous , instances: 5 )
+  - Variant | variant | None | 
+  - Type | string | None | 
+  - Label | textContent | None | Field label shown on page
+  - Name | string | None | 
+  - Value | string | None | 
+  - Required | string | None | Add a space to make the field required
+  - Checked | string | None | Add a space to make the field checked by default
+  - Input Attribute Name | string | None | 
+  - Input Attribute Value | string | None | 
+  - Label Attribute Name | string | None | 
+  - Label Attribute Value | string | None | 
+  VARIANTS: Checkbox, Radio, Toggle, Button
+### Form Radio (group: Form , instances: 3 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Group Name | string | None | All radios within the same group should use the same group n
+  - Label | textContent | None | Label text shown on page
+  - Value | string | None | Field value when checked
+  - Required | string | None | Add a space to make the field required
+  - Checked | string | None | Add a space to make the field checked by default
+  - Role | string | None | Switch to "listitem" if used in a list
+  - Classes | string | None | 
+  - Input Attribute Name | string | None | 
+  - Input Attribute Value | string | None | 
+  - Label Attribute Name | string | None | 
+  - Label Attribute Value | string | None | 
+  VARIANTS: Base
+### Content Wrapper (group: Wrapper , instances: 0 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Classes | string | None | 
+  - Style | string | None | 
+  - Slot | slot | None | 
+  VARIANTS: Inherit, Left, Center, Right, Center Mobile
+### Grid (group: Wrapper , instances: 8 )
+  - Visibility | visibility | None | 
+  - Classes | string | None | 
+  - Variant | variant | None | 
+  - Large Screen | number | None | Column count on large screens and autofit / autofill max col
+  - Medium Screen | number | None | 0 will inherit from the previous screen size
+  - Small Screen | number | None | 0 will inherit from the previous screen size
+  - Smallest Screen | number | None | 0 will inherit from the previous screen size
+  - Minimum Column Size | number | None | For autofit or autofill grids
+  - Style | string | None | 
+  - Role | string | None | Switch to "list" if grid will contain a list of items
+  - Slot | slot | None | 
+  VARIANTS: Default, Self Contained, Autofit, Autofill
+### Form Fieldset (group: Form , instances: 6 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Legend Variant | variant | None | 
+  - Legend Text | textContent | None | 
+  - Slot Role | string | None | Switch to "list" if containing a list of items
+  - Classes | string | None | 
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  - Slot | slot | None | 
+  VARIANTS: Flex Vertical, Flex Horizontal, Grid 2 Column, Grid 3 Column
+### Form Textarea (group: Form , instances: 1 )
+  - Visibility | visibility | None | 
+  - Label Variant | variant | None | 
+  - Label | textContent | None | Field label shown on page
+  - Name | string | None | Field title for submission results
+  - Placeholder | string | None | 
+  - Required | string | None | Add a space to make the field required
+  - Value | string | None | 
+  - Classes | string | None | 
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  VARIANTS: Base
+### Form Select (group: Form , instances: 5 )
+  - Visibility | visibility | None | 
+  - Label Variant | variant | None | 
+  - Label | textContent | None | Field label shown on page
+  - Name | string | None | Field title for submission results
+  - Required | string | None | Add a space to make the field required
+  - Allow Multi Select | string | None | Add a space to allow multi select
+  - Classes | string | None | 
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  - Slot | slot | None | 
+  VARIANTS: Base
+### Form Select Option (group: Form , instances: 29 )
+  - Visibility | visibility | None | 
+  - Text | textContent | None | 
+  - Value | string | None | 
+  - Selected | string | None | Add a space to make option selected by default
+  - Hidden | string | None | Add a space to make option hidden from list (sometimes used 
+  VARIANTS: Base
+### Typography Tag (group: Typography , instances: 1 )
+  - Visibility | visibility | None | 
+  - Text | textContent | None | 
+  - Classes | string | None | 
+  VARIANTS: Base
+### Logo (group: SVG , instances: 16 )
+  - Style | string | None | 
+  VARIANTS: Base
+### Visual Video (group: Visual , instances: 0 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Url | string | None | 
+  - Autoplay | string | None | 
+  - Loop | string | None | 
+  - Muted | string | None | 
+  - Classes | string | None | 
+  - Style | string | None | 
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  VARIANTS: Wide 2 / 1, Wide 16 / 9, Wide 3 / 2, Wide 5 / 4, Square 1 / 1, Tall 4 / 5, Tall 2 / 3, Cover
+### Media Overlay (group: Visual , instances: 3 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Overlay Strength | number | None | 
+  - Classes | string | None | 
+  VARIANTS: Base, Gradient
+### Contact Form (group: Form , instances: 1 )
+  - Visibility | visibility | None | 
+  - Classes | string | None | 
+  VARIANTS: Base
+### Slider (group: Interactive , instances: 2 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Slides Per View | string | None | 
+  - Controls Visibility | visibility | Settings | 
+  - Follow Finger | boolean | Settings | If set to false, slider will be swipeable but not draggable.
+  - Free Mode | boolean | Settings | If set to true, slides will not snap into place on release.
+  - Mousewheel | boolean | Settings | If set to false, the slider can't be controlled by the keybo
+  - Slide To Clicked Slide | boolean | Settings | If set to true, the slide will move into view when we click 
+  - Speed | number | Settings | 
+  - Classes | string | None | 
+  - Slot | slot | None | 
+  VARIANTS: Overflow Visible, Overflow Hidden, Crop Left
+### Global Styles (group: Global , instances: 7 )
+  VARIANTS: Base
+### Card Primary (group: Card , instances: 26 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Heading Tag | headingTag | None | 
+  - Heading Text | textContent | None | 
+  - Paragraph Text | richText | None | 
+  - Link Visibility | visibility | None | 
+  - Link Text | textContent | None | 
+  - Link Url | link | None | 
+  - External Link | link | None | 
+  - Image | image | None | 
+  - Role | string | None | Set to "listitem" if used in a list
+  - Classes | string | None | 
+  - Content Classes | string | None | 
+  - Style | string | None | 
+  VARIANTS: Default, Cover, Stacked
+### Button Arrow (group: Button , instances: 13 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Arrow Direction | variant | None | 
+  - Text | textContent | None | This is the text screen readers will read when focused on th
+  - Link | link | None | 
+  - Classes | string | None | 
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  VARIANTS: Primary / Medium, Secondary / Medium, Primary / Large, Secondary / Large
+### Stroke Path (group: SVG , instances: 99 )
+  - Path | string | None | 
+  VARIANTS: Base
+### Accordion List (group: Interactive , instances: 1 )
+  - Visibility | visibility | None | 
+  - Classes | string | None | 
+  - Style | string | None | 
+  - Close Previous | boolean | None | If set to true, currently open accordion will close when new
+  - Close On Second Click | boolean | None | If set to true, accordion will close the second time we clic
+  - Open On Hover | boolean | None | If set to true, accordion will open when we hover over it.
+  - Open By Default: Item # | number | None | If set to 1, accordion item 1 will be opened by default.
+  - Slot | slot | None | 
+  VARIANTS: Base
+### Accordion Item (group: Interactive , instances: 6 )
+  - Visibility | visibility | None | 
+  - Heading Text | textContent | None | 
+  - Content | richText | None | 
+  - Classes | string | None | 
+  VARIANTS: Base
+### Nav (group: Global , instances: 5 )
+  - Nav Position | variant | None | 
+  VARIANTS: Default, Overlap
+### Menu (group: Miscellaneous , instances: 10 )
+  - Variant | variant | None | 
+  VARIANTS: Mobile, Desktop
+### Nav Banner (group: Miscellaneous , instances: 5 )
+  - Visibility | visibility | None | 
+  - Text | textContent | None | 
+  - Link | link | None | 
+  VARIANTS: Base
+### Icon Search (group: SVG , instances: 11 )
+  VARIANTS: Base
+### Modal (group: Interactive , instances: 1 )
+  - Visibility | visibility | None | 
+  - Classes | string | None | 
+  - Variant | variant | None | 
+  - Show In Designer | boolean | None | If set to true, modal will be visible in designer.
+  - Modal ID | string | None | Each modal must have a unique ID. When using a modal inside 
+  - Slot | slot | None | 
+  VARIANTS: Small, Side Panel, Full Screen
+### Button Close (group: Button , instances: 4 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Text | textContent | None | This is the text screen readers will read when focused on th
+  - Link | link | None | 
+  - Classes | string | None | 
+  - Attribute 1 Name | string | None | 
+  - Attribute 1 Value | string | None | 
+  - Attribute 2 Name | string | None | 
+  - Attribute 2 Value | string | None | 
+  VARIANTS: Primary / Medium, Secondary / Medium, Primary / Large, Secondary / Large
+### Footer (group: Global , instances: 5 )
+  VARIANTS: Base
+### Tab (group: Interactive , instances: 2 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Controls Visibility | visibility | None | Show next and previous buttons
+  - Component ID | string | None | Give the component a unique ID to anchor link to it from a s
+  - Preview Content | boolean | None | Set to true to preview all tab content in designer view.
+  - Slide Tabs | boolean | None | If set to true, tab content will slide from side to side ins
+  - Autoplay Duration | string | None | Set a duration in seconds such as "4" to make the tabs autop
+  - Transition Duration | number | None | 
+  - Loop Controls | boolean | None | If true, the next button will loop instead of disabling when
+  - Pause On Hover | boolean | None | If set to true, the autoplay will pause whenever we hover ov
+  - Classes | string | None | 
+  - Slot | slot | None | 
+  - Slot | slot | None | 
+  - Slot | slot | None | 
+  VARIANTS: Base, Horizontal
+### Tab Link (group: Interactive , instances: 6 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Text | textContent | None | 
+  - Item ID | string | None | To anchor link to this item from another page, give this ite
+  - Classes | string | None | 
+  VARIANTS: Link, Button
+### Typography Plain (group: Typography , instances: 0 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Text | textContent | None | 
+  - Max Width | number | None | Set "-1" for no max width
+  - Classes | string | None | 
+  - Style | string | None | 
+  VARIANTS: Inherit, Text Small, Text Main, Text Large, H6, H5, H4, H3, H2, H1, Display
+### Form Input (group: Form , instances: 6 )
+  - Visibility | visibility | None | 
+  - Label Variant | variant | None | 
+  - Label | textContent | None | 
+  - Name | string | None | Field title for submission results
+  - Placeholder | string | None | 
+  - Required | string | None | Add a space to make the field required
+  - Value | string | None | 
+  - Type | string | None | text, email, password, tel, url, search, number, date
+  - Input Mode | string | None | Touch device keyboard type: none, text, decimal, numeric, te
+  - Auto Complete | string | None | on, off, name, given-name, family-name, email, tel, organiza
+  - Classes | string | None | 
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  VARIANTS: Base
+### Form Label Text (group: Form , instances: 19 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Text | textContent | None | Field label shown on page
+  - Classes | string | None | 
+  VARIANTS: Visible, Hidden, Bold
+### Footer Group (group: Miscellaneous , instances: 20 )
+  - Visibility | visibility | None | 
+  - Title | textContent | None | 
+  - Slot | slot | None | 
+  VARIANTS: Base
+### Footer Link (group: Miscellaneous , instances: 80 )
+  - Visibility | visibility | None | 
+  - Text | textContent | None | 
+  - Link | link | None | 
+  VARIANTS: Base
+### Visual Image (group: Visual , instances: 20 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Image | image | None | 
+  - Alt Text | altText | None | 
+  - Loading | string | None | Switch the value to "eager" when image is used at the top of
+  - Style | string | None | 
+  - Classes | string | None | 
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  VARIANTS: Wide 2 / 1, Wide 16 / 9, Wide 3 / 2, Wide 5 / 4, Square 1 / 1, Tall 4 / 5, Tall 2 / 3, Cover
+### iFrame (group: Visual , instances: 0 )
+  - Visibility | visibility | None | 
+  - Classes | string | None | 
+  - Style | string | None | 
+  - URL | string | None | 
+  - Title | string | None | 
+  VARIANTS: Base
+### Form Range (group: Form , instances: 1 )
+  - Visibility | visibility | None | 
+  - Classes | string | None | 
+  - Label Variant | variant | None | 
+  - Label | textContent | None | 
+  - Name | string | None | Field title for submission results
+  - ID | string | None | 
+  - Value | number | None | 
+  - Min | number | None | 
+  - Max | number | None | 
+  - Step | number | None | 
+  - Output Unit | textContent | None | 
+  - Required | string | None | Add a space to make the field required
+  - Attribute Name | string | None | 
+  - Attribute Value | string | None | 
+  VARIANTS: Base
+### Form Checkbox (group: Form , instances: 2 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Label | textContent | None | Label text shown on page
+  - Name | string | None | Field title for submission results
+  - Required | string | None | Add a space to make the field required
+  - Checked | string | None | Add a space to make the field checked by default
+  - Role | string | None | Switch to "listitem" if used in a list
+  - Classes | string | None | 
+  - Input Attribute Name | string | None | 
+  - Input Attribute Value | string | None | 
+  - Label Attribute Name | string | None | 
+  - Label Attribute Value | string | None | 
+  VARIANTS: Base
+### Layout (group: Wrapper , instances: 29 )
+  - Visibility | visibility | None | 
+  - Variant | variant | None | 
+  - Classes | string | None | 
+  - Column 1 Classes | string | None | 
+  - Column 2 Classes | string | None | 
+  - Slot | slot | None | Can contain headings, paragraphs, buttons, and other primary
+  - Slot | slot | None | Can contain images, videos, forms, sliders, and other second
+  VARIANTS: Stack, Stack Centered, Auto Width, Columns, Columns Reversed, Sticky Left, Breakout, Breakout Reversed, Full, Full Reversed, Contain, Contain Reversed, Card
+### Dropdown (group: Interactive , instances: 1 )
+  - Visibility | boolean | None | 
+  - Text | textContent | None | 
+  - Preview | boolean | None | If set to true, dropdown will be previewed as open in design
+  - Open On Hover In | boolean | None | 
+  - Close On Hover Out | boolean | None | 
+  - Slot | slot | None | 
+  VARIANTS: Base
