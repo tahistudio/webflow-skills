@@ -1,5 +1,15 @@
 # Webflow Marketplace Templates — requirements, rejections, creator practice, QA (Sept 2026)
 
+> **Update 27 Oct 2026.** The live Submission Guidelines and Grading Rubric changed. Current source: `sources/webflow-guidelines-and-rubric-2026-10-27.txt`. What changed against the Sept notes below:
+> - **Webflow Way Validator** is required. Paste its snippet into Site Settings → Custom Code → Head code, publish, and run it on all published pages to 100%. The submission form checks the latest run. Submit from the .webflow.io staging URL.
+> - **Paid Workspace plan** is required; Starter's page limit is too small. No Site plan needed.
+> - **Images over 150 KB block submission** (SVGs and Webflow-generated video posters exempt). The Sept note calling 150 KB "where possible" is out of date.
+> - **Slugs are fixed:** Style Guide `/style-guide`, Changelog `/changelog` (must list each version and what changed), Licenses `/licenses`, Instructions `/instructions` (only when advanced interactions, hidden components, GSAP custom code or SVG embeds apply).
+> - **noindex is optional** on Licenses and Changelog. It is no longer required on every required page.
+> - **Password page** is optional.
+> - **Rubric:** each row is Satisfactory, Good or Exceptional. Pass = Good on every row in both the design and functionality criteria. Functionality criteria are Conversion best practices, Responsive design, Site optimization and Accessibility. Satisfactory gets feedback; failing Good after two rounds may mean rejection.
+> - The Grading Rubric is referenced as the pass criteria next to the Submission Guidelines.
+
 Primary sources: Submission Guidelines (SG) https://webflow.com/templates/submission-guidelines · Grading Rubric (GR) https://webflow.com/templates/grading-rubric · Submission Checklist PDF 2025 (CL) · Submit a Template https://webflow.com/templates/submit-a-template · Become a Template Designer https://webflow.com/templates/applications · Marketplace Agreement https://webflow.com/legal/marketplace-agreement · Template Licenses https://webflow.com/templates/template-licenses · Creator Program Updates (Oct 2025) https://webflow.com/updates/template-creator-enhancements · Fulfillment links https://help.webflow.com/hc/en-us/articles/45776524336275 · GSAP vs Classic https://help.webflow.com/hc/en-us/articles/46300264646803 · Audit panel https://help.webflow.com/hc/en-us/articles/33961313088531 · Accessibility checklist https://webflow.com/accessibility/checklist · Logic/User Accounts deprecation https://webflow.com/updates/deprecating-logic-and-user-accounts
 
 ## 1. Official requirements

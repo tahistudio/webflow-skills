@@ -1,197 +1,237 @@
 # Marketplace submission checklist
 
-Every item Webflow's Submission Requirements and Quality Rubric make checkable, grouped the way Webflow groups them. Check type: **API** (structural, via the Webflow MCP or Data API), **VISUAL** (browser or Preview), **MANUAL** (Designer or site settings, a person must confirm). Report every item.
+Source: Webflow Submission Guidelines and Grading Rubric, checked 27 Oct 2026 (snapshot in `_research/sources/webflow-guidelines-and-rubric-2026-10-27.txt`).
+
+**Source tag**
+- **G**: Submission Guidelines, a Webflow requirement.
+- **R**: Grading Rubric, scored Satisfactory, Good or Exceptional.
+- **H**: house rule, our QA on top of Webflow's rules. Not on Webflow's pages.
+
+**Check type**
+- **API**: structural, via the Webflow MCP or Data API.
+- **VISUAL**: browser or Preview.
+- **MANUAL**: Designer or site settings; a person must confirm.
+
+Report every item. Never leave one blank.
 
 ## 1. Required pages
 
-| # | Requirement | Check |
-|---|---|---|
-| 1.1 | Page names in Title Case; slug matches name | API |
-| 1.2 | Style Guide page exists, shows all tags: headings, paragraphs, links, buttons, lists, blockquote, figure, forms | API + VISUAL |
-| 1.3 | Instructions / Start Here page exists if complex interactions, hidden components or SVG embeds are used; populated | API + VISUAL |
-| 1.4 | Licenses page at slug exactly `/licenses` at site root | API |
-| 1.5 | Licenses opens with: "All graphical assets in this template are licensed for personal and commercial use. If you'd like to use a specific asset, please check the license below." | VISUAL |
-| 1.6 | Licenses lists every custom font with licence link; every image, icon, asset with source or licence link | VISUAL |
-| 1.7 | AI-generated images identified with tool named and terms linked | VISUAL |
-| 1.8 | Footer on every page links visibly to Licenses | API |
-| 1.9 | Changelog page exists with a first entry | API + VISUAL |
-| 1.10 | `<meta name="robots" content="noindex">` in head code of Style Guide, Start Here, Licenses, Changelog (and any other utility page) | API |
-| 1.11 | Branded 404 with full navigation and CTAs; branded password page | VISUAL |
-| 1.12 | Real homepage at `/`; no showcase scaffolding at root | API + VISUAL |
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 1.1 | Page names Title Case; each name matches its slug | API | G |
+| 1.2 | Style Guide at `/style-guide`; shows every tag: headings, paragraphs, links, buttons, lists, blockquote, figure, forms | API + VISUAL | G |
+| 1.3 | Instructions at `/instructions` **only if** advanced or complex interactions, hidden components, GSAP custom code or SVG embeds are used. Explains how to access and edit them; includes GSAP docs if GSAP is used. If none apply, mark PASS as not applicable | API + VISUAL | G |
+| 1.4 | Licenses at `/licenses` | API | G |
+| 1.5 | Licenses opens with: "All graphical assets in this template are licensed for personal and commercial use. If you'd like to use a specific asset, please check the license below." | VISUAL | G |
+| 1.6 | Licenses lists every custom font with licence link; every image, icon and asset with source or licence link | VISUAL | G |
+| 1.7 | AI-generated images identified; tool or source named; terms linked, even when no attribution is required | VISUAL | G |
+| 1.8 | Footer on every page visibly links to Licenses | API | G |
+| 1.9 | Changelog at `/changelog` lists each template version and what changed; V1.0 first | API + VISUAL | G |
+| 1.10 | `<meta name="robots" content="noindex">` on Licenses and Changelog. **Optional** per Webflow; we recommend it. Missing is a note, not a fail | API | G (optional) + H |
+| 1.11 | Branded 404 with full navigation and CTAs | VISUAL | G |
+| 1.12 | Password page is optional. If present, styled to match the template | VISUAL | G |
+| 1.13 | Style Guide, Licenses and Changelog linked from the footer or a utility navigation | API + VISUAL | G |
+| 1.14 | Real homepage at `/`; no showcase scaffolding at the root | API + VISUAL | H |
 
 ## 2. Design system
 
-| # | Requirement | Check |
-|---|---|---|
-| 2.1 | Navbar, Footer, CTA are components on every page | API |
-| 2.2 | Component and variant names Title Case, concise, human-readable | API |
-| 2.3 | Props, slots or variants used instead of duplicated structures; no slider inside slider or tabs inside tabs | API + VISUAL |
-| 2.4 | No unused components (instance count 0) | API |
-| 2.5 | Prop names spelled correctly, tooltips present | API |
-| 2.6 | No lorem ipsum in headings, paragraphs or CMS; copy unique and relevant to the niche; spelling and grammar correct | API + VISUAL |
-| 2.7 | Line heights percentage or unitless; no text crashing at any breakpoint | API + VISUAL |
-| 2.8 | Primary font on Body; secondary fonts on tags or classes | API |
-| 2.9 | Variables for colours, typography, spacing, radius, shadows; Title Case with spaces; grouped; ramps ordered | API |
-| 2.10 | Variable modes for Tablet, Mobile Landscape, Mobile Portrait | API |
-| 2.11 | Tag styles on H1–H6, All Paragraphs, Unordered Lists, Ordered Lists, Blockquotes, Figures, Figure Captions, Links, bound to variables | API |
-| 2.12 | Stacked combo classes at most 3–4 per element | API |
-| 2.13 | No unused styles; no auto-named classes (Div Block N, Heading 2, Section 3) | API + MANUAL |
-| 2.14 | Hover, pressed and focus states styled on links, buttons, inputs | API + VISUAL |
-| 2.15 | One class naming format across the template (Client-First counts as one); combo names match base format | API |
-| 2.16 | No redundant styles | VISUAL |
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 2.1 | Navbar, Footer and CTA are components on every page | API | G |
+| 2.2 | Component and variant names Title Case; concise, consistent, human-readable | API | G |
+| 2.3 | Props, slots or variants instead of duplicated structures; components modular; no slider inside a slider, no tabs inside tabs | API + VISUAL | G |
+| 2.4 | No unused components (instance count 0) | API | H |
+| 2.5 | Prop names spelled correctly; tooltips present | API | H |
+| 2.6 | Copy unique and relevant to the niche; no lorem ipsum in headings, paragraphs or CMS; correct spelling and grammar | API + VISUAL | G |
+| 2.7 | Line heights percentage or unitless; no text crashing at any breakpoint | API + VISUAL | G |
+| 2.8 | Primary font on the Body element; secondary fonts on individual tags and classes | API | G |
+| 2.9 | Variables for colours (primary, secondary, background), typography (families, sizes, weights), spacing, radius and shadows; Title Case with spaces; purposeful groups; ramps ordered light-to-dark or small-to-large; no one-off values turned into variables | API | G |
+| 2.10 | Variable modes for tablet, mobile landscape and mobile portrait | API | G |
+| 2.11 | Tag styles bound to variables: All Headings H1 to H6, All Paragraphs, All Unordered Lists, All Ordered Lists, All Blockquotes, All Figures, All Figure Captions, All Links | API | G |
+| 2.12 | Stacked combo classes at most 3 to 4 per element | API | G |
+| 2.13 | Unused styles and classes removed; no auto-named classes (Div Block N, Heading 2, Section 3) | API + MANUAL | G + H |
+| 2.14 | Hover, pressed and focus states styled on links, buttons and inputs | API + VISUAL | G |
+| 2.15 | One class naming format across the template: Default (`Hero Container Element`), snake_case, PascalCase, camelCase, kebab-case or BEM. Premade systems such as Client First, Mast or Knockout are exempt. Combo names match the base format. Combo classes at most 3 levels: `section testimonials dark` passes, `section testimonials dark customers horizontal` fails | API | G |
+| 2.16 | No redundant styles (example: `text-align: left` on a paragraph inside a left-aligned container) | API + VISUAL | G |
+| 2.17 | Consistent grids and spacing taken from the style guide | VISUAL | G |
 
 ## 3. Interactions and GSAP
 
-| # | Requirement | Check |
-|---|---|---|
-| 3.1 | Native GSAP interactions only; no Classic (IX2) interactions | API (IX3 list) + VISUAL (`Webflow.require('ix2').store.getState().ixData` empty on published page) |
-| 3.2 | All links and buttons have hover states | VISUAL |
-| 3.3 | Interaction names sentence case and descriptive | API |
-| 3.4 | Hover and press use simple transitions on transform and opacity | API |
-| 3.5 | Background videos have pause or skip controls; no autoplay without controls | VISUAL |
-| 3.6 | No unused interactions | API |
-| 3.7 | Every breakpoint spot-checked: no overflow, layouts adapt, default sizes hold | VISUAL |
-| 3.8 | Images have width and height or aspect-ratio boxes; nothing injected late | API + VISUAL |
-| 3.9 | Only transform and opacity animated; no top, left, width, height, filter, shadow, blend | API |
-| 3.10 | Durations 150–800 ms | API |
-| 3.11 | Initial Appearance used for hidden-then-shown elements rather than display none or opacity 0 hacks | MANUAL |
-| 3.12 | Transitions on specific properties, never "all"; consistent timings; every property that changes on hover is transitioned | API |
-| 3.13 | ScrollTrigger markers off | API |
-| 3.14 | If GSAP custom code is present (we avoid it): Instructions page has "How to Edit GSAP Animations" with element map, key variables, removal steps | VISUAL |
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 3.1 | Native interactions only; no Classic (IX2) interactions | API (IX3 list) + VISUAL (`Webflow.require('ix2').store.getState().ixData` empty on the published page) | G |
+| 3.2 | Links and buttons have hover states | VISUAL | G |
+| 3.3 | Interaction names sentence case and descriptive ("Slide nav down on scroll", not "Show nav") | API | G |
+| 3.4 | Hover and press use simple transitions on transform and opacity; complex multi-element interactions only for advanced use | API | G |
+| 3.5 | Background videos have pause or skip controls; no autoplay without controls | VISUAL | G |
+| 3.6 | No unused interactions | API | G |
+| 3.7 | Every breakpoint spot-checked: no overflow, layouts adapt, default font sizes hold | VISUAL | G |
+| 3.8 | Images have explicit width and height or aspect-ratio boxes; nothing injected late | API + VISUAL | G |
+| 3.9 | Animate only GPU-friendly properties (transform, opacity); never top, left, width, height, filters, shadows or blend modes; minimise the animated area | API | G |
+| 3.10 | Durations 150 to 800 ms | API | G |
+| 3.11 | Initial Appearance controls visibility, not `display: none`, `visibility: hidden` or `opacity: 0` unless necessary | MANUAL | G |
+| 3.12 | Transitions on specific properties, never "All"; consistent timing across elements (input focus and button hover match); every property that changes on hover is transitioned | API | G |
+| 3.13 | ScrollTrigger markers off | API | H |
+| 3.14 | If GSAP custom code is present: Instructions has "How to Edit GSAP Animations" with an element map, customising key variables (duration, delay, ease, ScrollTrigger), removing animations step by step, and fenced code. Not applicable if none (we do not use GSAP custom code) | VISUAL | G |
 
 ## 4. SEO
 
-| # | Requirement | Check |
-|---|---|---|
-| 4.1 | Home title `{Template Name} - Webflow HTML website template` or `… Webflow Ecommerce website template` | API |
-| 4.2 | Footer has "Powered by Webflow" linking to webflow.com | API |
-| 4.3 | Every page incl. CMS templates: unique title < 60 chars | API |
-| 4.4 | Every page: description 150–160 chars | API |
-| 4.5 | Every page: Open Graph title, description, image JPEG or PNG ≥ 1200×630 | API |
-| 4.6 | CMS template pages bind title, description, OG to fields | MANUAL (API shows static vs bound) |
-| 4.7 | One H1 per page (more only inside section or article); H2–H6 in order, no skipped levels | API |
-| 4.8 | Concise descriptive slugs | API |
-| 4.9 | PageSpeed SEO ≥ 70 (aim 90+) on main pages | VISUAL |
-| 4.10 | No JSON-LD schema on any page | API |
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 4.1 | Home title exactly `{Template Name} - Webflow HTML website template` (ecommerce: `{Template Name} - Webflow Ecommerce website template`) | API | G |
+| 4.2 | Footer has "Powered by Webflow" linking to webflow.com | API + VISUAL | G |
+| 4.3 | Every page, including CMS templates: unique title under 60 characters | API | G |
+| 4.4 | Every page: description 150 to 160 characters | API | G |
+| 4.5 | Every page: Open Graph title, description and image; image JPEG or PNG, at least 1200×630 at 1.91:1; no WebP | API | G |
+| 4.6 | CMS template pages bind title, description and Open Graph to fields | MANUAL (API shows static vs bound) | G |
+| 4.7 | One H1 per page (more only inside a `section` or `article`); H2 to H6 in order, no skipped levels | API | G |
+| 4.8 | Concise, descriptive slugs | API | G |
+| 4.9 | PageSpeed SEO on main pages: Good 70 to 90, Exceptional 90 to 100 | VISUAL | R |
+| 4.10 | No JSON-LD schema on any page | API | H |
 
 ## 5. Accessibility
 
-| # | Requirement | Check |
-|---|---|---|
-| 5.1 | Core Web Vitals pass on desktop and mobile for main pages | VISUAL |
-| 5.2 | Heading order logical; Audit Panel clean of skipped headings and missing alt | MANUAL |
-| 5.3 | WCAG contrast for text, borders, icons, overlays, and for focus, hover, active states | VISUAL |
-| 5.4 | Semantic tags; ARIA where needed; unique descriptive link labels | API + VISUAL |
-| 5.5 | Alt text on informative images; decorative images marked decorative | API |
-| 5.6 | No autoplaying media; keyboard navigable; visible focus | VISUAL |
-| 5.7 | PageSpeed Accessibility ≥ 70 (aim 90+) | VISUAL |
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 5.1 | Core Web Vitals pass on desktop and mobile for main pages | VISUAL | G |
+| 5.2 | Logical heading order; Audit Panel clean of skipped levels and missing alt | MANUAL | G |
+| 5.3 | WCAG contrast for text, borders, icons and overlays, and for focus, hover and active states | VISUAL | G |
+| 5.4 | Semantic HTML; ARIA roles and labels where needed; unique, descriptive link labels; content organised for screen readers and keyboard navigation | API + VISUAL | G |
+| 5.5 | Alt text on important images; decorative images marked decorative in the media library | API | G |
+| 5.6 | No autoplaying media; keyboard navigable; visible focus | VISUAL | G |
+| 5.7 | Follow Webflow's accessibility checklist | MANUAL | G |
+| 5.8 | PageSpeed Accessibility: Good 70 to 90, Exceptional 90 to 100 | VISUAL | R |
+| 5.9 | Inclusive and plain language | VISUAL | G |
 
 ## 6. Images and assets
 
-| # | Requirement | Check |
-|---|---|---|
-| 6.1 | Images ≤ 150 KB where possible; none over 4 MB; site under 10 MB | API + MANUAL (site weight) |
-| 6.2 | Modern formats (WebP, AVIF, PNG, JPEG); CMS images compressed natively | API |
-| 6.3 | Lazy load below the fold; eager only above; responsive images enabled | API + MANUAL |
-| 6.4 | Videos compressed; no autoplay without controls | VISUAL |
-| 6.5 | Assets resale-safe or CC0 with licences linked; no premium stock; no trademarked logos (social icons excepted) | VISUAL |
-| 6.6 | High-quality, current imagery; no cutouts, low-res or generic stock | VISUAL |
-| 6.7 | Nav logo is an image file named for the template; distinct logomark and wordmark | API + VISUAL |
-| 6.8 | Favicon and webclip custom, matching the template (not the agency's) | MANUAL |
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 6.1 | Every image 150 KB or less. Larger images block submission. SVGs and Webflow-generated video posters are exempt. Check the original file size, not a generated variant | API | G |
+| 6.2 | No file over 4 MB | API | G |
+| 6.3 | Site total under 10 MB (sum of original asset sizes, plus CMS media) | API + MANUAL | G |
+| 6.4 | Modern formats (WebP, AVIF, PNG, JPEG); CMS images compressed with Webflow-native tools to AVIF or WebP | API | G |
+| 6.5 | Lazy-load below the fold; eager only for above-the-fold essentials; responsive images enabled in Project Settings | API + MANUAL | G |
+| 6.6 | Videos compressed; no autoplay without controls | VISUAL | G |
+| 6.7 | Assets free for resale or CC0 (sources such as Stock Up, Pexels, Unsplash); licences linked; no premium or trademarked graphics; no brand logos (social media icons excepted) | VISUAL | G |
+| 6.8 | High-quality, current imagery; no cutouts, low-resolution files or generic stock | VISUAL | G |
+| 6.9 | Nav logo is an image file that matches the template name; distinctive logomark and clean wordmark | API + VISUAL | G |
+| 6.10 | Favicon and webclip custom, matching the template's theme, displaying properly | MANUAL | G |
 
 ## 7. Layout and content
 
-| # | Requirement | Check |
-|---|---|---|
-| 7.1 | No empty links (`#` or blank) | API |
-| 7.2 | In repeating grids, the main image is a link | API |
-| 7.3 | Consistent spacing; nothing crammed | VISUAL |
-| 7.4 | Sections composed from components; labelled structure | API |
-| 7.5 | min-height, never height, on sections and heroes | API |
-| 7.6 | Content fits the category; inclusive; no obscene, violent, political or religious material | VISUAL |
-| 7.7 | Fluid layouts; rem type; consistent units | API |
-| 7.8 | All components function at every viewport (tabs stack on mobile) | VISUAL |
-| 7.9 | Responsive spacing system | API |
-| 7.10 | Rich text styled via tag selectors; unique rich text via a class on the Rich Text element | API |
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 7.1 | No empty links; every link and button goes somewhere | API | G |
+| 7.2 | In repeating grids, the main image is a clickable link | API | G |
+| 7.3 | Consistent spacing; nothing crammed or cluttered | VISUAL | G |
+| 7.4 | Sections, containers or labelled divs; sections composed from reusable components | API | G |
+| 7.5 | `min-height`, not `height`, on sections and heroes | API | G |
+| 7.6 | Content aligned with the template's category; appropriate for a general, global audience; no obscene language, nudity, violent imagery, drug references, political or religious bias or culturally insensitive material | VISUAL | G |
+| 7.7 | Fluid layouts optimised for mobile (margins, padding, type sizes, button sizes) | VISUAL | G |
+| 7.8 | Fluid units; REM for typography; consistent unit type in similar contexts | API | G |
+| 7.9 | Responsive spacing that adapts (for example 60px top and bottom on desktop, 20px on mobile) | API | G |
+| 7.10 | All elements and components work at every viewport (tabs stack on mobile) | VISUAL | G |
+| 7.11 | Rich Text: every child tag styled through tag selectors; unique styling through a class on the Rich Text element | API | G |
+| 7.12 | No more than two responsive bugs across screen sizes (Good); none (Exceptional) | VISUAL | R |
 
 ## 8. Forms and conversion
 
-| # | Requirement | Check |
-|---|---|---|
-| 8.1 | Custom success and error messages styled | VISUAL |
-| 8.2 | Custom input focus states | VISUAL |
-| 8.3 | Legible text and placeholders | VISUAL |
-| 8.4 | Meaningful form and field names (no "Email Form", no "Field 2") | API |
-| 8.5 | Labels on every field; correct field types | API |
-| 8.6 | Clear navigation; CTAs in nav and hero and repeated; social proof and objection handling present | VISUAL |
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 8.1 | Success and error messages customised to match the site | VISUAL | G |
+| 8.2 | Custom input focus states | VISUAL | G |
+| 8.3 | Form text and placeholders legible | VISUAL | G |
+| 8.4 | Meaningful names for forms and fields (they appear in notifications and reports); no "Email Form", no "Field 2" | API | G |
+| 8.5 | Every field labelled; correct field types (an email field is not text) | API | G |
+| 8.6 | Conversion design: clear navigation; CTAs in high-traffic places (nav, hero, repeated); leading headlines; social proof; objection handling; ease of use; results | VISUAL | G + R |
 
 ## 9. Custom code and site settings
 
-| # | Requirement | Check |
-|---|---|---|
-| 9.1 | No custom code in site settings, page settings or embeds, except font-smoothing CSS, noindex on utility pages, and SVG embeds (with Instructions page) | API |
-| 9.2 | No registered scripts; no attributes libraries | API |
-| 9.3 | Favicon and webclip set | MANUAL |
-| 9.4 | Responsive images enabled | MANUAL |
-| 9.5 | Form notifications empty | MANUAL |
-| 9.6 | Google or OFL fonts only; no uploaded commercial fonts | API |
-| 9.7 | Integrations default; no API tokens | MANUAL |
-| 9.8 | Site weight under 10 MB | MANUAL |
-| 9.9 | Minify CSS on | MANUAL |
-| 9.10 | Maps without API key | MANUAL |
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 9.1 | Custom code only in the allowed places: Webflow Way Validator snippet (required), font smoothing, optional noindex on Licenses and Changelog, SVG embeds (with Instructions), documented GSAP custom code. Nothing else in site settings, page settings or embeds | API | G |
+| 9.2 | Webflow Way Validator snippet in Site Settings → Custom Code → Head code; its latest run passes 100% on all published pages | MANUAL (run is visible only in the Validator) | G |
+| 9.3 | No registered scripts; no third-party attribute libraries | API | H |
+| 9.4 | Favicon and webclip set | MANUAL | G |
+| 9.5 | Responsive images enabled in Project Settings | MANUAL | G |
+| 9.6 | Form notifications settings empty | MANUAL | G |
+| 9.7 | Only Google or free OFL fonts; no Typekit or custom fonts | API | G |
+| 9.8 | Integrations default; no API token; no third-party integrations | MANUAL | G |
+| 9.9 | Site total weight under 10 MB | API + MANUAL | G |
+| 9.10 | Minify CSS on | MANUAL | G |
+| 9.11 | Maps without an API key | MANUAL | G |
+| 9.12 | Paid Workspace plan; submitted from the .webflow.io staging URL; no Site plan needed | MANUAL | G |
 
 ## 10. CMS
 
-| # | Requirement | Check |
-|---|---|---|
-| 10.1 | Collection pages for repeatable content; dynamic SEO on each | API |
-| 10.2 | Collection names Title Case with correct singular and plural | API |
-| 10.3 | Slugs short and descriptive | API |
-| 10.4 | Field names sentence case with help text | API |
-| 10.5 | 3 to 7 items per collection with realistic content | API |
-| 10.6 | All dynamic pages designed and populated | VISUAL |
-| 10.7 | Reference fields for relationships; option fields for fixed values; required flags; conditional visibility for optional fields | API |
-| 10.8 | CMS media compressed under 4 MB | API |
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 10.1 | Collection pages for repeatable or relational content; dynamic SEO on each CMS page | API | G |
+| 10.2 | Collection names Title Case with correct singular and plural; "This is a Collection of {plural}" and "Create a new {singular}" both read naturally | API | G |
+| 10.3 | Collection slugs short, singular and descriptive (for example `/project/...`) | API | G |
+| 10.4 | Field names sentence case; each field has a short description and help text | API | G |
+| 10.5 | 3 to 7 items per collection, realistic dummy content | API | G |
+| 10.6 | Every dynamic page has content and design that fit the category | VISUAL | G |
+| 10.7 | Reference or multi-reference fields for relations; option fields for fixed values; required flags on essential fields; conditional visibility on optional fields; pagination for large lists. Field types set correctly (they cannot change later) | API | G |
+| 10.8 | CMS media compressed under 4 MB, using Webflow-native AVIF or WebP compression | API | G |
 
 ## 11. Ecommerce (when present)
 
-| # | Requirement | Check |
-|---|---|---|
-| 11.1 | No business address, currency, shipping, tax, payment or hosting configured; setup guide unchecked | MANUAL |
-| 11.2 | No preloaders on product, category, checkout, order confirmation | VISUAL |
-| 11.3 | Cart visible on every page with items, subtotal, checkout; PayPal checkout offered | VISUAL |
-| 11.4 | Checkout page: form, order items, summary; PayPal checkout page styled to match | VISUAL |
-| 11.5 | Order confirmation element present | VISUAL |
-| 11.6 | Product template: add to cart, description, image; category template: categories list, product links | API + VISUAL |
-| 11.7 | Enough dummy products and categories, consistent casing, some with variants | API |
+If the template has no ecommerce, mark each item MANUAL with "not applicable; confirm no ecommerce".
+
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 11.1 | No business address; no currency, shipping, tax, payment or hosting configured; Setup Guide steps (business address, shipping method, tax settings, payment provider, hosting, checkout) unchecked | MANUAL | G |
+| 11.2 | No preloaders on the products template, categories template, checkout or order confirmation | VISUAL | G |
+| 11.3 | Cart in the Navbar or visible on every page, with items, subtotal and checkout buttons; functional; regular checkout button and PayPal checkout offered (Webpayments optional) | VISUAL | G |
+| 11.4 | Checkout page: checkout form, order items, order summary. PayPal checkout page: PayPal form, order items, order summary. Styling consistent | VISUAL | G |
+| 11.5 | Order confirmation page includes the order confirmation element | VISUAL | G |
+| 11.6 | Product template: Add to Cart element, description, image. Category template: product categories list and links to product pages | API + VISUAL | G |
+| 11.7 | Products and categories: consistent casing, correct spelling, sensible names including custom fields; enough dummy products and categories; some with variants where it makes sense | API | G |
 
 ## 12. Listing
 
-| # | Requirement | Check |
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 12.1 | Name 1 to 2 words (preferably 1); unique; not similar to an existing template; reflects the theme; no keyword stuffing; no symbols, slang or odd capitals; no brand, author or generic names such as "Template 01" | MANUAL | G |
+| 12.2 | Up to two categories that accurately represent the template | MANUAL | G |
+| 12.3 | Page count declared: one page, multi page, or multi layout (at least three layout variations across three static pages) | MANUAL | G |
+| 12.4 | Main thumbnail: homepage or a key page; simple and clear; no complex multi-page views, angled or tiled mockups | MANUAL | G |
+| 12.5 | Hover thumbnail: a different section or page; same colours, style and layout tone as the main thumbnail | MANUAL | G |
+| 12.6 | Thumbnails have no badges, feature icons, external logos or tool icons, template or category names, CTAs or sales text, and no excessive text | MANUAL | G |
+| 12.7 | Short and long descriptions written and proofread | MANUAL | H |
+
+## R. Grading rubric
+
+A template passes only at **Good on every row** in both sets of criteria. Satisfactory is eligible for feedback and revision; failing to reach Good after two rounds of feedback may lead to rejection. Each row is scored Satisfactory, Good or Exceptional.
+
+### Design criteria
+
+| Row | Good means | Exceptional means |
 |---|---|---|
-| 12.1 | Name 1–2 words, unique, relevant, no keywords, no symbols, no author or brand name | MANUAL |
-| 12.2 | Up to two accurate categories | MANUAL |
-| 12.3 | Main thumbnail: homepage or key page, flat, simple; hover thumbnail: different section, consistent style; no badges, tool logos, category names, CTAs, heavy text | MANUAL |
-| 12.4 | Short and long descriptions written and proofread | MANUAL |
-| 12.5 | Page count type declared correctly (one page, multi page, multi layout = 3 layouts across 3 static pages) | MANUAL |
+| Overall user experience | Better than average; aesthetically draws the user in; free of elements that confuse, strain or distract; typography and legibility meet the guidelines; on trend | Purely delightful; a wow factor or two without confusion; mastery of visual design; sets trends |
+| Graphic design | High-quality, relevant, cohesive branding; adds aesthetic and informational value; room for one or two visual design principles | Stunning, innovative visuals; graphics add both aesthetic and informational value; mastery of visual design principles |
+| Typography | Legible; good hierarchy; meets the submission guidelines | Hierarchy implemented perfectly; meets all guidelines |
+| Interaction design | Interactions help direct the user and reduce cognitive load | Interactions are brand attributes with personality and a pleasant cadence, and still reduce cognitive load |
+| Layout and structure: hierarchy | Clear information architecture; content aligns with the category; some placement could improve hierarchy | Fully processing the site feels effortless; visual hierarchy is impeccable |
+| Layout and structure: layout design quality | Layout requirements from the guidelines met; good variety from page to page; consistent spacing; not crammed | Everything functional and as expected; mastery of Gestalt principles |
+| Responsive design | No more than two bugs across screen sizes | No bugs or hierarchy issues across screen sizes |
 
-## Quality rubric (must reach "Good" on every row)
+### Functionality criteria
 
-| Row | Good means |
-|---|---|
-| Overall UX | better than average, on trend, nothing confusing or straining |
-| Graphic design | high quality, relevant, cohesive branding, adds aesthetic and informational value |
-| Typography | legible, good hierarchy, meets guidelines |
-| Interaction design | interactions direct the user and reduce cognitive load |
-| Hierarchy | information easy to process; clear intention in information architecture |
-| Layout | guideline requirements met; variety page to page; consistent spacing; not crammed |
-| Responsive | no more than 2 bugs across screen sizes |
-| Conversion | CTAs ubiquitous and obvious in nav and hero; easy to convert |
-| Site optimisation | PageSpeed SEO 70–90, Performance 51–70, Best Practices 51–70 |
-| Accessibility | PageSpeed Accessibility 70–90 |
+| Row | Good means | Exceptional means |
+|---|---|---|
+| Conversion best practices | Action items (CTAs, carts, form fills) are easy to find with minimal effort; some room to improve the journey | Action items are ubiquitous, placed in high-traffic spots such as the nav or hero, and repeated; persuasion built in (credibility, objection handling, social proof, ease of use, results) |
+| Responsive design | No more than two bugs across screen sizes | No bugs or hierarchy issues across screen sizes |
+| Site optimisation (PageSpeed) | SEO 70 to 90; Performance 51 to 70; Best practices 51 to 70 | SEO 90 to 100; Performance 70 to 90; Best practices 70 to 90 |
+| Accessibility (PageSpeed) | Accessibility 70 to 90; follows Webflow's accessibility checklist | Accessibility 90 to 100; high legibility; passing contrast; unique, meaningful link and button names; near-total adherence to the checklist |
 
-Exceptional is SEO and Accessibility 90+, Performance and Best Practices 70–90, zero responsive bugs.
+Satisfactory thresholds for PageSpeed are below these: SEO 51 to 70, Performance 51 to 70, Best practices 51 to 70, and Accessibility 51 to 70.
 
 ## Process facts
 
-Review takes 3 to 5 days. Low quality is rejected with feedback. High quality with requirement issues gets one chance to fix everything, and the feedback may not list every problem, so re-check the whole template before reopening. Newcomers submit one template at a time. Minor updates to a published template are made directly on the source site; major design changes are not accepted post-publish; track changes in the Changelog.
+- Review typically takes 3 to 5 days. Low-quality submissions are rejected with feedback [G].
+- High-quality submissions with requirement issues get feedback and one opportunity to fix everything. Feedback does not always list every problem, so re-check the whole template before reopening [G].
+- Newcomers submit one template at a time [G].
+- Minor updates to a published template are made on the source site; major design updates are not accepted after publish; track changes in the Changelog [H, from the research notes (Creator Program Updates, Oct 2025); not on the 27 Oct pages].
