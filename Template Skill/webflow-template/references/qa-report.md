@@ -6,6 +6,7 @@ Use this exact structure for every template QA pass. It mirrors Webflow's guidel
 # {Template Name} — Marketplace QA
 Site: {name}  ·  Pages: {n}  ·  Components: {n}  ·  Styles: {n}  ·  CMS collections: {n}  ·  Assets: {n} ({MB})
 Published: {date or "stale — last publish before latest edits"}
+Webflow Way Validator: {latest run % on all published pages, or "not run"}  ·  Workspace plan: {paid / Starter}
 Verdict: WOULD PASS / WOULD NOT PASS  ·  Blocking items: {n}  ·  Fix-list items: {n}
 
 ## Tier 1 — near-certain rejection
@@ -22,7 +23,7 @@ Verdict: WOULD PASS / WOULD NOT PASS  ·  Blocking items: {n}  ·  Fix-list item
 ### 1 Required pages
 | # | Item | Result | Evidence |
 | 1.1 | Title Case names, slug = name | PASS | 20/20 |
-| 1.4 | Licenses at /licenses | FAIL | publishes at /template-pages/licenses |
+| 1.4 | Licenses at /licenses | FAIL | publishes at /licensing |
 …
 ### 2 Design system … through 12 Listing
 
@@ -54,7 +55,8 @@ Rules for writing it:
 
 - Every checklist item gets one of PASS, FAIL, NEEDS VISUAL, MANUAL. Never blank.
 - Evidence is concrete: page names, element or class names, counts, measured values (a description length, a file size, an interaction id).
-- Tiers are ordered by how Webflow treats them: Tier 1 is a listed requirement breached (custom code, licences, required pages, SEO structure, CMS counts, ecommerce address, placeholder content at the root); Tier 2 is a requirement partly met or a rubric row at risk (responsive bugs, hover states, naming, copy defects); Tier 3 is polish (typos in prop names, minor spacing).
+- Tiers are ordered by how Webflow treats them. Tier 1 is a listed requirement breached: custom code outside the allowed exceptions, a Webflow Way Validator snippet missing or not at 100%, a required slug wrong (for example /licensing instead of /licenses), an image over 150 KB (blocked at submission), no paid Workspace plan, ecommerce address, CMS counts outside 3 to 7, placeholder content at the root. Tier 2 is a requirement partly met or a rubric row at risk: responsive bugs, hover states, naming, copy defects, a PageSpeed score below Good. Tier 3 is polish: typos in prop names, minor spacing, and a missing noindex on Licenses or Changelog (optional under the guidelines).
+- Rubric estimate uses the Grading Rubric rows and levels: Satisfactory, Good or Exceptional. Design criteria: Overall user experience, Graphic design, Typography, Interaction design, Layout and structure (hierarchy and layout design quality), Responsive design. Functionality criteria: Conversion best practices, Responsive design, Site optimization, Accessibility. A template passes only at Good on every row.
 - Copy defects count: typos, mismatched names or roles across pages, duplicated bios, mixed spelling conventions, keyword-stuffed headings, any lorem ipsum.
 - Rubric estimate covers every row, with "cannot assess without rendering" where that is true.
 - After fixes, re-run and append a second results block rather than editing the first, so the delta is visible.

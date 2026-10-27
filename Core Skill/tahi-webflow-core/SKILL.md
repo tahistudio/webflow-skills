@@ -130,7 +130,7 @@ Make something a component when it appears more than once, or when it must be ed
 - Code for a component that appears once per page (an FAQ block): inside that component.
 - Code for a component that appears many times per page (buttons): the site-wide Global Styles component.
 - Site-level code is reserved for tracking and consent.
-- Templates for the Webflow Marketplace carry no custom code at all except the standard font-smoothing snippet. The template skill governs that.
+- Templates for the Webflow Marketplace carry no custom code except what Webflow allows: the font-smoothing snippet, the Webflow Way Validator head snippet (required for submission), and the other documented exceptions. The template skill governs that.
 
 ### Native elements that need a person
 

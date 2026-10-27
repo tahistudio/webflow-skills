@@ -1,3 +1,4 @@
+SUPERSEDED on 27 Oct 2026 by webflow-guidelines-and-rubric-2026-10-27.txt. This older copy predates the Webflow Way Validator, the 150 KB blocking rule, the /style-guide and /instructions slugs, and the change that makes noindex optional. Kept for history only.
  - Submission Guidelines | Webflow - - - - - - - - - - 
  - 
  Get 50% off on all templates until Dec 3, 11:59pm PT! Code: 1128CWWFTS123 
