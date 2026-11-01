@@ -1,6 +1,6 @@
 ---
 name: webflow-template
-description: "Build, finish and QA Webflow Marketplace templates so they pass Webflow's submission requirements and quality rubric on the first review: required pages, licences, design system and naming, native GSAP interactions, SEO, accessibility, assets, CMS and ecommerce rules, the no-custom-code rule, copy quality, listing assets, and a pass/fail report with a fix-list. Use whenever the user mentions a Webflow template, the Marketplace, template submission, template QA, a style guide or licenses page for a template, a free cloneable, or asks whether a site is 'submittable'. Also use to develop a new template from a Figma file. Read tahi-webflow-core and client-first-webflow first; this skill adds the Marketplace rules."
+description: "Build, finish and QA Webflow Marketplace templates so they pass Webflow's submission requirements and quality rubric on the first review: required pages, licences, design system and naming, native GSAP interactions, SEO, accessibility, assets, CMS and ecommerce rules, the no-custom-code rule, copy quality, listing assets, and a pass/fail report with a fix-list. Use whenever the user mentions a Webflow template, the Marketplace, template submission, template QA, a style guide or licenses page for a template, a free cloneable, or asks whether a site is 'submittable'. Also use to develop a new template from a Figma file or from the Client-First V3 starter, and to adapt Client-First V3 (Global / Styles embeds, lowercase variables, Template components, launch checklist) to Marketplace rules. Read tahi-webflow-core and client-first-webflow first; this skill adds the Marketplace rules."
 ---
 
 # Webflow Marketplace templates
@@ -30,6 +30,20 @@ These alone get a template rejected. Check them first and last.
 11. **Site settings**: responsive images on, CSS minified, form notifications empty, integrations default, no API tokens, Google or OFL fonts only, no Maps key.
 12. **Ecommerce templates**: never add a business address or any store setting; setup guide stays unchecked; cart, product, category, checkout, PayPal checkout and order confirmation pages styled; no preloaders on those pages.
 
+## Client-First V3 on a template
+
+Templates are built in Client-First V3 (structure, naming, variables, components, template components). Five V3 defaults clash with the Marketplace and are changed on every template:
+
+| V3 default | On a template |
+|---|---|
+| `Global / Styles` with `global-styles_default` and `global-styles_custom` embeds | Embeds count as custom code. Move what can be native into native styles and variables (focus states via the Focused state, selection and rich text margins via tag and class styles, text clarity via the allowed font-smoothing CSS in site head). Then delete the embeds and the component (an empty, unused component fails the unused-components check). Note anything lost on the Start Here page. |
+| Variable names lowercase with dashes (`primary`, `background-hover`, `h2-font-size`) | Title Case with spaces (`Primary`, `Background Hover`, `H2 Font Size`). Groups and collections keep their V3 structure. |
+| Interaction names `Element [Action State]` | Sentence case, descriptive, per Webflow's GSAP guidance: "Open nav menu", "Reveal hero image on scroll". |
+| Finsweet Attributes, Accessibility Attributes script, `global-styles_custom` CSS | Not allowed. Native features only. |
+| Launch checklist items for tracking, consent, schema, custom fonts, form notifications, domains, robots.txt, llms.txt | Not allowed or not applicable. The launch checklist's Template column says which; use this skill's checklist instead. |
+
+What carries over unchanged: core structure with the native Section element and padding from variables, combined spacing classes and gap, grid utilities, `Group / Identifier` component names in matching groups (Title Case, so they pass), `Template / Core Structure` and `Template / Section` as the buyer's starting points (explain them on Start Here), and the non-template rows of the launch checklist (forms, CMS, performance, mobile, browsers, accessibility, organise).
+
 ## Copy and content
 
 Templates are judged as marketing sites. Every heading and paragraph is real, relevant copy for the template's niche, well written, no lorem ipsum, no keyword stuffing, correct spelling and grammar, consistent names and roles across the site (a team member's name and title match on every page). Content is inclusive and safe for a global audience. Fake brand and logos only. The template should quietly demonstrate good conversion design: obvious CTAs in nav and hero, social proof, objection handling, clear paths to contact or purchase.
@@ -40,9 +54,9 @@ A single, tasteful credit link to the agency belongs on the Style Guide page (an
 
 ## Workflow: build a template
 
-1. **Start** from the agency's no-code template starter (Client-First, Relume-style style guide, zero scripts). Confirm site settings are default and custom code is empty before doing anything else.
+1. **Start** from the agency's no-code template starter (Client-First, Relume-style style guide, zero scripts). If that starter is not yet on V3 with the table above applied, or you start from Finsweet's V3 starter, apply the table first and check it with the MCP: no embeds, Title Case variables. Confirm site settings are default and custom code is empty before doing anything else.
 2. **Foundation** per the client-site skill: scan the design, tokens with breakpoint modes, utilities, style guide, Navbar, Footer, Button, CTA components. Fill the Style Guide with every tag and utility.
-3. **Pages** from Base Structure with full SEO. Home is the real homepage at `/`; a template-showcase page, if wanted, lives in the Template Pages folder.
+3. **Pages** from `Template / Core Structure` (or Base Structure on older starters) with full SEO. Home is the real homepage at `/`; a template-showcase page, if wanted, lives in the Template Pages folder.
 4. **Sections** one at a time, Client-First skeleton, real copy, compressed assets with alt text, checked at every breakpoint. Library sections are renamed and stripped of Classic interactions.
 5. **CMS** with 3 to 7 items each, dynamic SEO, help text.
 6. **Motion** natively, sparingly, verified in Preview.
@@ -52,7 +66,7 @@ A single, tasteful credit link to the agency belongs on the Style Guide page (an
 
 ## Workflow: QA an existing template
 
-1. Read the full checklist. Audit the site through the MCP: pages and SEO, custom code, components, styles, variables, interactions, forms, CMS, assets, fonts, schema (must be empty).
+1. Read the full checklist. Audit the site through the MCP: pages and SEO, custom code (including any `Global / Styles` embeds), components and groups, styles, variables and their name casing, interactions, forms, CMS, assets, fonts, schema (must be empty).
 2. Check visually what the API cannot: every page at every breakpoint, hover and focus states, forms, navigation, interactions playing, markers off. Use the browser for legacy interactions (`Webflow.require('ix2').store.getState().ixData` must be empty).
 3. List site-settings items the user must confirm in the Designer.
 4. Write the report per the format: PASS, FAIL, NEEDS VISUAL or MANUAL per item at section, page and site level; a rubric estimate; a fix-list ordered by rejection likelihood.
@@ -60,4 +74,4 @@ A single, tasteful credit link to the agency belongs on the Style Guide page (an
 
 ## Anti-patterns
 
-Scripts or attributes libraries; schema; a showcase page at the root instead of the real home; Licenses inside a folder; static SEO on CMS template pages; placeholder images or lorem ipsum anywhere; more than 7 CMS items; markers on; Classic interactions; empty links (`#`) in nav or buttons; two H1s from rich text bodies; assets over 150 KB left uncompressed; competing button classes; agency favicon left in place of the template's; forms all named "Email Form"; typos in prop names visible to buyers.
+Scripts or attributes libraries; Client-First `Global / Styles` embeds left in; lowercase V3 variable names; schema; a showcase page at the root instead of the real home; Licenses inside a folder; static SEO on CMS template pages; placeholder images or lorem ipsum anywhere; more than 7 CMS items; markers on; Classic interactions; empty links (`#`) in nav or buttons; two H1s from rich text bodies; assets over 150 KB left uncompressed; competing button classes; agency favicon left in place of the template's; forms all named "Email Form"; typos in prop names visible to buyers.

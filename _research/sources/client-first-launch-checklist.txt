@@ -1,0 +1,558 @@
+Organize
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Client-First Launch Checklist
+This Webflow launch checklist includes tasks that should be completed before delivering a Webflow project to the client. This ensures that the website is launch-ready, user-friendly, high performing and of high quality. Get started by duplicating this Notion template for your project.
+Goals
+Deliver launch ready websites.
+Keep the list simple and easy to follow.
+All
+Designer
+Project Settings
+Pre Launch
+Post Launch
+Add Favicon
+General
+Important
+Project Settings
+Add Webclip
+General
+Important
+Project Settings
+Add client's local time zone
+General
+Important
+Project Settings
+Add client's language attribute
+General
+Important
+Project Settings
+Disable Webflow branding and badge
+General
+Important
+Project Settings
+General
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Ensure Webflow hosting is added
+Publishing
+Important
+Project Settings
+Minify HTML, CSS, and JS
+Publishing
+Important
+Project Settings
+Enable SSL
+Publishing
+Important
+Project Settings
+Ensure 301 redirects needed are set.
+Publishing
+Important
+Project Settings
+Add custom domains and set the www version to default.
+Publishing
+Important
+Help client add custom domain to the website. - Ensure both domains (root and www) are added. - Ensure one is set as default.
+Project Settings
+Create an appropriate staging url
+Publishing
+Important
+Project Settings
+Turn on “Use secure frame headers”
+Publishing
+Important
+Project Settings
+Enable “Per page CSS” under publishing
+Performance & Optimization
+Publishing
+Important
+Project Settings
+Enable “Asynchronously load JS” under publishing if possible.
+Performance & Optimization
+Publishing
+Important
+Project Settings
+Publishing
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Form
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Ensure form success and error states are styled properly
+Form
+Important
+Designer
+Confirm that each form has a unique name.
+Form
+Important
+Designer
+Confirm that form fields are clearly named and easy to understand.
+Form
+Important
+Designer
+Check form field names and ids (Check for any duplicates)
+Form
+Important
+Designer
+Ensure form fields have focus states
+Form
+Important
+Designer
+Enable Spam Protection for Spams and Bots
+Form
+Important
+Project Settings
+Enable form ReCAPTCHA if needed
+Form
+Optional
+Project Settings
+Complete form notification settings
+Form
+Important
+- Add client email for notifications - Add static/dynamic subject line - Add static/dynamic reply-to address - Add static/dynamic email template
+Project Settings
+Test form submissions
+Form
+Important
+Project Settings
+Fonts
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Make sure custom uploaded fonts are used in the project. Using WOFF2 format is recommended.
+Fonts
+Important
+This will make sure fonts have font-display : swap property. Use https://transfonter.org/ to convert font formats.
+Project Settings
+Remove unused fonts
+Fonts
+Important
+Project Settings
+Create a subset of existing font to reduce the overall file size.
+Fonts
+Performance & Optimization
+Recommended
+Font subsetting is the process of removing unused characters and symbols (glyphs) from a font file to make it much smaller while keeping the text looking correct. You can use https://transfonter.org/ for this.
+Project Settings
+Apps & Integrations
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Add GA4 tracking code
+Apps & Integrations
+Important
+Help client add Google Analytics to Webflow Set up Google Analytics - Webflow University Documentation
+Project Settings
+Add other integrations like Meta Pixel, Google Maps, Hotjar, HubSpot, etc. based on client’s requirements.
+Apps & Integrations
+Optional
+Project Settings
+Add Consent Pro or client’s preferred CMP, using Google Tag Manager setup is highly recommended
+Apps & Integrations
+Important
+https://consentpro.com/
+Pre Launch
+Make sure all integrations are working as expected.
+Apps & Integrations
+Pre Launch
+Post Launch
+Test CMP integration with Google Tag Assistant
+Apps & Integrations
+Important
+https://tagassistant.google.com/
+Post Launch
+SEO
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Add Meta Title and Description to all website pages
+SEO
+Important
+Make sure to follow a pattern for Title. Example: - Webflow Services | Finsweet - 5 Webflow Tips | Blog | Finsweet The ideal length for the meta title is 50–60 characters. The ideal length for the meta description is 150–160 characters.
+Designer
+Add Open Graph images to all website pages
+SEO
+Important
+Recommended image size is 1200 x 630 pixels. Recommended format is PNG or JPG for wide support.
+Designer
+Set all unwanted pages to draft or delete.
+SEO
+Important
+Designer
+Remove unwanted pages from auto-generated Sitemap
+SEO
+Important
+Turn of “Sitemap Indexing” for these pages under page settings.
+Designer
+Make sure to have proper slug for all the static and cms pages
+SEO
+Important
+Designer
+Unpublish all unused / blank CMS Template pages
+SEO
+Important
+You can unpublish an unused CMS template from the page settings of the template.
+Designer
+Add Schema markup / Structured data to all key pages
+AEO
+SEO
+Important
+This applies to static pages like Home, Product, Contact / Book Demo, etc. and CMS pages like Blog, Author, News, Articles, Reports, etc. Schema markup is code that helps search engines understand the information on a page. Google can use it to show rich results (also known as rich snippets), which can earn a page more clicks. AI agents and chatbots also use this data to better understand the content. What Is Schema Markup & How to Implement It (semrush.com) Structured Data Markup that Google Search Supports | Google Search Central  |  Documentation  |  Google for Developers Structured Data Markup Helper (google.com) Schema Markup Generator (JSON-LD) | TechnicalSEO.com Schema Markup validator https://youtu.be/PnSJ45VCYPs?t=624
+Designer
+Add Structured data to FAQ components on your website. Using (Using microdata is recommended)
+AEO
+SEO
+Important
+https://developers.google.com/search/docs/appearance/structured-data/qapage#microdata
+Designer
+Fix any broken/empty links
+SEO
+Important
+Check all links go to the proper place and there are no empty links Free Broken Link Checker - Dead Link Checking Tool by Ahrefs Free Broken Link Checking Tool - Dead Link Checker You can use this CSS to highlight broken links in Webflow. /* Empty Links Highlight / .wf-design-mode a[href="#"]:not(.w-lightbox):not([class="pagination"]) { outline-color: var(--red-400); outline-style: solid; outline-width: 3px; outline-offset: 5px; }
+Designer
+Ensure HTML semantic structure for headings, wrappers, etc.
+SEO
+Important
+Designer
+Make sure there are no errors inside Webflow audit panel for all pages
+SEO
+Important
+Designer
+Complete Google Site Verification using Google Search Console, using the verification key is recommended.
+SEO
+Important
+Google site verification - Webflow University Documentation
+Project Settings
+Add Global Canonical URL
+SEO
+Important
+Project Settings
+Set robots.txt if needed, to block any page from getting crawled by search engines or bots.
+SEO
+Important
+Format Start User-agent: * Disallow: /admin Disallow: /demo-page Sitemap: https://www.website.com/sitemap.xml Format End
+Project Settings
+Turn on auto-generation of sitemap
+SEO
+Important
+Project Settings
+Disable Webflow subdomain indexing
+SEO
+Important
+Project Settings
+Check for errors found in Google Search Console and fix them.
+SEO
+Important
+Post Launch
+Submit new sitemap to Google Search Console and remove the old one.
+SEO
+Important
+Post Launch
+Request a re-indexing from Google Search Console
+SEO
+Important
+Post Launch
+AEO
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Add Schema markup / Structured data to all key pages
+AEO
+SEO
+Important
+This applies to static pages like Home, Product, Contact / Book Demo, etc. and CMS pages like Blog, Author, News, Articles, Reports, etc. Schema markup is code that helps search engines understand the information on a page. Google can use it to show rich results (also known as rich snippets), which can earn a page more clicks. AI agents and chatbots also use this data to better understand the content. What Is Schema Markup & How to Implement It (semrush.com) Structured Data Markup that Google Search Supports | Google Search Central  |  Documentation  |  Google for Developers Structured Data Markup Helper (google.com) Schema Markup Generator (JSON-LD) | TechnicalSEO.com Schema Markup validator https://youtu.be/PnSJ45VCYPs?t=624
+Designer
+Add Structured data to FAQ components on your website. Using (Using microdata is recommended)
+AEO
+SEO
+Important
+https://developers.google.com/search/docs/appearance/structured-data/qapage#microdata
+Designer
+Make sure to add LLMs.txt file
+AEO
+Important
+Here is a guide on this https://help.webflow.com/hc/en-us/articles/43240104183315-Upload-an-llms-txt-file-to-your-site?_gl=1*j9tk1u*webflow_gcl_au*MTQxNzgwNzQwNS4xNzc5MjEyMDc3
+Pre Launch
+Check robots.txt: Ensure AI scrapers and crawlers (such as GPTBot, Claude-Web, and PerplexityBot) are not unintentionally blocked.
+AEO
+Important
+Pre Launch
+Validate all markup in Google's Rich Results Test & Schema.org validator
+AEO
+Important
+Pre Launch
+Check your website using Is Your Site Agent-Ready? for advanced AEO
+AEO
+Recommended
+https://isitagentready.com/
+Pre Launch
+CMS
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Add image field for Open Graph images inside CMS if needed
+CMS
+Important
+Designer
+Add meta title and description field to CMS collection if needed.
+CMS
+Important
+Designer
+Unpublish empty or unwanted collection templates
+CMS
+Important
+Designer
+Add help-text/description to necessary CMS fields
+CMS
+Important
+Designer
+Group CMS fields where possible
+CMS
+Designer
+Add CMS empty state to all collections
+CMS
+Important
+Designer
+Make sure all images have explicit width & height OR appropriate aspect-ratio
+Performance & Optimization
+Important
+This step helps avoid Cumulative Layout Shifts (CLS)
+Designer
+Make sure all the assets (lotties, images, graphics, etc.) are compressed or optimized
+Performance & Optimization
+Important
+Use tools like tinypng.com or inbuilt Webflow compression inside asset panel. Convert Lottie JSON files to dotLottie files for better performance.
+Designer
+Remove unwanted classes
+Performance & Optimization
+Important
+Designer
+Remove unwanted/unused interactions
+Performance & Optimization
+Important
+Designer
+Optimize necessary scripts used in page or project settings
+Performance & Optimization
+Important
+Add async or defer attribute to <script> tag. Async loads the scrip when page content is loading. Defer loads the script after the page content is loaded. Note: Remove it if your script if your code breaks. Example- <script async src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsload@1/cmsload.js"></script>
+Designer
+Make sure all the assets are compressed and optimized
+Performance & Optimization
+Important
+Designer
+Remove or disable any unused JavaScript or custom code.
+Performance & Optimization
+Important
+Designer
+Project Settings
+If any custom code is used on a single page, do not add it globally.
+Performance & Optimization
+Important
+Designer
+Use eager loading for images present in top section of every page.
+Performance & Optimization
+Important
+Designer
+Final scan of custom code in <head> and </body>
+Performance & Optimization
+Important
+Project Settings
+Create a subset of existing font to reduce the overall file size.
+Fonts
+Performance & Optimization
+Recommended
+Font subsetting is the process of removing unused characters and symbols (glyphs) from a font file to make it much smaller while keeping the text looking correct. You can use https://transfonter.org/ for this.
+Project Settings
+Enable “Per page CSS” under publishing
+Performance & Optimization
+Publishing
+Important
+Project Settings
+Enable “Asynchronously load JS” under publishing if possible.
+Performance & Optimization
+Publishing
+Important
+Project Settings
+Check for any horizontal scroll and fix it
+Performance & Optimization
+Important
+Pre Launch
+Run Google Page Insights, Lighthouse, or GTmetrix tests
+Performance & Optimization
+Important
+Make suggested updates to the website for better SEO, Accessibility and Website Performance.
+Pre Launch
+Use a tool like GT Metrix for detailed analysis and improvements.
+Performance & Optimization
+Recommended
+You can use a good tool like GT Metrix and feed the data found into your favorite AI chatbot to get valuable insights and pinpoint issues. https://gtmetrix.com/
+Pre Launch
+Performance & Optimization
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Disbale unnecessary interactions on mobile/tablet devices
+Mobile Optimization
+Important
+Improves mobile site performance and load times.
+Pre Launch
+Check website on Android mobile and tablet devices
+Mobile Optimization
+Important
+Perform a thorough check and fix any bugs/issues if found.
+Pre Launch
+Check website on iOS mobile and iPad devices
+Mobile Optimization
+Important
+Perform a thorough check and fix any bugs/issues if found.
+Pre Launch
+Make sure texts are readable in Mobile devices
+Mobile Optimization
+Important
+The ideal font size for body font on mobile is 16px and for smaller fonts is 14px.
+Pre Launch
+Make sure buttons are easily clickable on mobile/tablet devices
+Mobile Optimization
+Important
+Pre Launch
+Mobile Optimization
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Check website on Chrome/Edge browser
+Browser Checks
+Important
+Pre Launch
+Check website on Safari browser
+Browser Checks
+Important
+Pre Launch
+Check website on Firefox browser
+Browser Checks
+Important
+Pre Launch
+Browser Checks
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Add alt-text to all the images inside Asset panel.
+Accessibility
+Important
+You can also ask the client to add appropriate image descriptions. You can use AI Alt-text generator to add alt-texts in bulk.
+Designer
+Add ARIA attributes where needed
+Accessibility
+Important
+Example: aria-role=”button” for links or div blocks that act as buttons. aria-role=”link” for div blocks that act as links.. aria-label=”link_description” for links without description or text inside. ARIA states and properties - Accessibility | MDN (mozilla.org)
+Designer
+Add aria-label attribute to links without description or text inside
+Accessibility
+Important
+Example: Social media links, Image Wrappers working as links, etc. You can use Google page insights and Webflow’s audit panel to find the desired links.
+Designer
+Remove hover states on mobile/tablet devices
+Accessibility
+Important
+Designer
+Set up Keyboard Focus State where needed
+Accessibility
+Important
+Designer
+Add Finsweet’s Accessibility Attributes Solution to the website.
+Accessibility
+Recommended
+Accessibility in Webflow (finsweet.com) This script add multiple A11y features to the website. Add this to <head> of your project settings <!-- [Attributes by Finsweet] Accessibility --> <script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-a11y@1/a11y.js"></script>
+Designer
+Ensure buttons, links, accordions, inputs, etc have focus states
+Accessibility
+Important
+Designer
+Accessibility
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+404 and Password page should match the design.
+Organize
+Important
+Designer
+Create folders to organize the assets inside asset panel
+Organize
+Important
+Designer
+Create a complete and organized Style-guide to match the project design.
+Organize
+Recommended
+Make sure fonts, colors, buttons additional utility classes, etc. are added properly to the Style-guide page.
+Designer
+Make sure Components are grouped properly inside Component panel.
+Organize
+Important
+Designer
+Training
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+Help client add guest or team members to the project.
+Training
+Recommended
+Project Settings
+Record knowledge transfer or training for the client.
+Training
+Important
+Record tutorials for the client to use and scale their website or CMS if needed. You can use Loom for this.
+Pre Launch
+No Tag
+Check
+Name
+Tag
+Important / Optional
+Additional Information
+Step
+No results

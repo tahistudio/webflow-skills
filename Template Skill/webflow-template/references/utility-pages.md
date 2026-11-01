@@ -11,7 +11,7 @@
 | Components (optional dump page) | folder "Template Pages" | `/template-pages/components` | draft | yes |
 | 404 | system | `/404` | — | — |
 | Password | system | `/401` | — | — |
-| Base Structure (duplicate-this skeleton) | site root | any | draft | — |
+| Base Structure (only if the starter has no `Template / Core Structure` component) | site root | any | draft | yes |
 
 Licenses must publish at exactly `/licenses`; a folder breaks the requirement. The footer on every page links to Licenses. All utility pages carry `<meta name="robots" content="noindex">` in their head code.
 
@@ -22,7 +22,7 @@ Order: utilities, then variables, then components.
 1. Colours: swatches and ramps as variable-bound blocks, semantic scheme demo (light and dark section), text and background colour utilities.
 2. Typography: H1 to H6 as tags, `heading-style-*` classes, paragraph sizes, text weights, text styles, text alignment, a Rich Text block with every tag (headings, paragraphs, lists, blockquote, figure with caption, links, code).
 3. Buttons in every variant and size, with hover and focus visible.
-4. Shadows, radius, spacing scale (paddings, margins, spacers), max widths, containers, icons at each size.
+4. Shadows, radius, spacing scale (padding, margin and gap classes; section padding sizes), grid utilities, max widths, containers, icons at each size.
 5. Forms: input, textarea, select, checkbox, radio, label, error and success states.
 6. UI: tags, badges, cards, dividers.
 7. Components: one instance of each, or link to the Components page.
@@ -34,7 +34,7 @@ Keep the hidden default rich-text block so tag styles are never purged. The page
 Written for a buyer who has never used the template. Short sections, plain language:
 
 1. Welcome and what the template includes (pages, CMS, components).
-2. Getting started: duplicate the Base Structure page for new pages; where the Navbar, Footer and CTA components live and how to edit them once.
+2. Getting started: for a new page, drop in `Template / Core Structure` and unlink it; for a new section, drop in `Template / Section` and unlink it (or duplicate the Base Structure page on older starters); where the Navbar, Footer and CTA components live and how to edit them once.
 3. Colours and fonts: which variables to change; where the font is set (Body tag).
 4. Logo and favicon: the nav logo is an image file to replace; favicon and webclip in site settings.
 5. Images: compress, set alt text, keep formats modern.

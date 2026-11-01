@@ -24,14 +24,14 @@ Every item Webflow's Submission Requirements and Quality Rubric make checkable, 
 | # | Requirement | Check |
 |---|---|---|
 | 2.1 | Navbar, Footer, CTA are components on every page | API |
-| 2.2 | Component and variant names Title Case, concise, human-readable | API |
+| 2.2 | Component and variant names Title Case, concise, human-readable (Client-First `Group / Identifier`, such as `Global / Nav`, passes); every component in the group its name declares | API |
 | 2.3 | Props, slots or variants used instead of duplicated structures; no slider inside slider or tabs inside tabs | API + VISUAL |
 | 2.4 | No unused components (instance count 0) | API |
 | 2.5 | Prop names spelled correctly, tooltips present | API |
 | 2.6 | No lorem ipsum in headings, paragraphs or CMS; copy unique and relevant to the niche; spelling and grammar correct | API + VISUAL |
 | 2.7 | Line heights percentage or unitless; no text crashing at any breakpoint | API + VISUAL |
 | 2.8 | Primary font on Body; secondary fonts on tags or classes | API |
-| 2.9 | Variables for colours, typography, spacing, radius, shadows; Title Case with spaces; grouped; ramps ordered | API |
+| 2.9 | Variables for colours, typography, spacing, radius, shadows; Title Case with spaces (Client-First V3 ships lowercase-dash names; rename them); grouped; ramps ordered | API |
 | 2.10 | Variable modes for Tablet, Mobile Landscape, Mobile Portrait | API |
 | 2.11 | Tag styles on H1–H6, All Paragraphs, Unordered Lists, Ordered Lists, Blockquotes, Figures, Figure Captions, Links, bound to variables | API |
 | 2.12 | Stacked combo classes at most 3–4 per element | API |
@@ -129,7 +129,7 @@ Every item Webflow's Submission Requirements and Quality Rubric make checkable, 
 
 | # | Requirement | Check |
 |---|---|---|
-| 9.1 | No custom code in site settings, page settings or embeds, except font-smoothing CSS, noindex on utility pages, and SVG embeds (with Instructions page) | API |
+| 9.1 | No custom code in site settings, page settings or embeds, except font-smoothing CSS, noindex on utility pages, and SVG embeds (with Instructions page). Client-First V3's `Global / Styles` embeds count as custom code: removed, or every snippet moved to native styles first | API |
 | 9.2 | No registered scripts; no attributes libraries | API |
 | 9.3 | Favicon and webclip set | MANUAL |
 | 9.4 | Responsive images enabled | MANUAL |

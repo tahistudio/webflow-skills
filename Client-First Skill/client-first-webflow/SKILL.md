@@ -1,123 +1,195 @@
 ---
 name: client-first-webflow
-description: "Build and edit Webflow sites on Finsweet's Client-First system, including projects started from a Relume-style starter or assembled from Relume library sections: page structure, section skeleton, class naming and folders, utility versus custom classes, spacing and typography systems, variables and modes, native components with props, slots and variants, CMS naming, Finsweet Attributes, and QA. Use whenever a Webflow project shows Client-First classes (page-wrapper, main-wrapper, section_, padding-global, container-large, padding-section-, text-size-, heading-style-, is- combos), whenever the user says 'Client-First', 'Clientverse', 'Relume', 'Finsweet' or asks how to structure or name things in Webflow without a framework named. Read tahi-webflow-core first; this skill adds the Client-First rules."
+description: "Build and edit Webflow sites on Finsweet's Client-First V3 (with V2 legacy and upgrade path), including projects from the Client-First starter or assembled from Relume sections: core structure, native Section with padding from variables, class naming and folders, utility versus custom classes, combined spacing classes and gap, typography, the Base, Theme, Typography, Layout and Sizes variable collections, Global / Styles and Template components, Group / Identifier component names, interactions, Relume imports, QA and the Client-First launch checklist. Use whenever a project shows Client-First classes (page-wrapper, main-wrapper, section_, container-large, padding-bottom-medium, text-size-, heading-style-, grid-autofit, is- combos), or the user says 'Client-First', 'Finsweet', 'Relume', 'launch checklist' or asks how to structure or name things in Webflow without a framework named. Read tahi-webflow-core first; this skill adds the Client-First rules."
 ---
 
-# Client-First in Webflow
+# Client-First in Webflow (V3)
 
-Client-First is a naming and structure system, not a stylesheet. It gives every class a readable, client-safe name, standardises the page and section skeleton, and separates global utilities from component-specific custom classes. This skill encodes the official system plus the way we extend it with native components, variables, modes and Relume sections.
+Client-First is a naming and structure system built for the Webflow Designer. V3 puts Webflow Variables underneath everything, flattens the core structure, merges spacing direction and size into one class, and adds template components for pages and sections. This skill is the official V3 rule set plus the way Tahi extends it with native components, Relume sections and agency QA.
 
 Read `tahi-webflow-core` first. Detail lives in:
 
-- [references/class-reference.md](references/class-reference.md) — every utility family with its scale and the naming grammar. Read before creating or renaming any class.
-- [references/components-and-structure.md](references/components-and-structure.md) — page skeleton, section recipe, native components in Client-First, the nested button, repeaters, CMS, Relume import procedure. Read before building a page or component.
+- [references/finsweet-client-first-v3.md](references/finsweet-client-first-v3.md): Finsweet's official V3 rules for agents, verbatim. It is the base rule set. Read it in full before the first change to any Client-First project. Where this SKILL.md states a Tahi override, the override wins.
+- [references/class-reference.md](references/class-reference.md): every V3 utility family, scales, variable collections and naming grammar. Read before creating or renaming any class or variable.
+- [references/components-and-structure.md](references/components-and-structure.md): core structure, template components, Global / Styles, native components and props, the nested button, CMS, Relume import procedure. Read before building a page or component.
+- [references/v2-to-v3-migration.md](references/v2-to-v3-migration.md): how to recognise a V2 project, what changed, and how to work in or upgrade one. Read whenever the project shows V2 markers.
+- [references/launch-checklist.md](references/launch-checklist.md): Finsweet's Client-First launch checklist, adapted for MCP checks. Run it before any client handoff or go-live.
 
-## Page skeleton
+## First: which version is this project?
+
+Read the project before writing to it (styles, variable collections with groups and modes, components).
+
+- **V3 markers**: variable collections named Base, Theme, Typography, Layout, Sizes; `padding-bottom-medium` style classes; `gap-*` and `grid-autofit*` utilities; components named `Global / Styles`, `Template / Section`, `Template / Core Structure`; sections built from the native Section element with padding on `section_*`.
+- **V2 markers**: `spacer-*` classes; two-class spacing wrappers (`padding-bottom padding-medium`); `layer`; colour-only variables named `Base Color Brand/...` or `--base-color-brand--blue`; a single `global-styles` embed; `padding-global padding-section-*` on every section.
+
+Work in the version the project uses. Never mix V2 and V3 patterns inside one project. Upgrading a V2 project is a restructure: ask first, then follow the migration reference.
+
+## The starter is structure, not design
+
+Starter values (colours, fonts, sizes, spacing, content) are placeholders. Keep the structure, replace the values from the user's design source (Figma, brand guidelines, instructions). If no design source is given, ask before styling. Never bend the design to fit starter values.
+
+## Core structure
+
+Default V3 structure, used on every page unless the user says otherwise:
 
 ```
-Body
-└─ page-wrapper
-   ├─ [Global Styles]              HTML embed component with site-wide CSS
-   ├─ [Navbar]                     component, directly above main-wrapper
-   ├─ main-wrapper  (<main>)
-   │   ├─ section_hero  (<header> or <section>)
-   │   │   └─ padding-global padding-section-large
-   │   │       └─ container-large
-   │   │           └─ hero_component …
-   │   ├─ section_features
-   │   └─ section_cta
-   └─ [Footer]                     component, directly below main-wrapper
+page-wrapper
+├─ Global / Styles                 component, two embeds (default + custom)
+├─ Global / Nav                    component, directly above main-wrapper
+├─ main-wrapper  (<main>)
+│   ├─ section_hero                native Section element (<section>, or <header> for a page header)
+│   │   └─ container-large
+│   │       └─ hero_component …
+│   ├─ section_features
+│   └─ section_cta
+└─ Global / Footer                 component, directly below main-wrapper
 ```
 
-- `padding-section-*` sits on the same div as `padding-global`. One wrapper, not two.
-- `section_*` classes carry no styles of their own. Colour schemes and backgrounds come from utility combos stacked on the section (`section_hero color-scheme-dark`, `section_cta background-color-secondary`).
-- Navbar and Footer are components, in those positions, on every page. The CTA band is a component too.
-- Global Styles is a component holding one HTML embed. Site-wide CSS lives there, never in page or site code.
+- Padding goes directly on `section_[identifier]` through variables: `padding-left` and `padding-right` bound to Layout › Spacing › `global-padding`; `padding-top` and `padding-bottom` bound to Layout › Section Padding › `small`, `medium` or `large` (different variables for uneven top and bottom).
+- Never stack `padding-global` or `padding-section-*` as combos on a `section_*` class.
+- Alternative structure, only when a section needs padding as its own layer: `section_x > padding-global padding-section-[size] > container-[size]`. `padding-section-[direction]-[size]` handles uneven padding there.
+- Start new pages by unlinking `Template / Core Structure` and new sections by unlinking `Template / Section`. Never edit the template components themselves. If unlinking is not possible through the MCP, build the same structure by hand.
+- Beyond padding, keep section styling light. Shared section looks (a dark theme) come from a global class stacked on the section (`theme-dark`, `section-style-dark`), not repeated styles.
+- `page-wrapper` holds page-wide styles; `body` keeps only typography and background colour. Warn before adding `overflow: hidden` to `page-wrapper`; it breaks `position: sticky` everywhere inside.
 
 ## Naming grammar
 
 | Kind | Form | Examples |
 |---|---|---|
-| Utility | hyphens only, no underscore | `text-size-large`, `padding-section-medium`, `hide-tablet` |
-| Custom | `folder_element-qualifier` | `hero_component`, `hero_heading-wrapper`, `testimonial_card-image` |
-| Component root | `folder_component` | `nav_component`, `faq_component`, `card_component` |
-| Combo | `is-` prefix, stacked on its base | `button is-secondary`, `faq_item is-open` |
-| Section wrapper | `section_name` | `section_hero`, `section_pricing`, `section_faq` |
+| Utility | dashes only, no underscore | `text-size-large`, `padding-bottom-medium`, `hide-tablet` |
+| Custom | `folder_element-name` | `hero_component`, `hero_heading-wrapper`, `testimonial_card-image` |
+| Component root | `folder_component` | `nav_component`, `faq_component`, `clients-slider_component` |
+| Combo | `is-` prefix, only on its base | `button is-secondary`, `faq_item is-open` |
+| Section | `section_identifier` | `section_hero`, `section_pricing`, `section_faq` |
 
-- Lowercase. No abbreviations. Words in general-to-specific order (`text-size-large`, not `large-text`).
-- Folder is what the thing is: `hero`, `feature`, `cta`, `testimonial`, `pricing`, `faq`, `nav`, `footer`, `blog`. Never a page (`home_`, `about_`) and never a library block number (`layout234_`). A page name is allowed only when the thing is inseparable from that page and hyper-specific: `contact_form`, `pricing_cards`, `blog_list`.
-- One underscore per folder level. Keep it to one, occasionally two, levels.
-- Rename anything that arrives generic (`Div Block 47`, `Heading 3`) or numbered before styling it.
+- Lowercase, dashes between words, no abbreviations (`background`, not `bg`; `button`, not `btn`), general to specific (`text-size-large`).
+- Name a class by where it is used, not where it sits. An element reused across sections, pages or components gets its own general class.
+- One underscore per folder level; usually one level, occasionally two. One folder strategy across the project.
+- Rename anything that arrives generic (`Div Block 47`) or numbered (`layout234_item`) before styling it.
 
-## Utilities, then variables, then custom
+**Tahi override, page names in folders.** Finsweet allows a page-prefixed folder whenever a class is used on one page only (`home-slider_arrow`). We are stricter: name by what the thing is (`hero_`, `slider_`, `testimonial_`). A page name is allowed only when the thing is inseparable from that page and hyper-specific: `contact_form`, `pricing_cards`, `blog_list`, `casestudy_*`. Never `home_`, `about_` or library block numbers.
 
-1. Existing utility. The reference lists every family. If a utility does the job, no custom class.
-2. Variable bound to a native property.
-3. New utility, added to the style guide, when the value will recur. Keep the family's grammar (`shadow-medium`, `radius-small`, `text-color-brand`).
-4. Custom class defined on one component only.
+## Class strategy
 
-Stacking: one to two classes ideal, three fine, four maximum. Stack like with like (spacing with spacing, type with type). Never add a style while several utilities are selected. Never restyle a utility at a breakpoint; use an `is-` combo or a custom class instead.
+Order of preference:
+
+1. **Existing utility** where it fits.
+2. **Custom class first, utility on top** (V3 recommended pattern): `home-header_text text-size-large`. The custom class holds the instance styles; the utility stays under global control.
+3. **Custom class only**, every value bound to a variable.
+4. **Combo on utilities** (`text-size-large is-home-header`) when certain properties must stay globally controlled.
+5. **New utility** only when it manages an important style globally or speeds up building. Follow the family's keyword pattern so Finsweet Extension groups it (`shadow-box-small / medium / large`). Add it to the style guide.
+
+Stacking: one or two classes is the norm, three needs a reason, four is the hard maximum. Stack like with like (spacing with spacing, type with type). Never add a style while a stack of utilities is selected (it creates an accidental combo). Never edit a utility to fix one element; if a utility must change globally, say which class and that it affects the whole project, and ask first.
+
+Combos only when the variant inherits something worth managing globally (`button is-secondary`). Otherwise a flat class (`container-large`, not `container is-large`). On built pages prefer a component variant over an `is-` combo for a visual switch; keep `is-` for state (`is-open`, `is-active`) and the style guide.
+
+Layouts: no flex, column or breakpoint layout utilities. Custom classes with flex or grid, plus the V3 grid utilities on top of a custom class (`team_list grid-autofit-small`). A clear project layout system (`grid_col-2`, `grid_col-3` with `is-` exceptions) is acceptable.
 
 ## Spacing
 
-- Section padding: `padding-section-small | medium | large` on the `padding-global` div, values from the Section Space variables.
-- Inside sections: gap on the parent (`grid` or `flex` gap) first. Spacer blocks (`spacer-small` and so on) or padding wrappers (`padding-bottom padding-medium`) only when gap cannot express it.
-- Wrapper pattern is exactly two classes, direction then size. Responsive tweaks only on single-class spacers via combos (`spacer-large is-mobile-small`).
-- All values rem. Borders may be 1px.
+- Every value comes from Layout › Spacing variables. Scale: `0`, `xxtiny` .25, `xtiny` .5, `tiny` .75, `xxsmall` 1, `xsmall` 1.25, `small` 1.5, `medium` 2, `large` 3, `xlarge` 4, `xxlarge` 5, `huge` 6, `xhuge` 8, `xxhuge` 12rem (defaults; read the project). Variable modes scale it down on tablet and mobile; never add breakpoint spacing styles for what a mode already handles.
+- Classes: `margin-[size]`, `padding-[size]`, `margin-[direction]-[size]`, `padding-[direction]-[size]` (one class: `padding-bottom-medium`), `gap-[size]`, `spacing-clean`. Directions: top, bottom, left, right, horizontal, vertical.
+- Between headings, paragraphs and buttons: a spacing block (empty div with one spacing class) or a spacing wrapper. Never spacing classes on text elements.
+- Equal space between children, button rows, a button with an icon: gap on the parent. Inner padding of cards and items: padding on the custom class.
+- Never `spacer-[size]`, `margin-custom[n]`, `padding-custom[n]` or `layer`, even if the project still has them.
+- Section padding has its own scale (Section Padding group) separate from this one.
 
 ## Typography
 
-- Tags carry the default styles: H1 to H6, All Paragraphs, lists, blockquote, figure, links, bound to variables. Most headings have no class at all.
-- `heading-style-h1…h6` exist only to make a semantically correct tag look like another level. Never pick a tag for its size.
-- `text-size-*`, `text-weight-*`, `text-style-*`, `text-align-*`, `text-color-*` for deviations. Three or more type utilities on one element means make a custom class or a new utility.
-- `text-rich-text` on every Rich Text element; unique rich text styling via a class on the Rich Text and its tag selectors.
-- Units rem. Fluid `clamp()` values are allowed on client sites via variables; templates stay on stock stepped values.
+- Body and H1 to H6 tag styles are the defaults, bound to the Typography collection (Body and H1 to H6 groups). Most text has no class.
+- Choose the heading tag for document structure; `heading-style-h1…h6` only to make a correct tag look like another level. Never a heading tag on non-heading text.
+- Deviations: `text-size-*`, `text-weight-*`, `text-color-*`, `text-align-*`, `text-style-*` (including V3 `balance`, `pretty`, `1line`, `2lines`, `3lines`), and the inherit classes (`text-color-inherit`, `text-size-inherit`, `text-weight-inherit`, `text-decoration-inherit`).
+- A typography stack that repeats becomes one grouped class bound to the same variables (`text-style-subtitle`). Custom text classes are uncommon and bound to Typography variables.
+- `text-rich-text` on every Rich Text element; style its content through nested tag selectors, never classes inside it.
+- rem everywhere (`24/16rem` works in inputs); 1px borders stay px; no vw or vh for type or spacing. Fluid responsive only when the user asks.
 
-## Variables and colour
+## Variables
 
-- Variables for everything: colours, spacing, section space, container widths, max widths, type sizes and weights, radius, shadows. More tokens beat fewer.
-- Two tiers where theming matters: primitives (`Brand Colors/Primary`, `Neutral Colors/Lightest`) and semantic aliases (`Color Scheme/Background`, `Color Scheme/Text`). Raw hex on a primitive is fine; shades may alias a base colour or be set directly.
-- Title Case names with folders. Ramps ordered light to dark, small to large.
-- Responsive values use variable modes bound to Tablet, Mobile Landscape and Mobile Portrait.
-- Alternate schemes use a mode switch on a `color-scheme-dark` (or `-light`) utility that sets background and text from the scheme aliases. That utility is the only sanctioned dark-section mechanism; no JavaScript theme toggles.
+Five collections, each value set once and linked (not copied):
 
-## Native components
+| Collection | Holds | Modes |
+|---|---|---|
+| Base | primitives: Brand, Neutral, Others colours; Font Family, Font Weight, Line Height, Letter Spacing | none |
+| Theme | semantic colour: Background, Border, Link, Text, Button Primary, Button Secondary, System | Base, Dark Mode |
+| Typography | Body, H1 to H6, Font Size | Desktop, Tablet, Mobile Landscape |
+| Layout | Spacing, Section Padding | Desktop, Tablet, Mobile Landscape |
+| Sizes | Max Width, Container, Grid Columns, Border Radius, Focus, Icon | Desktop |
 
-Client-First's "component" (`x_component`) is a class group. On top of that, anything appearing more than once becomes a native Webflow component with the same name in Title Case: class `testimonial_component`, component "Testimonial". Props, slots and variants follow the core rules and the reference. The nested button (Button holds Button Content holds Button Layout) is the only button. A Classes prop is exposed on client sites only; templates get nothing hyper-technical.
+- Classes bind to semantic tokens (Theme, Typography), not primitives. New colour: primitive in Base first, then a semantic variable that references it.
+- Use the group that matches the property (Background on `background-color`, Text on `color`, Spacing on padding, margin and gap).
+- Groups Title Case; variable names lowercase with dashes, no repeated group name (`Background › primary`, not `background-primary`), except where the Style panel needs context (`h2-font-size`). Never name a semantic variable after a colour.
+- Responsive values change per mode in the Variables panel, not with breakpoint styles. Theme switches through the Style panel or a `theme-dark` utility.
+- Custom code references a variable by its exact CSS name copied from the project (`--brand--blue`, `--_theme---text--primary` by default). Never hand-build it.
+- Before creating a variable, check one with the same purpose or value does not exist. Report every variable created.
 
-## Responsive
+**Tahi override, templates.** Webflow Marketplace requires variable names in Title Case with spaces. On templates, rename V3's lowercase names (`primary` → `Primary`, `background-hover` → `Background Hover`). Client sites keep the V3 lowercase convention.
 
-- Webflow's standard breakpoints. Desktop-first; override downward at Tablet (≤991), Mobile Landscape (≤767), Mobile Portrait (≤479). Enable 1280, 1440 and 1920 when the design needs control there; decide once.
-- Utilities pre-scale at the breakpoints. Responsive changes to a global element go on an `is-` combo or a custom class, never on the utility.
-- `hide`, `hide-tablet`, `hide-mobile-landscape`, `hide-mobile-portrait` for visibility.
-- Native Navbar breakpoint set to match; Navbar, Slider and Tabs stay native and need a person to place them.
+## Components and interactions
+
+- Webflow components are named `Group Name / Component Identifier`, each word capitalised: `Global / Nav`, `Global / Footer`, `Global / Styles`, `Card / Blog Post`, `Form / Contact`, `Modal / Video`, `Section / CTA`. Common groups: Global, Template, Card, Form, Section, Modal, Component, plus Tahi's Button group.
+- The slash does not create a group. Create the group in the Components panel and move the component into it; if the MCP cannot, tell the user exactly which groups to create and what goes in each.
+- The component name and its wrapper class are separate: `Card / Blog Post` wraps `blog-card_component`.
+- Anything appearing more than once becomes a native component. Props, slots and variants follow the core rules and the components reference. The nested button (Button › Button Content › Button Layout) is the only button. A Classes prop is exposed on client sites only.
+- Interactions: `Element [Action State]`, Title Case, actions and states in brackets: `Nav Menu [Open]`, `Button Arrow [Move In]`, `Image [Show Scroll In]`. No trigger in the name unless essential (`Discount Modal [Delay On Load]`). Breakpoint-only interactions get a second bracket: `Nav Sidebar Slide [Show] [Mobile]`. Templates use Webflow's sentence-case GSAP names instead (see the template skill).
+
+## Global styles
+
+- `Global / Styles` sits on every page with two embeds: `global-styles_default` (Finsweet's CSS) and `global-styles_custom` (project CSS). Add project CSS to the custom embed only. Never edit or delete default snippets unless the user asks.
+- Default snippets: text clarity, focus state, text selection, rich text first and last margin removal (on); pointer cursor, form reset, inherit typography, highlight empty links (off). Enable an off snippet by removing its comment tags, keeping its note. Do not enable inherit typography unless asked; it breaks All Links styling.
+- Change focus and selection looks through Sizes › Focus and Theme › System variables, not by editing snippets.
+- Templates cannot ship these embeds; see the template skill.
+
+## Semantic HTML and accessibility
+
+`main` on `main-wrapper` (one per page), `section` on every section (each with a heading), `header`, `footer`, `nav`, `article`, `aside`, `address`, `figure` where they fit. One H1, no skipped levels. Native links to navigate, buttons for actions. Visible focus on every focusable element. `aria-label` on icon-only controls, `aria-hidden="true"` on decorative icons and SVGs, `aria-expanded` with `aria-controls` on toggles, `aria-current="page"` on current-page links. Do not duplicate ARIA that a tag or native Webflow component already provides. Native Webflow elements (Navbar, Tabs, Slider, Dropdown, Lightbox, Forms, Collection Lists) by default.
 
 ## Relume and library sections
 
-Library sections are raw material, not finished work. When one is pulled in: rename every class to the semantic grammar, remove every Classic interaction it carries, re-bind values to the project's variables, snap sizes to the project's tokens, replace its buttons with the project Button component, and check whether an existing section on the site already covers the need before adding a new one. Procedure in the reference.
+Library sections are raw material. On import: rename every class to the grammar, strip every Classic interaction, convert any V2 patterns (spacers, two-class wrappers, `layer`, padding wrappers) to V3, rebind values to the project's variables, replace buttons with the project Button component, and check whether an existing section already covers the need. Procedure in the components reference.
 
 ## Attributes and code
 
-- Finsweet Attributes V2 for lists, filters, sliders and similar on client sites, loaded once in site head. Own code may replace it. Never on templates.
-- Class ordering in the stylesheet can be fixed with the Finsweet extension when a direction and size utility pair stops applying.
-- Code placement follows the core rules: page settings, the owning component, Global Styles, or site settings for tracking only.
+- Finsweet Attributes V2 on client sites, loaded once in site head with `defer`. Own code may replace it. Never on templates.
+- Project CSS goes in `global-styles_custom`, not Page or Site Settings, so it stays visible in the Designer. Page-only scripts stay on that page.
+- Code placement otherwise follows the core rules.
+
+## MCP working rules
+
+- Confirm the site and page. Read the project first. Reuse classes, variables and components; check a class name is free before creating it.
+- Ask before: renaming or deleting any class, variable, component or page; editing a utility class, a variable value, `global-styles_default` or a template component; restructuring existing pages or sections; publishing.
+- After changes, report classes created, variables created or linked, components created, and anything with a global effect. If a rule could not be followed (including an MCP limitation), say which and why.
 
 ## Workflow for a new Client-First build
 
-1. Audit against the reference: which utilities and variables the starter provides, what the project added, existing components.
-2. Foundation: variables and modes to the design, snap values per the core tolerance, extend utilities and the style guide, build Navbar, Footer, Button and CTA components, set the Base Structure page.
-3. Sections one at a time, each `section_name > padding-global padding-section-* > container-* > name_component`, built from components where repeated, checked live at every breakpoint.
-4. Interactions native GSAP, verified in Preview.
-5. QA per the core checklist plus: no utility restyled at a breakpoint, no class stacks over four, no page-prefixed folders, every `_component` that repeats is a native component.
+1. Audit: version, collections and modes, utilities, components and groups, what the starter provides.
+2. Foundation: replace starter variable values with the design's, extend utilities and the style guide, build `Global / Nav`, `Global / Footer`, the Button and `Section / CTA` components, confirm `Global / Styles` and the template components.
+3. Pages from `Template / Core Structure`; sections one at a time from `Template / Section`: `section_name > container-* > name_component`, padding from variables, built from components where repeated, checked live at every breakpoint.
+4. Interactions native GSAP, named per the convention, verified in Preview.
+5. QA per the core checklist and the pre-flight list below.
+6. Before go-live or handoff, run the [launch checklist](references/launch-checklist.md).
+
+## Pre-flight (every task)
+
+- Design values come from the design source, not the starter.
+- Core structure in place; native Section element; section padding from variables.
+- Custom classes have an underscore, utilities do not; lowercase, no abbreviations, general to specific; no page-prefixed folders outside the allowed cases.
+- No element over four classes; no spacing classes on text; no `spacer-*`, `*-custom[n]` or `layer`.
+- Values linked to semantic variables, not primitives or hard-coded.
+- One H1, no skipped levels, semantic tags set, keyboard and focus work.
+- Components follow `Group / Identifier` and sit in the matching group; interactions follow `Element [Action State]`.
+- No utility, `global-styles_default` or template component edited without approval.
+- A summary of changes given to the user.
 
 ## Anti-patterns
 
-- Page-prefixed or numbered folders (`home_hero`, `whym_section-1`, `layout9_item`); parallel prefixes for one thing (`blog_`, `blg_`, `post_`).
-- Styling `section_*` directly; margin on sections.
-- Restyling a utility at a breakpoint; four-plus stacks; mixed-category stacks; accidental combos from multi-select.
-- Tag chosen for size; skipped heading levels; classes on every heading.
-- `container is-large` style combos where a flat class exists (`container-large`).
-- Layout utility systems (`grid-3-col`, `flex-center`); abbreviations (`col-2-d`).
-- Hex in classes; px on type or spacing; vw or vh for sizing.
-- Competing button classes alongside the Button component.
-- Library sections kept with their block numbers or Classic interactions.
+- Mixing V2 and V3 patterns in one project; upgrading without asking.
+- Treating the starter as the style guide.
+- `padding-global padding-section-*` combos on `section_*`; Div Block sections without the `section` tag.
+- `spacer-*`, two-class spacing wrappers in V3, `layer`, margin on buttons for spacing, spacing classes on text.
+- Editing a utility for one element; restyling a utility at a breakpoint; five-class stacks; mixed-category stacks; accidental combos.
+- Primitives linked directly to classes; colour-named semantic variables; breakpoint styles for values a mode handles; hand-built CSS variable names.
+- Page-prefixed or numbered folders (`home_hero`, `layout9_item`); parallel prefixes for one thing.
+- Tag chosen for size; classes on every heading; classes inside Rich Text.
+- Layout utility systems (`grid-3-col`, `flex-center`); abbreviations.
+- Component names without a group, or in a group that does not match; editing template components to build content.
+- Library sections kept with their block numbers, V2 spacing or Classic interactions.
