@@ -92,6 +92,29 @@ That object holds `events` (trigger type, target element or style ids, action li
 - JSON-LD belongs in the page-settings schema field (`bulk_update_pages_schema_markup`), never in head or body code.
 - Templates for the Marketplace carry no schema at all.
 
+## Known limits and workarounds (learned on a full Client-First V3 conversion, MCP 2.2)
+
+| Want | What happens | Do instead |
+|---|---|---|
+| Variable with a `color-mix()` custom value | Create and update both fail ("internal error") | Compute the mix and store static hex; tell the owner to switch it back to `color-mix` in the Designer if shades must follow the brand colour |
+| Update a variable's base mode | Passing `mode_id: "base"` fails | Omit `mode_id` for the base mode; pass it for every other mode |
+| Rename a collection or a mode, delete a collection, move a variable between collections | No action exists | Create the new collection, recreate variables, rebind every style (map old id to new id, dump styles, rebind, re-dump to prove zero references), then delete the old variables; owner renames modes and deletes the empty collection |
+| `row-gap` / `column-gap` bound to a variable | Rejected ("does not support setting a variable of type length") | Use `grid-row-gap` and `grid-column-gap` |
+| `outline-width` / `outline-offset` bound to a variable | Rejected | Static rem values; owner binds them in the Designer |
+| `-webkit-line-clamp` utilities (`text-style-2lines`) | `-webkit-box-orient` rejected | Owner creates them in the Designer |
+| `var(--css-name)` inside a property value (for example `grid-template-columns: repeat(auto-fit, minmax(min(var(--x), 100%), 1fr))`) | Webflow rewrites it to its own `@var_<id>` binding; it renders | Fine to use; an unknown variable name stays as literal text |
+| Native Navbar | Not in the element builder's types | Owner drops a Navbar from the Add panel; the MCP then styles it (`set_style` on NavbarWrapper, Container, Brand, Menu, Link, Button) and sets links through `data_element_settings_tool set_settings` key `link` with `{mode: "page", to: pageId}` (NavbarLink rejects `set_link`) |
+| Navbar link "Current" state colour | A `w--current` combo created by the MCP becomes `._w--current` and never matches | Owner styles the Current state in the Designer |
+| Page link in a component link prop (default or instance value) | Rejected; schema lists `page` but the server accepts only url, email, phone, popover, modal | URL path (`/folder/slug`) and tell the owner to switch it to a page link; plain Link elements take `set_link` with `linkType: "page"` |
+| `move_element` before or after a component instance | Rejected ("Cannot move an element before a component instance") | Anchor on a non-instance sibling, or insert the new instance with `prepend`/`append` on the parent and remove the old one |
+| Replace a component everywhere | No swap action | Build the new one, insert an instance next to every old instance (pages and inside other component definitions via `scope_component_id`), remove the old instances, confirm the old instance count is 0, then `unregister_component` |
+| Component display name `Group / Identifier` | The group field does not change the name | Set both: `set_component_metadata` with `name: "Global / Nav"` and `group: "Global"` |
+| Delete a class that a hidden or odd element still uses | Refused ("Ensure there are no usages") even when element queries find none | Leave it and list it for the owner's Style Cleaner |
+| `update_prop` on Variant, Size, Layout or boolean visibility props | "not an updatable prop type" | Owner adds tooltips in the Components panel |
+| Large batches | Calls with more than about 10 actions time out | Batches of about 10; after a timeout, re-read before re-running so nothing is duplicated |
+| `element_snapshot_tool` | Fails with an empty error when the element's page is not the active canvas | `designer_tool switch_page` first; it cannot snapshot a component definition root, so snapshot an instance |
+| Designer-backed tools stop working mid-task | "Unable to connect to Webflow Designer" | Ask the user to reopen the Designer with the MCP app link and keep the tab in the foreground |
+
 ## Verification
 
 - `element_snapshot_tool` needs the Designer tab open and in the foreground, renders desktop only, and does not run embeds or custom code. First snapshot may show fallback fonts; re-snapshot.
