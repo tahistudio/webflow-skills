@@ -1,0 +1,15 @@
+{
+  "name": "tahi-studio",
+  "description": "Tahi Studio's Claude Code plugins for building, editing and QA-ing Webflow sites.",
+  "owner": {
+    "name": "Tahi Studio",
+    "email": "business@tahi.studio"
+  },
+  "plugins": [
+    {
+      "name": "tahi-webflow",
+      "source": "./plugins/tahi-webflow",
+      "description": "Webflow skills: core rules, Lumos, Client-First V3, client sites, Marketplace templates and IX2 to GSAP migration."
+    }
+  ]
+}

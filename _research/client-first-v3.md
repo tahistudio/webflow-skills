@@ -1,6 +1,6 @@
 # Client-First V3 research notes (November 2026)
 
-Sources: finsweet.com/client-first/docs/whats-new (V3 release notes, linked from Finsweet's October 2026 product email); Finsweet's `client-first.md` agent rules (beta), supplied by the user and kept verbatim in the skill at `Client-First Skill/client-first-webflow/references/finsweet-client-first-v3.md`; the Client-First launch checklist at finsweet.notion.site/client-first-launch-checklist (raw dump in `sources/client-first-launch-checklist.txt`). Supersedes the V2.1 notes in `client-first.md` where they conflict.
+Sources: finsweet.com/client-first/docs/whats-new (V3 release notes, linked from Finsweet's October 2026 product email); Finsweet's `client-first.md` agent rules (beta), supplied by the user and kept verbatim in the skill at `plugins/tahi-webflow/skills/client-first-webflow/references/finsweet-client-first-v3.md`; the Client-First launch checklist at finsweet.notion.site/client-first-launch-checklist (raw dump in `sources/client-first-launch-checklist.txt`). Supersedes the V2.1 notes in `client-first.md` where they conflict.
 
 ## What's new in V3 (release notes)
 

@@ -1,0 +1,11 @@
+{
+  "name": "tahi-webflow",
+  "description": "How Tahi Studio builds, edits and QAs Webflow sites: shared core rules, Lumos, Client-First V3 (with the official Finsweet agent rules and launch checklist), client-site builds from Figma, Marketplace templates, and Classic interaction to GSAP migration.",
+  "author": {
+    "name": "Tahi Studio",
+    "email": "business@tahi.studio"
+  },
+  "homepage": "https://github.com/tahistudio/webflow-skills",
+  "repository": "https://github.com/tahistudio/webflow-skills",
+  "keywords": ["webflow", "client-first", "lumos", "templates", "gsap"]
+}
