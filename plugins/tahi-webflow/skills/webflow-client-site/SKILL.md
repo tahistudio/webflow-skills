@@ -38,8 +38,8 @@ Audit the Webflow site per the core workflow. Read the framework skill's invento
 2. **Tokens**: map colours, type, spacing, radius, shadow onto variables, snapping per tolerance. Create modes for responsive values and for any theme or dark sections.
 3. **Utilities**: extend the framework's utilities for any recurring value the scan found. Add each to the style guide.
 4. **Components list**: from the repeat analysis, write a spec per component before building it: name, group, description, open or closed, props with groups and tooltips, variants, slots, nested components, which parts are ` (dev)`.
-5. **Style guide and components page** complete and visible. Navbar, Footer, Button and CTA components built and placed on the Base Structure page.
-6. **Pages** created from Base Structure with title, slug, folder, SEO title and description, Open Graph.
+5. **Style guide and components page** complete and visible. Navbar, Footer, Button and CTA components built and placed on the page skeleton (Client-First V3: `Template / Core Structure`; otherwise the project's Base Structure page).
+6. **Pages** created from the page skeleton with title, slug, folder, SEO title and description, Open Graph.
 
 Only when all of this exists does section building start.
 
@@ -77,6 +77,7 @@ Run the core checklist per page and per site. Add for client sites:
 - Schema validates on every page.
 - All ` (dev)` components and props hidden from Marketers; slot restrictions set where needed.
 - Client-facing components have descriptions; a short client guide is written (where to add sections, what each prop does, what not to touch).
+- On Client-First projects, the Client-First launch checklist (`client-first-webflow` › references/launch-checklist.md) run in full, with its project-settings and post-launch items handed to the user as a list. On other frameworks, use it as the go-live list anyway; it is framework-neutral apart from naming.
 - Publish only to staging first and only when asked; the user confirms embeds, animation and mobile before any custom domain publish.
 
 ## Reporting

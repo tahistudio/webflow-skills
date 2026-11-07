@@ -26,7 +26,7 @@ Order: utilities, then variables, then components.
 1. Colours: swatches and ramps as variable-bound blocks, semantic scheme demo (light and dark section), text and background colour utilities.
 2. Typography: H1 to H6 as tags, `heading-style-*` classes, paragraph sizes, text weights, text styles, text alignment, a Rich Text block with every tag (headings, paragraphs, lists, blockquote, figure with caption, links, code).
 3. Buttons in every variant and size, with hover and focus visible.
-4. Shadows, radius, spacing scale (paddings, margins, spacers), max widths, containers, icons at each size.
+4. Shadows, radius, spacing scale (padding, margin and gap classes; section padding sizes), grid utilities, max widths, containers, icons at each size.
 5. Forms: input, textarea, select, checkbox, radio, label, error and success states.
 6. UI: tags, badges, cards, dividers.
 7. Components: one instance of each, or link to the Components page.
@@ -45,7 +45,7 @@ The page explains how to access and edit those components [G]. House rule [H]: i
 
 Contents, written for a buyer, short sections in plain language [H]:
 1. Welcome and what the template includes (pages, CMS, components).
-2. Getting started: duplicate the base structure page for new pages; where the Navbar, Footer and CTA components live and how to edit them once.
+2. Getting started: for a new page, drop in `Template / Core Structure` and unlink it; for a new section, drop in `Template / Section` and unlink it (or duplicate the base structure page on older starters); where the Navbar, Footer and CTA components live and how to edit them once.
 3. Colours and fonts: which variables to change; where the font is set (Body tag).
 4. Logo and favicon: the nav logo is an image file to replace; favicon and webclip in site settings.
 5. Images: compress to 150 KB or less, set alt text, keep formats modern.

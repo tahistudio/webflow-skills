@@ -38,14 +38,14 @@ Report every item. Never leave one blank.
 | # | Requirement | Check | Src |
 |---|---|---|---|
 | 2.1 | Navbar, Footer and CTA are components on every page | API | G |
-| 2.2 | Component and variant names Title Case; concise, consistent, human-readable | API | G |
+| 2.2 | Component and variant names Title Case; concise, consistent, human-readable (Client-First `Group / Identifier`, such as `Global / Nav`, passes); every component in the group its name declares | API | G |
 | 2.3 | Props, slots or variants instead of duplicated structures; components modular; no slider inside a slider, no tabs inside tabs | API + VISUAL | G |
 | 2.4 | No unused components (instance count 0) | API | H |
 | 2.5 | Prop names spelled correctly; tooltips present | API | H |
 | 2.6 | Copy unique and relevant to the niche; no lorem ipsum in headings, paragraphs or CMS; correct spelling and grammar | API + VISUAL | G |
 | 2.7 | Line heights percentage or unitless; no text crashing at any breakpoint | API + VISUAL | G |
 | 2.8 | Primary font on the Body element; secondary fonts on individual tags and classes | API | G |
-| 2.9 | Variables for colours (primary, secondary, background), typography (families, sizes, weights), spacing, radius and shadows; Title Case with spaces; purposeful groups; ramps ordered light-to-dark or small-to-large; no one-off values turned into variables | API | G |
+| 2.9 | Variables for colours (primary, secondary, background), typography (families, sizes, weights), spacing, radius and shadows; Title Case with spaces (Client-First V3 ships lowercase-dash names; rename them); purposeful groups; ramps ordered light-to-dark or small-to-large; no one-off values turned into variables | API | G |
 | 2.10 | Variable modes for tablet, mobile landscape and mobile portrait | API | G |
 | 2.11 | Tag styles bound to variables: All Headings H1 to H6, All Paragraphs, All Unordered Lists, All Ordered Lists, All Blockquotes, All Figures, All Figure Captions, All Links | API | G |
 | 2.12 | Stacked combo classes at most 3 to 4 per element | API | G |
@@ -150,7 +150,7 @@ Report every item. Never leave one blank.
 
 | # | Requirement | Check | Src |
 |---|---|---|---|
-| 9.1 | Custom code only in the allowed places: Webflow Way Validator snippet (required), font smoothing, optional noindex on Licenses and Changelog, SVG embeds (with Instructions), documented GSAP custom code. Nothing else in site settings, page settings or embeds | API | G |
+| 9.1 | Custom code only in the allowed places: Webflow Way Validator snippet (required), font smoothing, optional noindex on Licenses and Changelog, SVG embeds (with Instructions), documented GSAP custom code. Nothing else in site settings, page settings or embeds. Client-First V3's `Global / Styles` embeds count as custom code: move what can be native into styles, then delete the embeds and the component | API | G |
 | 9.2 | Webflow Way Validator snippet in Site Settings → Custom Code → Head code; its latest run passes 100% on all published pages | MANUAL (run is visible only in the Validator) | G |
 | 9.3 | No registered scripts; no third-party attribute libraries | API | H |
 | 9.4 | Favicon and webclip set | MANUAL | G |

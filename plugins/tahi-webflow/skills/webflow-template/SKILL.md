@@ -1,6 +1,6 @@
 ---
 name: webflow-template
-description: "Build, finish and QA Webflow Marketplace templates so they pass Webflow's Submission Guidelines and Grading Rubric on the first review: the Webflow Way Validator, required pages and slugs, licences, design system and naming, native GSAP interactions, SEO, accessibility, the 150 KB image rule, CMS and ecommerce rules, the custom-code exceptions, copy quality, listing assets, and a pass/fail report with a fix-list. Use whenever the user mentions a Webflow template, the Marketplace, template submission, template QA, a style guide or licenses page for a template, a free cloneable, or asks whether a site is 'submittable'. Also use to develop a new template from a Figma file. Read tahi-webflow-core and client-first-webflow first; this skill adds the Marketplace rules."
+description: "Build, finish and QA Webflow Marketplace templates so they pass Webflow's Submission Guidelines and Grading Rubric on the first review: the Webflow Way Validator, required pages and slugs, licences, design system and naming, native GSAP interactions, SEO, accessibility, the 150 KB image rule, CMS and ecommerce rules, the custom-code exceptions, copy quality, listing assets, and a pass/fail report with a fix-list. Use whenever the user mentions a Webflow template, the Marketplace, template submission, template QA, a style guide or licenses page for a template, a free cloneable, or asks whether a site is 'submittable'. Also use to develop a new template from a Figma file or from the Client-First V3 starter, and to adapt Client-First V3 (Global / Styles embeds, lowercase variables, Template components, launch checklist) to Marketplace rules. Read tahi-webflow-core and client-first-webflow first; this skill adds the Marketplace rules."
 ---
 
 # Webflow Marketplace templates
@@ -48,6 +48,20 @@ These alone get a template rejected. Check them first and last.
 
 Each row is rated Satisfactory, Good or Exceptional. A template passes only at Good on every row, in both the design criteria and the functionality criteria. Satisfactory gets feedback and a revision; failing to reach Good after two rounds of feedback may lead to rejection. Thresholds and the full row text are in the checklist, section R.
 
+## Client-First V3 on a template
+
+Templates are built in Client-First V3 (structure, naming, variables, components, template components). Five V3 defaults clash with the Marketplace and are changed on every template:
+
+| V3 default | On a template |
+|---|---|
+| `Global / Styles` with `global-styles_default` and `global-styles_custom` embeds | Embeds count as custom code. Move what can be native into native styles and variables (focus states via the Focused state, selection and rich text margins via tag and class styles, text clarity via the allowed font-smoothing CSS in site head). Then delete the embeds and the component (an empty, unused component fails the unused-components check). Note anything lost on the Instructions page. |
+| Variable names lowercase with dashes (`primary`, `background-hover`, `h2-font-size`) | Title Case with spaces (`Primary`, `Background Hover`, `H2 Font Size`). Groups and collections keep their V3 structure. |
+| Interaction names `Element [Action State]` | Sentence case, descriptive, per Webflow's GSAP guidance: "Open nav menu", "Reveal hero image on scroll". |
+| Finsweet Attributes, Accessibility Attributes script, `global-styles_custom` CSS | Not allowed. Native features only. |
+| Launch checklist items for tracking, consent, schema, custom fonts, form notifications, domains, robots.txt, llms.txt | Not allowed or not applicable. The launch checklist's Template column says which; use this skill's checklist instead. |
+
+What carries over unchanged: core structure with the native Section element and padding from variables, combined spacing classes and gap, grid utilities, `Group / Identifier` component names in matching groups (Title Case, so they pass), `Template / Core Structure` and `Template / Section` as the buyer's starting points (explain them on the Instructions page), and the non-template rows of the launch checklist (forms, CMS, performance, mobile, browsers, accessibility, organise).
+
 ## Copy and content
 
 Templates are judged as marketing sites. Every heading and paragraph is real, relevant copy for the template's niche, well written, no lorem ipsum, no keyword stuffing, correct spelling and grammar, consistent names and roles across the site (a team member's name and title match on every page). Content is inclusive and safe for a global audience [G]. Fake brand and logos only [G]. The template should quietly demonstrate good conversion design: obvious CTAs in nav and hero, social proof, objection handling, clear paths to contact or purchase [G and R].
@@ -58,9 +72,9 @@ A single, tasteful credit link to the agency belongs on the Style Guide page (an
 
 ## Workflow: build a template
 
-1. **Start** from the agency's no-code template starter (Client-First, Relume-style style guide, zero scripts). Confirm site settings are default and custom code is empty before doing anything else. Confirm a paid Workspace plan.
+1. **Start** from the agency's no-code template starter (Client-First, Relume-style style guide, zero scripts). If that starter is not yet on V3 with the table above applied, or you start from Finsweet's V3 starter, apply the table first and check it with the MCP: no embeds, Title Case variables. Confirm site settings are default and custom code is empty (apart from the Validator snippet and font smoothing) before doing anything else. Confirm a paid Workspace plan.
 2. **Foundation** per the client-site skill: scan the design, tokens with breakpoint modes, utilities, style guide, Navbar, Footer, Button, CTA components. Fill the Style Guide with every tag and utility.
-3. **Pages** from a duplicate-this base structure with full SEO. Home is the real homepage at `/`. Style Guide, Licenses and Changelog sit at the root at their required slugs. A template-showcase page, if wanted, lives in a folder and never takes a required slug.
+3. **Pages** from `Template / Core Structure` (or a duplicate-this base structure on older starters) with full SEO. Home is the real homepage at `/`. Style Guide, Licenses and Changelog sit at the root at their required slugs. A template-showcase page, if wanted, lives in a folder and never takes a required slug.
 4. **Sections** one at a time, Client-First skeleton, real copy, compressed assets (150 KB or less) with alt text, checked at every breakpoint. Library sections are renamed and stripped of Classic interactions.
 5. **CMS** with 3 to 7 items each, dynamic SEO, help text.
 6. **Motion** natively, sparingly, verified in Preview.
@@ -71,7 +85,7 @@ A single, tasteful credit link to the agency belongs on the Style Guide page (an
 
 ## Workflow: QA an existing template
 
-1. Read the full checklist. Audit the site through the MCP: pages, slugs and SEO, custom code, components, styles, variables, interactions, forms, CMS, assets and file sizes, fonts, schema (must be empty).
+1. Read the full checklist. Audit the site through the MCP: pages, slugs and SEO, custom code (including any `Global / Styles` embeds), components and groups, styles, variables and their name casing, interactions, forms, CMS, assets and file sizes, fonts, schema (must be empty).
 2. Check visually what the API cannot: every page at every breakpoint, hover and focus states, forms, navigation, interactions playing, markers off. Use the browser for legacy interactions (`Webflow.require('ix2').store.getState().ixData` must be empty on the published page).
 3. Confirm the Webflow Way Validator snippet is in head code and its latest run is 100% on every published page. The API cannot see the run; mark it MANUAL until a person confirms.
 4. List site-settings items the user must confirm in the Designer.
@@ -80,4 +94,4 @@ A single, tasteful credit link to the agency belongs on the Style Guide page (an
 
 ## Anti-patterns
 
-Custom code outside the exceptions above; scripts or attribute libraries; schema; a showcase page at the root instead of the real home; Style Guide, Licenses or Changelog inside a folder (the slug breaks); Instructions at any slug other than `/instructions`; any image over 150 KB (blocked at submission); a validator snippet that is missing or not at 100%; static SEO on CMS template pages; placeholder images or lorem ipsum anywhere; more than 7 CMS items; markers on; Classic interactions; empty links (`#`) in nav or buttons; a second H1 outside a section or article; competing button classes; agency favicon left in place of the template's; forms all named "Email Form"; typos in prop names visible to buyers.
+Custom code outside the exceptions above; Client-First `Global / Styles` embeds left in; lowercase V3 variable names; scripts or attribute libraries; schema; a showcase page at the root instead of the real home; Style Guide, Licenses or Changelog inside a folder (the slug breaks); Instructions at any slug other than `/instructions`; any image over 150 KB (blocked at submission); a validator snippet that is missing or not at 100%; static SEO on CMS template pages; placeholder images or lorem ipsum anywhere; more than 7 CMS items; markers on; Classic interactions; empty links (`#`) in nav or buttons; a second H1 outside a section or article; competing button classes; agency favicon left in place of the template's; forms all named "Email Form"; typos in prop names visible to buyers.
