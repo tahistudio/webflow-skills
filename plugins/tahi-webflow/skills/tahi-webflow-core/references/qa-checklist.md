@@ -2,6 +2,8 @@
 
 Run per section while building, per page when a page is complete, and per site before handoff. Report each item as PASS, FAIL (with evidence), NEEDS VISUAL (you could not render it) or MANUAL (only a person in the Designer or site settings can check it). Specialist skills add their own sections; they never remove these.
 
+This list is the Webflow-specific layer. The project-wide checks (forms end to end, accessibility depth, SEO, security, analytics) live in `tahi-core:dev-qa` and are scaled by the risk level in `PROJECT.md`; design and visual depth is scaled by craft level in `tahi-design:design-qa`.
+
 ## Per section (while building)
 
 - [ ] Built from existing utilities, variables and components; any new class was created as a style first and, if reusable, added to the style guide.

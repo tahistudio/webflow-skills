@@ -1,0 +1,11 @@
+{
+  "name": "tahi-core",
+  "description": "How Tahi Studio runs any website project, on any stack: the project profile that sets how much rigour a job needs, the project log and decision record, the lifecycle and its gates, dev QA scaled by risk, the production launch gate, stack choice and retros.",
+  "author": {
+    "name": "Tahi Studio",
+    "email": "business@tahi.studio"
+  },
+  "homepage": "https://github.com/tahistudio/webflow-skills",
+  "repository": "https://github.com/tahistudio/webflow-skills",
+  "keywords": ["project", "process", "qa", "launch", "tiers", "logging"]
+}

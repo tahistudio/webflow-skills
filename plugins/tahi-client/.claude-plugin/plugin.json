@@ -1,0 +1,11 @@
+{
+  "name": "tahi-client",
+  "description": "How Tahi Studio works with clients across a website project: kickoff and the client questionnaire, access and assets, updates, feedback rounds, scope changes, sign-off, waiting on clients, difficult conversations, handover, editor guides, training and monthly plans. Scales to the project's process and risk levels and drafts everything a client sees for a person to send.",
+  "author": {
+    "name": "Tahi Studio",
+    "email": "business@tahi.studio"
+  },
+  "homepage": "https://github.com/tahistudio/webflow-skills",
+  "repository": "https://github.com/tahistudio/webflow-skills",
+  "keywords": ["client", "kickoff", "onboarding", "feedback", "scope", "sign-off", "handover", "training", "monthly-plan", "retainer"]
+}

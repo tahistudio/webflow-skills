@@ -120,4 +120,4 @@ That object holds `events` (trigger type, target element or style ids, action li
 - `element_snapshot_tool` needs the Designer tab open and in the foreground, renders desktop only, and does not run embeds or custom code. First snapshot may show fallback fonts; re-snapshot.
 - Full-page composites catch overlay and layering problems that isolated section snapshots hide.
 - Published `.webflow.io` pages cannot be fetched by the agent's fetch tools; use a browser tool or ask the user to check.
-- Never publish by default. Offer the staging domain first and only on explicit confirmation.
+- Publish to the `.webflow.io` staging domain freely when a rendered check needs it. Never publish to a custom domain without explicit confirmation (`tahi-core:launch`).

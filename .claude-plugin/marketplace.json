@@ -1,15 +1,35 @@
 {
   "name": "tahi-studio",
-  "description": "Tahi Studio's Claude Code plugins for building, editing and QA-ing Webflow sites.",
+  "description": "How Tahi Studio delivers websites for clients: running the project, working with the client, design consistency and motion, and building on Webflow or code stacks.",
   "owner": {
     "name": "Tahi Studio",
     "email": "business@tahi.studio"
   },
   "plugins": [
     {
+      "name": "tahi-core",
+      "source": "./plugins/tahi-core",
+      "description": "Start here. The project profile that sets how much rigour a job needs, the log and decisions, lifecycle gates, dev QA scaled by risk, the production launch gate, stack choice and retros."
+    },
+    {
+      "name": "tahi-client",
+      "source": "./plugins/tahi-client",
+      "description": "Working with clients: kickoff, communication, feedback rounds, scope changes, sign-off, handover, training and retainers, scaled by process level."
+    },
+    {
+      "name": "tahi-design",
+      "source": "./plugins/tahi-design",
+      "description": "Design consistency across a site, AI tells to avoid, industry and audience starting points, the site animator motion system, and design QA scaled by craft level."
+    },
+    {
       "name": "tahi-webflow",
       "source": "./plugins/tahi-webflow",
       "description": "Webflow skills: core rules, Lumos, Client-First V3, client sites, Marketplace templates and IX2 to GSAP migration."
+    },
+    {
+      "name": "tahi-code",
+      "source": "./plugins/tahi-code",
+      "description": "Code stacks: Astro, Next.js, Sanity, Cloudflare and AWS, with production checklists scaled by risk."
     }
   ]
 }

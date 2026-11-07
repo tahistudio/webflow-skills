@@ -1,6 +1,6 @@
 # Marketplace submission checklist
 
-Source: Webflow Submission Guidelines and Grading Rubric, checked 27 Oct 2026 (snapshot in `_research/sources/webflow-guidelines-and-rubric-2026-10-27.txt`).
+Source: Webflow Submission Guidelines as updated 6 Nov 2026, and the Grading Rubric (unchanged since the 27 Oct 2026 check). The last saved snapshot is `_research/sources/webflow-guidelines-and-rubric-2026-10-27.txt` (27 Oct 2026). The 6 Nov changes were read from the live page and no snapshot file was saved for them.
 
 **Source tag**
 - **G**: Submission Guidelines, a Webflow requirement.
@@ -19,19 +19,19 @@ Report every item. Never leave one blank.
 | # | Requirement | Check | Src |
 |---|---|---|---|
 | 1.1 | Page names Title Case; each name matches its slug | API | G |
-| 1.2 | Style Guide at `/style-guide`; shows every tag: headings, paragraphs, links, buttons, lists, blockquote, figure, forms | API + VISUAL | G |
-| 1.3 | Instructions at `/instructions` **only if** advanced or complex interactions, hidden components, GSAP custom code or SVG embeds are used. Explains how to access and edit them; includes GSAP docs if GSAP is used. If none apply, mark PASS as not applicable | API + VISUAL | G |
-| 1.4 | Licenses at `/licenses` | API | G |
-| 1.5 | Licenses opens with: "All graphical assets in this template are licensed for personal and commercial use. If you'd like to use a specific asset, please check the license below." | VISUAL | G |
+| 1.2 | Style Guide at `/style-guide` at the site root; shows every tag: headings, paragraphs, links, buttons, lists, blockquote, figure, forms | API + VISUAL | G |
+| 1.3 | Instructions at `/instructions` at the site root, required if advanced or complex interactions, hidden components, GSAP custom code or SVG embeds are used. Explains how to access and edit them; includes GSAP docs if GSAP custom code is used; no self-promotion. We always build it [H]: if no trigger applies and the page is missing, report an H note, not a G fail | API + VISUAL | G + H |
+| 1.4 | Licenses at `/licenses` at the site root | API | G |
+| 1.5 | Licenses opens with: "All graphical assets in this template are licensed for personal and commercial use. If you'd like to use a specific asset, please check the license below." Validator blocks | VISUAL | G |
 | 1.6 | Licenses lists every custom font with licence link; every image, icon and asset with source or licence link | VISUAL | G |
 | 1.7 | AI-generated images identified; tool or source named; terms linked, even when no attribution is required | VISUAL | G |
-| 1.8 | Footer on every page visibly links to Licenses | API | G |
-| 1.9 | Changelog at `/changelog` lists each template version and what changed; V1.0 first | API + VISUAL | G |
-| 1.10 | `<meta name="robots" content="noindex">` on Licenses and Changelog. **Optional** per Webflow; we recommend it. Missing is a note, not a fail | API | G (optional) + H |
-| 1.11 | Branded 404 with full navigation and CTAs | VISUAL | G |
-| 1.12 | Password page is optional. If present, styled to match the template | VISUAL | G |
-| 1.13 | Style Guide, Licenses and Changelog linked from the footer or a utility navigation | API + VISUAL | G |
-| 1.14 | Real homepage at `/`; no showcase scaffolding at the root | API + VISUAL | H |
+| 1.8 | Footer or utility navigation on every page visibly links to Licenses. Validator blocks | API | G |
+| 1.9 | Changelog at `/changelog` at the site root lists each template version and what changed; V1.0 first | API + VISUAL | G |
+| 1.10 | `<meta name="robots" content="noindex">` in the head code of Licenses and Changelog. **Required** since 6 Nov 2026 (optional on 27 Oct). Allowed on other utility pages but not asked for | API | G |
+| 1.11 | Branded 404 with the site navbar, footer and CTAs. Validator blocks a 404 without the navbar and footer | VISUAL | G |
+| 1.12 | Password page is optional. If present, styled to match the template, with meaningful form and field names | VISUAL | G |
+| 1.13 | Style Guide and Changelog linked from the footer or a utility navigation on every page | API + VISUAL | G |
+| 1.14 | Real homepage at `/`; no showcase or "buy" landing page anywhere in the template | API + VISUAL | H |
 
 ## 2. Design system
 
@@ -79,7 +79,7 @@ Report every item. Never leave one blank.
 | # | Requirement | Check | Src |
 |---|---|---|---|
 | 4.1 | Home title exactly `{Template Name} - Webflow HTML website template` (ecommerce: `{Template Name} - Webflow Ecommerce website template`) | API | G |
-| 4.2 | Footer has "Powered by Webflow" linking to webflow.com | API + VISUAL | G |
+| 4.2 | Footer has "Powered by Webflow" linking to webflow.com. Validator blocks | API + VISUAL | G |
 | 4.3 | Every page, including CMS templates: unique title under 60 characters | API | G |
 | 4.4 | Every page: description 150 to 160 characters | API | G |
 | 4.5 | Every page: Open Graph title, description and image; image JPEG or PNG, at least 1200×630 at 1.91:1; no WebP | API | G |
@@ -116,7 +116,9 @@ Report every item. Never leave one blank.
 | 6.7 | Assets free for resale or CC0 (sources such as Stock Up, Pexels, Unsplash); licences linked; no premium or trademarked graphics; no brand logos (social media icons excepted) | VISUAL | G |
 | 6.8 | High-quality, current imagery; no cutouts, low-resolution files or generic stock | VISUAL | G |
 | 6.9 | Nav logo is an image file that matches the template name; distinctive logomark and clean wordmark | API + VISUAL | G |
-| 6.10 | Favicon and webclip custom, matching the template's theme, displaying properly | MANUAL | G |
+| 6.10 | Favicon and webclip present, custom, matching the template's theme, displaying properly; not Webflow's default (Validator blocks), not the agency's | API (published head) + MANUAL | G |
+| 6.11 | Width and height set on every image in its image settings. Validator blocks | API | G |
+| 6.12 | Autoplay and background videos have a visible play/pause control. Validator blocks | VISUAL | G |
 
 ## 7. Layout and content
 
@@ -139,10 +141,10 @@ Report every item. Never leave one blank.
 
 | # | Requirement | Check | Src |
 |---|---|---|---|
-| 8.1 | Success and error messages customised to match the site | VISUAL | G |
+| 8.1 | Own success and error messages written and styled on every form, matching the site. Webflow's defaults ("Thank you! Your submission has been received!", "Oops! Something went wrong while submitting the form.") are rejected; Validator blocks | VISUAL + API | G |
 | 8.2 | Custom input focus states | VISUAL | G |
 | 8.3 | Form text and placeholders legible | VISUAL | G |
-| 8.4 | Meaningful names for forms and fields (they appear in notifications and reports); no "Email Form", no "Field 2" | API | G |
+| 8.4 | Meaningful names for forms and fields (they appear in notifications and reports), the password page form included; no "Email Form", no "Field 2". Validator blocks defaults | API | G |
 | 8.5 | Every field labelled; correct field types (an email field is not text) | API | G |
 | 8.6 | Conversion design: clear navigation; CTAs in high-traffic places (nav, hero, repeated); leading headlines; social proof; objection handling; ease of use; results | VISUAL | G + R |
 
@@ -150,9 +152,9 @@ Report every item. Never leave one blank.
 
 | # | Requirement | Check | Src |
 |---|---|---|---|
-| 9.1 | Custom code only in the allowed places: Webflow Way Validator snippet (required), font smoothing, optional noindex on Licenses and Changelog, SVG embeds (with Instructions), documented GSAP custom code. Nothing else in site settings, page settings or embeds. Client-First V3's `Global / Styles` embeds count as custom code: move what can be native into styles, then delete the embeds and the component | API | G |
-| 9.2 | Webflow Way Validator snippet in Site Settings → Custom Code → Head code; its latest run passes 100% on all published pages | MANUAL (run is visible only in the Validator) | G |
-| 9.3 | No registered scripts; no third-party attribute libraries | API | H |
+| 9.1 | Custom code only in the allowed places: Webflow Way Validator snippet (required), font smoothing, noindex on Licenses and Changelog (required there), SVG embeds (with Instructions), GSAP custom code (with "How to Edit GSAP Animations" on Instructions). Nothing else in site settings, page settings or embeds. Client-First V3's `Global / Styles` embeds count as custom code: move what can be native into styles, then delete the embeds and the component | API | G |
+| 9.2 | Webflow Way Validator snippet in Site Settings → Custom Code → Head code; its latest run passes 100% on all published pages; re-run before every submit | MANUAL (run is visible only in the Validator) | G |
+| 9.3 | No registered scripts; no third-party attribute libraries; no leftover `fs-*` attributes | API | H |
 | 9.4 | Favicon and webclip set | MANUAL | G |
 | 9.5 | Responsive images enabled in Project Settings | MANUAL | G |
 | 9.6 | Form notifications settings empty | MANUAL | G |
@@ -169,7 +171,7 @@ Report every item. Never leave one blank.
 |---|---|---|---|
 | 10.1 | Collection pages for repeatable or relational content; dynamic SEO on each CMS page | API | G |
 | 10.2 | Collection names Title Case with correct singular and plural; "This is a Collection of {plural}" and "Create a new {singular}" both read naturally | API | G |
-| 10.3 | Collection slugs short, singular and descriptive (for example `/project/...`) | API | G |
+| 10.3 | Collection slugs short, singular and descriptive (`/article/…`, `/event/…`, `/project/…`) | API | G |
 | 10.4 | Field names sentence case; each field has a short description and help text | API | G |
 | 10.5 | 3 to 7 items per collection, realistic dummy content | API | G |
 | 10.6 | Every dynamic page has content and design that fit the category | VISUAL | G |
@@ -201,6 +203,36 @@ If the template has no ecommerce, mark each item MANUAL with "not applicable; co
 | 12.5 | Hover thumbnail: a different section or page; same colours, style and layout tone as the main thumbnail | MANUAL | G |
 | 12.6 | Thumbnails have no badges, feature icons, external logos or tool icons, template or category names, CTAs or sales text, and no excessive text | MANUAL | G |
 | 12.7 | Short and long descriptions written and proofread | MANUAL | H |
+
+## 13. Validator blocking issues and self-promotion (6 Nov 2026)
+
+Since 6 Nov 2026 the Webflow Way Validator blocks submission on twelve issues [G]. Each maps to an item; check these first, because the form will not accept a run below 100%.
+
+| Validator blocking issue | Item |
+|---|---|
+| Default form success or error messages | 8.1 |
+| Default form or field names | 8.4 |
+| Image without width and height | 6.11 |
+| Autoplay video without a play/pause control | 6.12 |
+| 404 without the site navbar and footer | 1.11 |
+| Licenses not linked from the footer or navigation | 1.8 |
+| Missing or default favicon or webclip | 6.10 |
+| ® or ™ in copy | 13.6 |
+| Links that promote the author or their other templates | 13.2 |
+| Licenses page without the required opening text | 1.5 |
+| GSAP custom code without an Instructions page | 13.7 |
+| Footer without a "Powered by Webflow" link to webflow.com | 4.2 |
+
+| # | Requirement | Check | Src |
+|---|---|---|---|
+| 13.1 | None of the twelve blocking issues above on any published page; latest Validator run 100% (see 9.2) | MANUAL (run in browser) | G |
+| 13.2 | No "Buy", "Get template" or pricing buttons or links; no "More templates" or "All templates" links; no links to other templates | API | G |
+| 13.3 | No floating badges, bars, banners or pop-ups | VISUAL | G |
+| 13.4 | No offers for customisation, support, Figma files or other paid services (Instructions page included) | VISUAL | G |
+| 13.5 | Only self-credit is one "Designed by" link in the footer, visible text, to the agency site or creator profile; no credit on the Style Guide or Instructions page | API + VISUAL | G |
+| 13.6 | No ® or ™ in copy | API | G |
+| 13.7 | No GSAP custom code without an Instructions page section "How to Edit GSAP Animations" (see 3.14). Not applicable if there is none | API | G |
+| 13.8 | Listing description has no links to the author's site, other templates or paid services, and no support email | MANUAL | G |
 
 ## R. Grading rubric
 

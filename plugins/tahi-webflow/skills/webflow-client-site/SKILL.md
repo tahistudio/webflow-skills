@@ -22,7 +22,7 @@ References:
 
 ## Phase 0 — Intake
 
-Collect before starting:
+If the project has no `PROJECT.md` yet, run the kickoff intake in `tahi-core:tahi-project` first; it sets the levels and scope. Then collect the Webflow-specific items it does not cover:
 
 - Figma file and which pages and frames are in scope; which breakpoints the designer drew.
 - Webflow site, framework, starter used, and anything already built.
@@ -58,7 +58,7 @@ After the last section of a page: heading outline check, Lighthouse, console, th
 
 ## Phase 3 — Motion
 
-Native GSAP interactions only, added after a page's structure is stable. Component-scoped where the block is a component. Reveals carry start values; scroll reveals start around 85 percent of the viewport with at least half a second duration; markers off; reduced-motion honoured. Verify in Preview. Library sections' Classic interactions are stripped, never kept.
+How much motion, which moves and which tokens come from the profile's motion level and `tahi-design:site-animator`. Native GSAP interactions only, added after a page's structure is stable. Component-scoped where the block is a component. Reveals carry start values; scroll reveals start around 85 percent of the viewport with at least half a second duration; markers off; reduced-motion honoured. Verify in Preview. Library sections' Classic interactions are stripped, never kept.
 
 ## Phase 4 — SEO, schema, settings
 
@@ -78,7 +78,7 @@ Run the core checklist per page and per site. Add for client sites:
 - All ` (dev)` components and props hidden from Marketers; slot restrictions set where needed.
 - Client-facing components have descriptions; a short client guide is written (where to add sections, what each prop does, what not to touch).
 - On Client-First projects, the Client-First launch checklist (`client-first-webflow` › references/launch-checklist.md) run in full, with its project-settings and post-launch items handed to the user as a list. On other frameworks, use it as the go-live list anyway; it is framework-neutral apart from naming.
-- Publish only to staging first and only when asked; the user confirms embeds, animation and mobile before any custom domain publish.
+- Publish to the `.webflow.io` staging domain whenever it helps to check the work. The user confirms embeds, animation and mobile there, and the custom-domain publish goes through `tahi-core:launch`.
 
 ## Reporting
 

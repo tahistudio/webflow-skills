@@ -7,6 +7,8 @@ description: "Shared rules and workflow for building, editing and QA-ing any Web
 
 This skill holds the rules that apply to every Webflow build regardless of framework. Framework-specific skills (Lumos, Client-First) and job-specific skills (client site, template) add to it and never contradict it. When a specialist skill is loaded, read this one first.
 
+The project itself (the `PROJECT.md` profile with its risk, craft, process and motion levels, the log, the lifecycle gates and the production launch) is run by `tahi-core:tahi-project`. Read the profile before building and scale QA to it. Webflow hosting already handles SSL, CDN, backups and uptime, so never spend time on those (see references/platforms.md in `tahi-core:tahi-project`).
+
 Two things sit above every other rule:
 
 1. **Everything must be visible and editable in the Designer.** A class that only exists as text in an HTML attribute, a style hidden in an embed, or a value that only lives in code is a bug. If a person opening the Style panel cannot see it, it does not exist.
@@ -54,7 +56,7 @@ Work in long, deliberate steps. One section per pass. Never paste many frames at
 
 ### Phase 3 — QA before calling anything done
 
-After each page: visual pass at every breakpoint, Lighthouse, console clean. After the site: full checklist in [references/qa-checklist.md](references/qa-checklist.md). Never report "done" for something you could not see rendered; say exactly what is unverified and how the user can check it.
+After each page: visual pass at every breakpoint, Lighthouse, console clean. After the site: full checklist in [references/qa-checklist.md](references/qa-checklist.md), alongside `tahi-core:dev-qa` and `tahi-design:design-qa` at the depth the profile's levels set. Never report "done" for something you could not see rendered; say exactly what is unverified and how the user can check it.
 
 ## Rules
 
@@ -144,7 +146,7 @@ The MCP is the preferred build path. Its gotchas are collected in [references/mc
 - Create styles before referencing them. Apply properties through the style tool bound to variables, never through the HTML builder's CSS parameter or an embed.
 - Build inside a component definition by scoping to the component; insert instances into slots with the component builder; bind props to element settings.
 - Snapshots need the Designer open and in the foreground and show desktop only. Use Preview or the published page for other breakpoints.
-- Never publish without an explicit instruction.
+- Publishing to the `.webflow.io` staging subdomain is fine whenever it helps you or the user check the work. Publishing to a custom (production) domain needs an explicit instruction and the gate in `tahi-core:launch`.
 
 ## Quality bar and reporting
 
