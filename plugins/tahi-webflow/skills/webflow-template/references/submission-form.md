@@ -20,8 +20,13 @@ The form's status only means its own checks passed. Before the owner ticks the f
 3. No registered scripts.
 4. Every interaction duration is 800 ms or less (checklist 3.10).
 5. The Webflow Way Validator was re-run after the last publish.
-6. Licenses names every image source, names the tool for AI-generated images and links its terms.
+6. Licenses names every image source and, for AI-generated images, the exact tool or model (for example Gemini Nano Banana, ChatGPT or Sora) with a link to its terms. Ask the owner where every image came from; do not infer it from how a photo looks.
 7. Listing text, Changelog and the live site agree on page count, collections and interactions.
+
+## Expect these, do not chase them
+
+- The required Webflow Way Validator snippet in the head is a render-blocking script (about 1 s in a mobile Lighthouse run) and Webflow's own font loader blocks too. Together with Webflow's server response they dominate Home mobile LCP. Report the score and its causes; remove the snippet only after acceptance, and never to improve a score before submitting.
+- The Validator can hang on "Validating…". Reload the Designer fully, reopen Apps, Webflow Validation, Launch App, Run Validator. Two Designer tabs open at once can freeze screenshots; keep one.
 
 ## Form flow
 
