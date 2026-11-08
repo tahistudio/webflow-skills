@@ -4,6 +4,7 @@ Raw research gathered before writing the skills. Nothing here is a skill; skills
 
 ## Reports
 - client-first.md — Finsweet Client-First 2.1 rules, gaps, anti-patterns
+- client-first-v3.md - Client-First V3 changes, launch checklist source, and the decisions taken when moving the skills to V3
 - client-first-reference-sites.md — what the agency actually does (Flowout, Meditrain, Nexus Law): conventions, schema pattern, client vs template differences, debt
 - lumos.md — Lumos docs gap-check vs the official lumos-skill
 - lumos-stock-and-template-fork.md — stock Lumos 2.2.3 inventory, Giant Group diff, template starter fork conventions
@@ -16,4 +17,4 @@ Raw research gathered before writing the skills. Nothing here is a skill; skills
 - user-preferences-round1.md / round2.md / round3.md — answered question rounds
 
 ## sources/
-Raw dumps: full submission-guidelines + grading-rubric text, stock Lumos 2.2.3 components/props/variables, Giant Group components/classes.
+Raw dumps: Client-First launch checklist, full submission-guidelines + grading-rubric text, stock Lumos 2.2.3 components/props/variables, Giant Group components/classes.

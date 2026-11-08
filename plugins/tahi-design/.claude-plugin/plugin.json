@@ -1,0 +1,11 @@
+{
+  "name": "tahi-design",
+  "description": "How Tahi Studio keeps a site's design consistent, distinctive and well-moved on any stack: design tokens and section rhythm, a drift audit, AI-tell and industry playbooks, the motion system scaled by the project's motion level, and design QA against Figma with a ranked fix list.",
+  "author": {
+    "name": "Tahi Studio",
+    "email": "business@tahi.studio"
+  },
+  "homepage": "https://github.com/tahistudio/webflow-skills",
+  "repository": "https://github.com/tahistudio/webflow-skills",
+  "keywords": ["design", "design-system", "tokens", "consistency", "motion", "animation", "gsap", "design-qa", "figma"]
+}

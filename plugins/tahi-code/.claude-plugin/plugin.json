@@ -1,0 +1,11 @@
+{
+  "name": "tahi-code",
+  "description": "How Tahi Studio builds websites in code: Astro for content and marketing sites, Next.js App Router for app-like sites, Sanity as the headless CMS, Cloudflare Workers for hosting and edge, and AWS when a client needs it. Each skill reads the project profile and scales its production checklist by risk.",
+  "author": {
+    "name": "Tahi Studio",
+    "email": "business@tahi.studio"
+  },
+  "homepage": "https://github.com/tahistudio/webflow-skills",
+  "repository": "https://github.com/tahistudio/webflow-skills",
+  "keywords": ["astro", "nextjs", "sanity", "cloudflare", "aws", "headless", "code"]
+}

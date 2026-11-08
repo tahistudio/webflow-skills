@@ -2,3 +2,6 @@
 Thumbs.db
 *.tmp
 .wfguide.tmp.md
+
+# eval run output
+plugins/*/evals/results/

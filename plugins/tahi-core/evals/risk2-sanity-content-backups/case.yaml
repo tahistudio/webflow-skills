@@ -1,0 +1,5 @@
+schema_version: "1.1"
+name: risk2-sanity-content-backups
+tags: [tiers, platforms]
+context:
+  scaffold_script: scaffold.sh
