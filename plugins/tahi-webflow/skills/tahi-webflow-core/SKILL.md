@@ -125,6 +125,7 @@ Make something a component when it appears more than once, or when it must be ed
 - Honour `prefers-reduced-motion` through the interaction's conditional playback when the platform supports it.
 - Legacy (Classic) interactions imported with library sections are stripped and rebuilt natively. See the migration procedure in [references/mcp-playbook.md](references/mcp-playbook.md).
 - A saved interaction is not proof it plays. Verify in Preview or on the published page.
+- Agree the reveal style (fade-up, swipe, split text) with the owner before building many interactions. Staggered section reveals through the API: see the recipe in [references/mcp-playbook.md](references/mcp-playbook.md).
 
 ### Custom code placement
 

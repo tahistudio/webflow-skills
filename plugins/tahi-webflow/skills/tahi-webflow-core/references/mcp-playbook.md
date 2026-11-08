@@ -70,6 +70,20 @@ Large responses are saved to a file by the harness. Parse them with a script; do
 - Conditional playback: `[{type: "prefers-reduced-motion", behavior: "dont-animate"}]`.
 - A successful write proves nothing about playback. Check in Preview or on the published page.
 
+### Staggered section reveals (one interaction per section class)
+
+Used on Larkstone, 8 Nov 2026. Fades the headings, text and buttons of a section in sequence as it scrolls into view.
+
+- Trigger: `wf:scroll` on the section class (`section_xyz`), `start` `"top 80%"`, `enter` `"play"`, the other toggles `"none"`. One scroll trigger per interaction, so one interaction per section class.
+- Action: `wf:transform` `{opacity: ["0%","100%"], yPercent: [6, 0]}`, `timing.duration` 0.8 or less, `timing.ease` 8, `timing.stagger` `{amount: 0.4 to 0.8, from: "start"}`. `amount` spreads the whole sequence over that time, so a long section does not drag; `each` grows with the item count.
+- Target: `{extensionKey: "wf:selector", value: "h2, h3, p, .button_component", filterContext: {relationship: "within", filterBy: ["wf:class", [SECTION_STYLE_BLOCK_ID]], firstMatchOnly: false}}`. Look up the style block id with `data_style_tool`.
+- The `within` filter is relative to the `filterBy` class, not to the trigger. Always filter by the same section class as the trigger. A selector without a section filter hides and reveals every match on the whole site.
+- Skip hero sections and any LCP element; an opacity-0 start state delays them.
+- Sections that hold native Tabs, Sliders or accordions: target headings and intro text only.
+- Images fade with a separate class-level interaction using the `wf:trigger-only` target (the triggering element itself), opacity only, 0.8 s or less.
+- Verify on the published page by sampling `getComputedStyle(el).opacity` while scrolling; a background browser tab plays slowly, so wait before judging. Do this on at least one page of each type and confirm nothing is left at 0.
+- Agree the reveal style with the owner before building many interactions: show or describe one fade-up, swipe or split-text example and get a yes.
+
 ### Migrating legacy (Classic, IX2) interactions
 
 The API cannot list or delete Classic interactions. Read them from the published page in a browser console:
