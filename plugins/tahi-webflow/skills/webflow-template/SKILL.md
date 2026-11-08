@@ -94,11 +94,12 @@ The 6 Nov 2026 guidelines treat any credit outside the footer as self-promotion,
 4. **Sections** one at a time, Client-First skeleton, real copy, compressed assets (150 KB or less, width and height set) with alt text, checked at every breakpoint. Library sections are renamed and stripped of Classic interactions.
 5. **CMS** with 3 to 7 items each, singular collection slugs, dynamic SEO, help text.
 6. **Forms** with custom success and error messages and meaningful form and field names.
-7. **Motion** natively, sparingly, verified in Preview.
-8. **Utility pages** per the reference, at the root. Licenses complete. Changelog lists each version and what changed, starting at V1.0. The footer or a utility navigation links Style Guide, Licenses and Changelog; the footer carries "Powered by Webflow" and the single "Designed by" credit.
+7. **Motion** natively, sparingly, verified in Preview. Agree the reveal style with the owner before building interactions, keep every duration at 800 ms or less (checklist 3.10), and use the staggered section-reveal recipe in `tahi-webflow-core/references/mcp-playbook.md`.
+8. **Utility pages** per the reference, at the root. Licenses complete. Changelog lists each version and what changed, starting at V1.0, dated the day you submit. Keep one facts file (page names and count, CMS collections, interactions, fonts, image formats, version, date) and write the listing, Changelog and Instructions from it so they cannot disagree. The footer or a utility navigation links Style Guide, Licenses and Changelog; the footer carries "Powered by Webflow" and the single "Designed by" credit.
 9. **QA** per the checklist and report format. Fix everything in tiers 1 and 2, including every image over 150 KB and every Validator blocking issue. Re-run the whole template, not just the items you changed.
 10. **Validate.** Install the Webflow Way Validator, publish, and run it on all published pages until it reports 100%. Re-run QA after any fix.
-11. **Listing**: name of one or two words, up to two categories, page count type declared, thumbnails without badges, text or CTAs, short and long descriptions with no links and no support email.
+11. **Listing**: name of one or two words, up to two categories, page count type declared, thumbnails without badges, text or CTAs, short and long descriptions with no links and no support email. Make the listing assets (profile image, 750×995 thumbnail, 1440×900 gallery) before opening the form; specs and flow are in [references/submission-form.md](references/submission-form.md).
+12. **Submit.** Never tell the owner a template is ready, and never let them tick the final confirmations, until the QA report verdict is WOULD PASS and the pre-submit pass in the submission-form reference is done. The form's "Ready to submit" only means the form's own checks passed.
 
 ## Workflow: QA an existing template
 
