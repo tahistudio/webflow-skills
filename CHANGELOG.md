@@ -2,6 +2,9 @@
 
 Newest first. One line per change that alters how we work. Plugin versions follow commits (no `version` field), so this file is the human record.
 
+## 2026-11-10 (Larkstone first review)
+- `webflow-template`: new Running checklist section (rows per page, section, component, breakpoint, with evidence); pre-submit pass gains items 8 to 12 from Webflow's first review (placeholder social links, logo links to Home, unused-style cleanup, bound CMS page titles, image width and height on every page).
+
 ## 2026-11-08 (Larkstone retro)
 - `webflow-template`: new `references/submission-form.md` (form flow, asset specs, preview-link source, pre-submit pass); workflow now makes listing assets before the form, keeps one facts file for listing, Changelog and Instructions, and adds step 12: never call a template ready until the QA verdict is WOULD PASS, because the form's "Ready to submit" only reflects its own checks.
 - `tahi-webflow-core`: staggered section-reveal recipe for IX3 (section-scoped `wf:selector` with a `within` filter, stagger `amount`, 800 ms cap) and "agree the reveal style first".

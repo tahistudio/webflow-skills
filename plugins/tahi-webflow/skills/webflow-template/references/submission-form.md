@@ -22,6 +22,13 @@ The form's status only means its own checks passed. Before the owner ticks the f
 5. The Webflow Way Validator was re-run after the last publish.
 6. Licenses names every image source and, for AI-generated images, the exact tool or model (for example Gemini Nano Banana, ChatGPT or Sora) with a link to its terms. Ask the owner where every image came from; do not infer it from how a photo looks.
 7. Listing text, Changelog and the live site agree on page count, collections and interactions.
+8. Every external link in a component (footer, navbar, CTA, social cards) is a neutral placeholder for the buyer. Only the single "Designed by" credit points to the studio, with no tracking parameters. Social cards often hide in the CTA component, not the footer; list every link in every component.
+9. Footer and navbar logos link to Home. Read the link setting; a logo linked to a page id that is not Home publishes as `#`.
+10. The Designer's Style Manager "Clean up unused styles" is empty. Starter and showcase classes (for example `template-hero_*`, `template-inclusions_*`, `global-styles`) are the usual leftovers. The API can remove styles that are plainly unused, but a style with a combo-class variant needs the Style Manager.
+11. CMS template pages: SEO title bound to the item name. The pages API accepts `{{wf {"path":"name","type":"PlainText"} }} | Site name` as `seo.title`; check the rendered title on one item per collection.
+12. Every image on every published page, including CMS pages and the Style Guide, has width and height. Scan the live HTML; only the Designer's image settings can set them.
+
+First reviews check sitewide components first, so a mistake in a component repeats on every page. Webflow's first review of Larkstone (9 Nov 2026) came back with items 8, 9, 10, 11 and 12.
 
 ## Expect these, do not chase them
 

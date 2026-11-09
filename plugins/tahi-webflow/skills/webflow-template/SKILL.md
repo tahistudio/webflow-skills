@@ -86,6 +86,16 @@ Templates are judged as marketing sites. Every heading and paragraph is real, re
 
 The 6 Nov 2026 guidelines treat any credit outside the footer as self-promotion, so the old credit on the Style Guide and Instructions pages is gone. The only permitted credit is one "Designed by {Agency}" link in the footer, visible text, linking to the agency site or creator profile [G]. UTM parameters on that single link are fine [H]. Nothing else points at the agency anywhere: not the Instructions page, not the listing description (no links, no support email; buyers use the Support tab), not the thumbnails [G].
 
+## Running checklist (keep it from the first hour)
+
+Create `docs/template-checklist.md` in the project (a scratch file if there is no project) before building, and update it after every change. It is the single record of what is done, and it feeds the QA report and the owner's sign-off.
+
+- **Rows.** One row per page (including CMS template pages and utility pages), per section on each page, per component, per CMS collection, per interaction, and per asset group. Add the screen sizes: for every page, one tick each for Desktop, Tablet (991), Mobile landscape (767) and Mobile portrait (479), plus the larger breakpoints if enabled.
+- **Columns.** Item, status (DONE, OPEN, NEEDS PERSON), evidence (page, element, count, value or screenshot), date.
+- **Rule.** A row turns DONE only with evidence, and only after you looked at the published result. Never from a successful write.
+- **Sitewide components.** Footer, Navbar, CTA and other components get their own rows with every link, image and social icon listed, because one fix there changes every page.
+- **Before submit.** No row may be OPEN. NEEDS PERSON rows are handed to the owner in one list. After a Webflow review email, add its items as new rows and work from the same file.
+
 ## Workflow: build a template
 
 1. **Start** from the agency's no-code template starter (Client-First, Relume-style style guide, zero scripts). If that starter is not yet on V3 with the table above applied, or you start from Finsweet's V3 starter, apply the table first and check it with the MCP: no embeds, Title Case variables. Confirm site settings are default and custom code is empty (apart from the Validator snippet and font smoothing) before doing anything else. Confirm a paid Workspace plan.
