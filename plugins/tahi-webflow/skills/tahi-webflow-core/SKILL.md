@@ -31,6 +31,8 @@ Write down the framework in use, the naming pattern, the token scale, and the re
 
 ### Phase 1 — Foundation before sections
 
+New builds start by duplicating the matching starter site (template, client-site or white-label); see [references/starters.md](references/starters.md) for how they differ and the duplicate checklist.
+
 For a new build, or a build from a Figma file, set up the whole system before building a single content section:
 
 1. Scan every page and frame of the design. List every colour, type style, spacing value, radius, shadow, and every repeated block. This is the long-term view; a section built before this scan will be rebuilt.
