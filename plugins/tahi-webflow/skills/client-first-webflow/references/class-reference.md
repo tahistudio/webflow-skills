@@ -115,7 +115,7 @@ Apply a custom class first, then a grid class on top. All default to a `medium` 
 
 - Groups Title Case; names lowercase with dashes; no group name repeated in the variable name; never colour-named semantics; follow the client's own colour system if they have one.
 - CSS names (copy from the project, never hand-build): Base `--[group]--[name]` (`--brand--blue`); others `--_[collection]---[group]--[name]` (`--_theme---text--primary`).
-- Templates: rename variables to Title Case with spaces for the Marketplace (`Primary`, `Background Hover`).
+- Tahi starters (template, client-site, white-label): variable names are Title Case with spaces (`Primary`, `Background Hover`, `H2 Font Size`). Outside projects keep their own convention.
 
 ## Custom class grammar
 

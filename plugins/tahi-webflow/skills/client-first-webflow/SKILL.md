@@ -122,7 +122,7 @@ Five collections, each value set once and linked (not copied):
 - Custom code references a variable by its exact CSS name copied from the project (`--brand--blue`, `--_theme---text--primary` by default). Never hand-build it.
 - Before creating a variable, check one with the same purpose or value does not exist. Report every variable created.
 
-**Tahi override, templates.** Webflow Marketplace requires variable names in Title Case with spaces. On templates, rename V3's lowercase names (`primary` → `Primary`, `background-hover` → `Background Hover`). Client sites keep the V3 lowercase convention.
+**Tahi override, variable names.** Variable names are Title Case with spaces on every Tahi starter (template, client-site and white-label), not V3's lowercase: `Primary`, `Background Hover`, `H2 Font Size`. The Marketplace requires it for templates, and keeping all three starters identical lets fixes and components copy between them without renaming. When working on an outside project that already uses V3 lowercase names, keep its convention.
 
 ## Components and interactions
 
