@@ -44,6 +44,10 @@ Templates are built in Client-First V3 (structure, naming, variables, components
 
 What carries over unchanged: core structure with the native Section element and padding from variables, combined spacing classes and gap, grid utilities, `Group / Identifier` component names in matching groups (Title Case, so they pass), `Template / Core Structure` and `Template / Section` as the buyer's starting points (explain them on Start Here), and the non-template rows of the launch checklist (forms, CMS, performance, mobile, browsers, accessibility, organise).
 
+## Design patterns
+
+Templates are where we design, so apply the core skill's design-review patterns as defaults: the hero passes the mirror test for the template's niche (who, what they get, one next step); one accent colour (Brand/CTA through the Button Primary and Link tokens) is reserved for calls to action, roughly 60-30-10; sections read front, middle, back with one element breaking a section edge where it suits; motion has one job per screen and never hides the hero's words. Break a pattern only on purpose and note why in the QA report. An interactive "free sample" tool is only possible with native elements (no custom code), so at most a native multi-step form.
+
 ## Copy and content
 
 Templates are judged as marketing sites. Every heading and paragraph is real, relevant copy for the template's niche, well written, no lorem ipsum, no keyword stuffing, correct spelling and grammar, consistent names and roles across the site (a team member's name and title match on every page). Content is inclusive and safe for a global audience. Fake brand and logos only. The template should quietly demonstrate good conversion design: obvious CTAs in nav and hero, social proof, objection handling, clear paths to contact or purchase.

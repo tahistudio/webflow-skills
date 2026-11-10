@@ -29,6 +29,8 @@ Collect before starting:
 - Pages list and sitemap, CMS needs (what repeats, what the client will add), forms and their destinations, integrations, languages.
 - Brand assets: logo as SVG, fonts and licences, image sources.
 - Who edits after launch (Marketer in Build mode, Editor, both).
+- The hero's three answers: who it is for, what they get, the one next step; and the words customers search with (see the core skill's design-review reference).
+- What every customer asks before they buy, and whether a small tool could answer it (estimator, quiz, checker). If it can be done well, recommend one, at most one or two per site.
 
 Audit the Webflow site per the core workflow. Read the framework skill's inventory to know what already exists.
 

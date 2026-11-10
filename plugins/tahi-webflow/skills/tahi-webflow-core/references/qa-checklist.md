@@ -13,6 +13,8 @@ Run per section while building, per page when a page is complete, and per site b
 - [ ] Heading level fits the page outline (one h1 per page, no skipped levels).
 - [ ] Section rendered and checked at desktop, then at every enabled breakpoint. No horizontal scroll, no text overflow, tap targets at least 44px on touch sizes.
 - [ ] Any interaction plays in Preview; markers are off; reduced-motion handled.
+- [ ] Each animation has one job; one thing moves per screen; nothing on the first screen hides its words behind an entrance animation (unless motion is the site's point, noted in the report).
+- [ ] The accent colour sits on calls to action and key links, not on decoration (exceptions noted).
 
 ## Per page
 
@@ -24,6 +26,7 @@ Run per section while building, per page when a page is complete, and per site b
 - [ ] Console has no errors on load and after scrolling the full page.
 - [ ] Lighthouse: aim for 80 or above mobile and 90 or above desktop. Record the score and the top three causes if below.
 - [ ] Visual pass at every breakpoint, top to bottom, including the navigation open state and any modals, tabs, sliders and accordions.
+- [ ] First screen passes the mirror test: who it is for, what they get, one clear next step; headline uses the words customers search with. Depth reads front, middle, back. Report misses as FLAG with a suggestion (see design-review.md); on client builds the approved design wins.
 
 ## Per site
 

@@ -54,7 +54,7 @@ Work in long, deliberate steps. One section per pass. Never paste many frames at
 
 ### Phase 3 — QA before calling anything done
 
-After each page: visual pass at every breakpoint, Lighthouse, console clean. After the site: full checklist in [references/qa-checklist.md](references/qa-checklist.md). Never report "done" for something you could not see rendered; say exactly what is unverified and how the user can check it.
+After each page: visual pass at every breakpoint, Lighthouse, console clean, and a design review of the first screen against [references/design-review.md](references/design-review.md) (mirror test, one accent, depth, motion with a job). After the site: full checklist in [references/qa-checklist.md](references/qa-checklist.md). Never report "done" for something you could not see rendered; say exactly what is unverified and how the user can check it.
 
 ## Rules
 
@@ -121,6 +121,7 @@ Make something a component when it appears more than once, or when it must be ed
 - Use Webflow's native GSAP-powered interactions for all motion. Do not add GSAP or other animation libraries as custom code unless the user asks.
 - Animate transform and opacity only. Durations between 150 and 800 ms. Reveals carry an explicit start value so they play from the API; the API cannot set Initial Appearance.
 - Honour `prefers-reduced-motion` through the interaction's conditional playback when the platform supports it.
+- Every animation has one job (show the product, point to the next step, confirm an action). One thing moves per screen. The first screen's headline, text and button are readable immediately, never faded or flown in. When motion is the point of the site, heavy motion is the job; say so in the report. Detail in [references/design-review.md](references/design-review.md).
 - Legacy (Classic) interactions imported with library sections are stripped and rebuilt natively. See the migration procedure in [references/mcp-playbook.md](references/mcp-playbook.md).
 - A saved interaction is not proof it plays. Verify in Preview or on the published page.
 

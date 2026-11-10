@@ -81,6 +81,7 @@ Classic often uses the first group as the initial state (element starts at opaci
 - Call the interactions guide action once, then `create_interaction` per rebuilt interaction. Scope to the component when the target lives in a component definition; otherwise page or site scope with `[pageId, elementId]` targets.
 - Name in sentence case: "Reveal cards on scroll", "Open mobile menu".
 - Add `conditionalPlayback` for reduced motion.
+- Migration is a chance to cut, not only copy. Keep an animation only if it has one job (show the product, point to the next step, confirm an action); one thing moves per screen; drop entrance animations on the first screen's headline, text and button so they are readable at once. List every cut in the report with the reason. When motion is the site's point, keep it and say so. See the core skill's design-review reference.
 - Verify each one in Preview or on the published page. A successful write is not proof it animates.
 
 ### 7. Remove the legacy interactions
