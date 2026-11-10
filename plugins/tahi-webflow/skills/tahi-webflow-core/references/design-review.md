@@ -45,6 +45,7 @@ Motion is the fastest way to make a site feel premium and the fastest way to mak
 - **One thing moves per screen.** Pick the product, the result or the before-and-after; keep the rest still.
 - **Never make them wait for the words.** The first screen's headline, text and button are readable immediately: no fade-in, fly-in or word-by-word reveal above the fold. Reveals start further down the page.
 - **Give an off switch.** Honour `prefers-reduced-motion` (conditional playback); on motion-heavy sites add a visible motion toggle if the design allows.
+- **Micro-interactions ease.** Hover, focus and pressed changes to colour, background, border, shadow and underline transition smoothly: about 200ms, ease, on the specific properties (never `transition: all`). Text links are underlined and the underline colour eases on hover; buttons are never underlined in any state.
 - Exception: when motion is the product or the point of the site (a motion studio, an immersive launch page), heavy motion is the job. Say so in the report and still keep the first screen's words readable and reduced motion honoured.
 
 ## 5. The free sample (an interactive tool)

@@ -15,6 +15,7 @@ Run per section while building, per page when a page is complete, and per site b
 - [ ] Any interaction plays in Preview; markers are off; reduced-motion handled.
 - [ ] Each animation has one job; one thing moves per screen; nothing on the first screen hides its words behind an entrance animation (unless motion is the site's point, noted in the report).
 - [ ] The accent colour sits on calls to action and key links, not on decoration (exceptions noted).
+- [ ] Hover and focus colour, border, shadow and underline changes ease (about 200ms, specific properties, no `transition: all`); text links underline, buttons never do.
 
 ## Per page
 
